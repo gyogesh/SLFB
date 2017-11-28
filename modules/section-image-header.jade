@@ -1,0 +1,20 @@
+// Module - Section Image Header (Common module on landing pages) - Starts
+section.section-image-header
+  .container-fluid.no-gutter
+    .image-container
+      img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/summer-palace-island-shangri-la.jpg", alt="SUMMER PALACE Island Shangri-La")
+    .content-container
+      h1 SUMMER PALACE
+        span Island Shangri-La
+    .social-container
+      .container
+        .row
+          //.hidden-xs.hidden-sm.hidden-md.col-lg-3
+            include ../includes/breadcrums
+          //col-lg-12 should be col-lg-6 if above breadcrumb div is uncommented
+          .col-lg-12
+            .social-share
+              span Share
+              .social-icons-wrapper(data-visible=3)
+                include ../includes/social-icons-share
+// Module - Section Image Header (Common module on landing pages) - Ends

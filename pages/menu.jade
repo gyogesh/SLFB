@@ -1,0 +1,12 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - SUMMER PALACE"}
+  - var Meta = {description:"SUMMER PALACE", keywords:"SUMMER PALACE"}
+  - var currentUrl = "menu"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-image-header
+  include ../pages/menu-markup
+  include ../modules/footer

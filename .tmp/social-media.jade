@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Social Media"}
+  - var Meta = {description:"Module - Social Media", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/social-media

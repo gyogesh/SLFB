@@ -1,0 +1,582 @@
+// scss predefined variables, classes and mixins to be used.
+@import
+'fonts',
+'variables',
+'typography',
+'mixins',
+'button';
+
+
+/* base css */
+svg {
+  height: 100%;
+  max-height: 50px;
+  width: 100%;
+}
+.ie9 svg {
+  max-height: 40px;
+}
+
+/* base font css */
+html {
+  font-size:10px;
+}
+body {
+  font-family: $MyriadPro-Regular;
+  font-size: 100%;
+  color: $primary-color-2;
+  line-height: 1.5;
+  overflow-y: auto;
+  &.hang{
+    position: fixed;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+input,a{
+  outline: none;
+  text-decoration: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+a {
+  color: $secondary-color-6;
+}
+a.call-us-lnk {
+  color: $black;
+}
+/* bootstrap overwrite default padding from 15px to 10px */
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12,
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* overwriting bootstrap row negative margin as per padding */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* resetting gutter padding to 0 on container */
+.no-gutter {
+  padding-left: 0;
+  padding-right:0;
+
+  /* resetting gutter margin to 0 on row */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.half-gutter {
+  padding-left: 5px;
+  padding-right:5px;
+
+  /* resetting gutter margin to 0 on row */
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+.no-right-gutter {
+  padding-right: 0;
+  /* resetting gutter margin to 0 on row */
+  .row {
+    margin-right: 0;
+  }
+}
+.no-left-gutter {
+  padding-left: 0;
+  /* resetting gutter margin to 0 on row */
+  .row {
+    margin-left: 0;
+  }
+}
+
+/* Primary button - Teal (View all) button */
+.button-primary {
+  @include buttonPrimary;
+}
+
+/* Secondary button - plain (Book now) button */
+.button-secondary {
+  @include buttonSecondary;
+}
+
+/* Common CTA link */
+.cta-link {
+  font-family: $MyriadPro-Regular;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.62;
+  color: #026865;
+  text-decoration: none;
+  display: block;
+
+  &:hover, &:focus {
+    color: #028883;
+    text-decoration: underline;
+  }
+}
+
+/* Common paragraph styles */
+p {
+  font-family: $MyriadPro-Regular;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.3125;
+  color: #333;
+}
+
+/* class to lazy load images */
+.lazy-load-wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 100px;
+  background: url(../img/bg/loader.gif) no-repeat center 30px;
+}
+
+.lazy-load {
+
+}
+
+//Section Rows on landing pages
+.section-row{
+  padding: 40px 0;
+  @include breakpoint('xs'){
+    padding: 20px 0;
+  }
+}
+
+
+// class for section heading with left and right border line
+.section-heading{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  h1{
+    font-family: $FuturaStd-Medium;
+    font-size: 36px; // ie8 fallback
+    font-size: 3.6rem; // modern browsers
+    line-height: 1.22; // propotional to font-size
+
+    color: $primary-color-2;
+    text-transform: uppercase;
+
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+    // @include breakpoint('lg'){
+    //   font-size: 30px;
+    //   font-size: 3rem;
+    //   line-height: 1.13;
+    // }
+    @include breakpoint('md'){
+      font-size: 24px;
+      font-size: 2.4rem;
+      line-height: 1.33;
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 100px;
+      border-top: 2px solid $primary-color-2;
+      @include breakpoint('xs'){
+        display: none;
+      }
+    }
+
+    &:before {
+      right: -130px;
+    }
+
+    &:after {
+      left: -130px;
+    }
+  }
+  p{
+    font-family: $MyriadPro-Semibold;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  a.cta-link{
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2.25;
+    display: table;
+    margin: 9px auto 11px;
+    text-transform: none;
+    @include breakpoint('xs'){
+      line-height: 1.5;
+    }
+    img{
+      display: none;
+      vertical-align: initial;
+      @include breakpoint('sm'){
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//Class for the alignment of "view all" button
+.view-all-btn{
+  margin-top: 20px;
+  text-align: center;
+  @include breakpoint('xs'){
+    padding:0 10px;
+    .button-primary{
+      width: 100%;
+    }
+  }
+
+}
+
+.mid-aligner{
+  position: relative;
+  vertical-align: middle;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.35em;
+    .ie8 &{
+      margin-right:0;
+      display: none;
+    }
+  }
+  .aligned-content{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+// Class for overlay
+
+.common-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    top: 0;
+    right:0;
+    z-index: 10;
+    background-color: #f9f7f8;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    &.stackup{
+      z-index: 12;
+    }
+
+    &.spinner {
+      background: url("../img/bg/loader.gif") no-repeat center 200px $primary-color-1;
+     /* opacity: 0.8;
+      filter: alpha(opacity=80);*/
+      position: fixed;
+    }
+}
+
+// Class for the common pop up container
+.common-popup-block{
+  &:not(.promotion-popup-block) {
+    display: none;
+    position: absolute;
+    //width: 80%;
+    z-index: 13;
+    top:30px;
+    left:50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    padding: 80px 0 60px 0;
+    background-color: $primary-color-1;
+  }
+    //@include boxShadow(#ccc, 1px, 1px, 2px);
+     -webkit-box-shadow: 0 0 5px 5px rgba(51,51,51,0.3);
+     -moz-box-shadow: 0 0 5px 5px rgba(51,51,51,0.3);
+     box-shadow: 0 0 5px 5px rgba(51,51,51,0.3);
+    &.thankYouPopUp{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    @include breakpoint('xs'){
+      width: 100%;
+      padding: 55px 0 40px 0;
+    }
+    &.zoomed{
+      width: 80%;
+      @include breakpoint('xs'){
+        width: 100%;
+      }
+      &.map-static{
+        @include breakpoint('xs'){
+          top: 0;
+          bottom: 0;
+          position: fixed;
+        }
+      }
+    }
+
+  // Class for the common close btn for pop up container
+  .close-btn{
+    width: 60px;
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+    color: $primary-color-1;
+    background-color: $primary-color-3;
+    position:absolute;
+    right: 0;
+    top:0;
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-decoration: none;
+    z-index: 10;
+    &:before{
+      line-height: 60px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    @include breakpoint('xs'){
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      &:before{
+        line-height: 40px;
+      }
+    }
+  }
+
+  &.promotion-popup-block {
+    padding: 0 !important;
+    box-shadow: none;
+    margin: 80px auto 40px;
+    background-color: transparent;
+
+    .modal-dialog {
+      width: auto !important;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-row {
+      padding: 60px 0 40px;
+    }
+  }
+}
+
+
+
+
+// Clear close button appear in IE input
+::-ms-clear {
+   display: none;
+}
+
+// Hide Transparent scrollbar over IE browser
+body, html{
+  -ms-overflow-style: scrollbar;
+}
+
+.accordion-container .panel-container{
+  @include breakpoint('sm'){
+    display: none;
+  }
+}
+
+
+// Read More
+
+.introductory{
+  .introductory-fulltext{
+    display: none;
+  }
+  .read-more, .read-less{
+    color: $secondary-color-2;
+    cursor: pointer;
+    font-family: $MyriadPro-Semibold;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.9;
+    position: relative;
+    text-transform: uppercase;
+    &:after{
+      font-size: 15px;
+      line-height: 1;
+      margin-left: 2px;
+      position: absolute;
+      top: 10%;
+    }
+  }
+}
+
+.pop-up-videoblock{
+  width: 970px;
+  background: url(../img/bg/loader.gif) no-repeat scroll center center;
+  @include breakpoint('sm'){
+    width: 750px;
+  }
+  @include breakpoint('xs'){
+    width: auto;
+  }
+}
+
+/* Static map css */
+.map[data-type='static-map'] {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  &:before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $primary-color-1;
+    background-color: #8c8984;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* responsive video code */
+.video-block{
+  position:relative;
+  height:0;
+  padding-bottom:56.25%;
+  width:100%;
+
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* No result Message*/
+
+body .no-result-message{
+  color: $primary-color-2;
+  border: 2px solid $section-background-2;
+  font-family: $FuturaStd-Medium;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.6;
+  margin: 10px auto;
+  max-width: 1150px;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: none;
+  @include breakpoint('md'){
+    max-width: 950px;
+  }
+  @include breakpoint('sm'){
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    max-width: 730px;
+  }
+  span{
+    display: block;
+  }
+}
+
+/* Show scrollbar in Mobile or Tablet - SHANGWEAS-45 */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid $primary-color-1;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $primary-color-1;
+}

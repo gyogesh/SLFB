@@ -1,0 +1,128 @@
+// Landing Filter starts here
+
+.landing-filter{
+  @include breakpoint('sm'){
+    margin-top: 15px;
+    position: relative;
+  }
+  .offer-sort{
+    margin-top: 15px;
+    @include breakpoint('sm'){
+      margin-top: 5px;
+    }
+    @include breakpoint('xs'){
+      display: block;
+      float: none;
+      padding-bottom: 10px;
+      text-align: center;
+      width: 100%;
+    }
+    ul{
+      list-style: outside none none;
+      padding: 0;
+      text-align: left;
+      @include breakpoint('xs'){
+        text-align: center;
+      }
+    }
+    li{
+      border-left: 1px solid #cccccc;
+      display: inline-block;
+      padding: 0 25px;
+      &:first-child{
+        border: none;
+        padding-left: 0;
+        @include breakpoint('xs'){
+          padding-left: 15px;
+        }
+      }
+      @include breakpoint('xs'){
+        padding: 0 15px;
+      }
+      a {
+        color: $secondary-color-2;
+        font-family: $MyriadPro-Semibold;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        &.active{
+          border-bottom: 2px solid $secondary-color-2;
+          color: $primary-color-2;
+        }
+      }
+    }
+  }
+  .filter-container{
+    margin-top: 0;
+    position: static;
+    width: auto;
+    @include breakpoint('xs'){
+      width: 100%;
+      position: relative;
+    }
+    .filter-field{
+      width: auto;
+      .form-container{
+        @include breakpoint('md'){
+          & > li{
+            margin-left: 12px;
+          }
+        }
+        @include breakpoint('sm'){
+          & > ul{
+            position: absolute;
+            left: 0;
+            &:before{
+              left: 70%;
+            }
+          }
+          li{
+            margin-left: 0;
+          }
+        }
+        @include breakpoint('xs'){
+          & > ul{
+            position: relative;
+            &:before{
+              left: 90px;
+            }
+          }
+        }
+      }
+    }
+    .calendar-toggle{
+      display: none;
+      @include breakpoint('sm'){
+        color: $primary-color-1;
+        cursor: pointer;
+        background-color: $primary-color-3;
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 10px;
+        text-align: center;
+        width: 105px;
+        &:before{
+          font-size: 15px;
+          vertical-align: middle;
+        }
+        &.active{
+          &:after{
+            content: "\74";
+            font-size: 15px;
+            padding-left: 6px;
+            vertical-align: middle;
+          }
+        }
+      }
+      @include breakpoint('xs'){
+        display: table-cell;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+}

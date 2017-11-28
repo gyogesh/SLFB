@@ -1,0 +1,47 @@
+/*
+ * jquery.selectBoxIt.css 2.9.0
+ * Author: @gregfranko
+ */
+
+/* Div container holding the dropdown list */
+.selectboxit-container { position: relative; display: inline-block; /* Prevents text selection */
+	-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+/* Dropdown List Box */
+.selectboxit-container .selectboxit { height: 28px; /* Height of the select box */ cursor: pointer; padding: 0; display: block; border-radius: 6px; margin: 0; -webkit-border-radius: 4px; -moz-border-radius: 4px; border: 1px solid #D9D9D9; border-radius: 4px 4px 4px 4px; box-shadow: 0 1px 0 0 #D9D9D9 inset; overflow:hidden; min-width:65px; background-color: #F3F3F3; position:relative; }
+.selectboxit-container .selectboxit:focus { outline: thin dotted; }
+.selectboxit-container .selectboxit.selectboxit-disabled { cursor: default; }
+/* Dropdown list Default Icon Positioning */
+.selectboxit-default-icon { float: left; }
+/* Dropdown List Box Text */
+.selectboxit-text { line-height: 30px; overflow: hidden; padding:0px 10px; }
+/* Dropdown List Options List*/
+.selectboxit-container .selectboxit-options { min-width: 100%; /* Minimum Width of the dropdown list box options */ margin: 0; padding: 0; list-style: none; position: absolute; overflow: auto; cursor: pointer; display: none; z-index: 9990; outline: none; top: auto; bottom: auto; left: auto; right: auto; -moz-box-shadow: none; /* Firefox */ -webkit-box-shadow: none; /* Safari, Chrome */ box-shadow: none; /* CSS3 */ text-align: left; background: none repeat scroll 0 0 #F6F6F6; border: 1px solid #CCCCCC; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; max-height:150px !important; }
+.selectboxit-container .selectboxit-options, .selectboxit-text { font-family:open_sansregular; font-size: 0.8461em; color: #666666; }
+/* Overrides Bootstrap drop down option style */
+.selectboxit-options .selectboxit-option.active .selectboxit-option-anchor { color: #fff; width:100%; }
+.dropdown-menu .active > a, .dropdown-menu .active > a:hover { background-color:#008bae; }
+.selectboxit-option .selectboxit-option-anchor { padding: 0px 10px; line-height: 30px; display:block; }
+.selectboxit-option .selectboxit-option-anchor:hover { text-decoration: none; }
+/* Dropdown List Individual Options */
+.selectboxit-option, .selectboxit-optgroup-header { line-height: 30px; /* Height of Individual Select Box Options */ overflow: hidden; white-space: nowrap; list-style: none; margin: 0; }
+/* Dropdown List Optgroup Options */
+.selectboxit-optgroup-option { text-indent: 20px; }
+/* Dropdown List Optgroup Header hover psuedo class */
+.selectboxit-optgroup-header[data-disabled='true']:hover { cursor: default; }
+/* Dropdown List Down Arrow Container (if an image is not used) */
+.selectboxit-arrow-container { /* Positions the down arrow */
+   /*background: url("../images/select_arrow.png") no-repeat scroll right center transparent;*/ height: 20px; position: absolute; right: 5px; top: 0px; width: 20px; z-index: 20; }
+/* Dropdown List Down Arrow */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow { /* Horizontally centers the down arrow */
+  margin: 0 auto; display: block; position: absolute; top: 50%; right: 40%; }
+/* Dropdown List Down Arrow For jQueryUI and jQuery Mobile */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon { top: 30%; }
+/* Dropdown List Individual Option Icon Positioning */
+.selectboxit-option-icon { float: left; }
+/* Dropdown List Individual Option Image Positioning */
+.selectboxit-option-icon-url { width: 18px; height: 18px; background-size: 18px 18px; background-repeat: no-repeat; }
+.selectboxit-default-icon.selectboxit-option-icon-url { margin-left: 5px; }
+/* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon { background-color: inherit; }
+/* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+.jqueryui .ui-icon-triangle-1-s { background-position: -64px -16px; }

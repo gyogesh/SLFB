@@ -1,0 +1,297 @@
+.redeem-package {
+  .section-heading{
+    h1{
+      &:before,
+      &:after {
+        @include gridBreakpoint('sm') {
+          width: 100px;
+        }
+      }
+      &:before {
+        @include gridBreakpoint('sm') {
+          right: -130px;
+          }
+        }
+
+      &:after {
+        @include gridBreakpoint('sm') {
+          left: -130px;
+        }
+      }
+    }
+  }
+  .form-container .form-field-group.error span.error-message {
+    margin-bottom: 10px;
+  }
+}
+
+.redeem-package-container {
+	.package-name {
+    h2 {
+      border: none;
+      text-align: center;
+      text-transform: none;
+      padding-bottom: 0;
+    }
+  }
+  .package-location {
+    //text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    strong {
+      font-family: $MyriadPro-Semibold;
+    }
+  }
+  .package-header {
+    @include gridBreakpoint('sm') {
+      max-width: 510px;
+      margin: 0 auto;
+    }
+    @include gridBreakpoint('md') {
+      max-width: 610px;
+    }
+  }
+  .package-body {
+    @include gridBreakpoint('sm') {
+      max-width: 510px;
+      margin: 0 auto;
+    }
+    @include gridBreakpoint('md') {
+      // max-width: 500px;
+    }
+    h3,
+    label {
+      @include gridBreakpoint('md') {
+        font-size: 16px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .package-footer {
+    /*@include gridBreakpoint('sm') {
+      margin-top: 20px;
+    }*/
+    border-top: 1px solid #cccccc;
+    margin-top: 10px;
+    padding-top: 30px;
+  }
+
+  .package-container,
+  .price-container {
+    .content {
+      font-family: $MyriadPro-Semibold;
+      font-size: 16px;
+      font-size: 1.6rem;
+      @include gridBreakpoint('md') {
+        font-size: 24px;
+        font-size: 2.4rem;
+        margin-top: 5px;
+      }
+    }
+    .info {
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+    h3 {
+      margin-bottom: 0;
+      @include gridBreakpoint('sm') {
+        margin-top: 10px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+  .package-container {
+
+  }
+  .price-container {
+
+  }
+  .quantity-container {
+    .message {
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      text-transform: lowercase;
+      margin-top: 6px;
+      display: block;
+    }
+    .error {
+      .message {
+        color: #aa2525;
+      }
+    }
+  }
+  .gc-calculator-container {
+    text-align: center;
+
+    h3 {
+      font-family: $FuturaStd-Medium;
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+      margin-top: 0;
+      @include gridBreakpoint('md') {
+        margin-bottom: 10px;
+      }
+      > span {
+        font-family: $MyriadPro-Regular;
+        display: block;
+        @include gridBreakpoint('sm') {
+          display: inline;
+        }
+      }
+    }
+    .info p{
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .member-gc-profile {
+    text-align: center;
+    .error-message {
+      p {
+        font-family: $MyriadPro-Regular;
+        font-size: 13px;
+        font-size: 1.3rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #aa2525;
+        strong {
+          font-family: $MyriadPro-Bold;
+        }
+      }
+    }
+  }
+  .golden-circle-btn {
+    padding-top: 20px;
+    .button-primary {
+      @include gridBreakpoint('sm') {
+        width: 242px;
+      }
+      @include gridBreakpoint('md') {
+        width: 160px;
+      }
+    }
+  }
+}
+
+.attendiees-container {
+  .form-container {
+    .notes {
+      padding: 0;
+      p {
+        margin-bottom: 0;
+        @include breakpoint('xs'){
+          font-size: 16px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    h2 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      border-bottom: 0;
+      padding-bottom: 0;
+      text-align: center;
+      margin-top: 10px;
+      padding-top: 20px;
+      border-top: 0;
+      @include gridBreakpoint('md') {
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+      @include gridBreakpoint('lg') {
+        font-size: 21px;
+        font-size: 2.1rem;
+      }
+    }
+    h3 {
+      font-size: 16px;
+      font-size: 1.6rem;
+      text-transform: none;
+      margin-top: 10px;
+      @include gridBreakpoint('lg') {
+        font-size: 21px;
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
+.attendee-body {
+  .readonly-label {
+    margin-top: 10px;
+
+    .name-title {
+      margin-right: 5px;
+    }
+  }
+  @include gridBreakpoint('md') {
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+  }
+  @include gridBreakpoint('lg') {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.attendee-footer {
+  clear: both;
+  .icon-uncheck {
+    //font-size: 1.55rem;
+  }
+  @include gridBreakpoint('md') {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+.attendee{
+  transition: all 0.5s ease;
+  @include gridBreakpoint('md') {
+    width: 458px;
+    margin: 0 auto;
+  }
+  .notes p {
+      font-size: 13px;
+      font-size: 1.3rem;
+  }
+  &.primary {
+    @include breakpoint('sm') {
+      width: 100%;
+    }
+    > .notes {
+      text-align: left;
+    }
+  }
+  &.others {
+    border-top: solid 1px #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+    &:nth-child(2) {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+      @include breakpoint('sm') {
+        padding-top:20px;
+      }
+    }
+
+    @include breakpoint('sm') {
+      float: left;
+      width: 100%;
+    }
+    @include gridBreakpoint('md') {
+      clear: right;
+      float: right;
+    }
+  }
+  .mobile-number {
+    padding-left: 0;
+  }
+}

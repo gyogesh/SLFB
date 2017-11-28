@@ -1,0 +1,359 @@
+// predefine fonts as per style guide
+
+//FuturaStd-Medium
+@font-face {
+  font-family: 'FuturaStd-Medium';
+  src: url('../font/FuturaStd-Medium/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../font/FuturaStd-Medium/FuturaStd-Medium.woff') format('woff'),
+  url('../font/FuturaStd-Medium/FuturaStd-Medium.ttf') format('truetype'),
+  url('../font/FuturaStd-Medium/FuturaStd-Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// FuturaNo2D-Reg
+@font-face {
+    font-family: 'futurano2dregular';
+    src: url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.eot');
+    src: url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.woff2') format('woff2'),
+         url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.woff') format('woff'),
+         url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.ttf') format('truetype'),
+         url('../font/FuturaNo2D-Reg/futurano2d-boo-webfont.svg#futurano2dregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// FuturaNo2D-Med
+@font-face {
+  font-family: 'FuturaNo2D-Med';
+  src: url('../font/FuturaNo2D-Med/FuturaNo2D-Med.eot?#iefix') format('embedded-opentype'),
+  url('../font/FuturaNo2D-Med/FuturaNo2D-Med.woff') format('woff'),
+  url('../font/FuturaNo2D-Med/FuturaNo2D-Med.ttf') format('truetype'),
+  url('../font/FuturaNo2D-Med/FuturaNo2D-Med.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// MyriadPro-Bold
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('../font/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/MyriadPro-Bold/MyriadPro-Bold.woff') format('woff'),
+  url('../font/MyriadPro-Bold/MyriadPro-Bold.ttf') format('truetype'),
+  url('../font/MyriadPro-Bold/MyriadPro-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// // MyriadPro-BoldCond
+// @font-face {
+//   font-family: 'MyriadPro-BoldCond';
+//   src: url('../font/MyriadPro-BoldCond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+//   url('../font/MyriadPro-BoldCond/MyriadPro-BoldCond.woff') format('woff'),
+//   url('../font/MyriadPro-BoldCond/MyriadPro-BoldCond.ttf') format('truetype'),
+//   url('../font/MyriadPro-BoldCond/MyriadPro-BoldCond.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// MyriadPro-BoldCondIt
+// @font-face {
+//   font-family: 'MyriadPro-BoldCondIt';
+//   src: url('../font/MyriadPro-BoldCondIt/MyriadPro-BoldCondIt.eot?#iefix') format('embedded-opentype'),
+//   url('../font/MyriadPro-BoldCondIt/MyriadPro-BoldCondIt.woff') format('woff'),
+//   url('../font/MyriadPro-BoldCondIt/MyriadPro-BoldCondIt.ttf') format('truetype'),
+//   url('../font/MyriadPro-BoldCondIt/MyriadPro-BoldCondIt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// // MyriadPro-BoldIt
+// @font-face {
+//   font-family: 'MyriadPro-BoldIt';
+//   src: url('../font/MyriadPro-BoldIt/MyriadPro-BoldIt.eot?#iefix') format('embedded-opentype'),
+//   url('../font/MyriadPro-BoldIt/MyriadPro-BoldIt.woff') format('woff'),
+//   url('../font/MyriadPro-BoldIt/MyriadPro-BoldIt.ttf') format('truetype'),
+//   url('../font/MyriadPro-BoldIt/MyriadPro-BoldIt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// // MyriadPro-Cond
+// @font-face {
+//   font-family: 'MyriadPro-Cond';
+//   src: url('../font/MyriadPro-Cond/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),
+//   url('../font/MyriadPro-Cond/MyriadPro-Cond.woff') format('woff'),
+//   url('../font/MyriadPro-Cond/MyriadPro-Cond.ttf') format('truetype'),
+//   url('../font/MyriadPro-Cond/MyriadPro-Cond.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// // MyriadPro-CondIt
+// @font-face {
+//   font-family: 'MyriadPro-CondIt';
+//   src: url('../font/MyriadPro-CondIt/MyriadPro-CondIt.eot?#iefix') format('embedded-opentype'),
+//   url('../font/MyriadPro-CondIt/MyriadPro-CondIt.woff') format('woff'),
+//   url('../font/MyriadPro-CondIt/MyriadPro-CondIt.ttf') format('truetype'),
+//   url('../font/MyriadPro-CondIt/MyriadPro-CondIt.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// MyriadPro-Italic
+@font-face {
+  font-family: 'MyriadPro-Italic';
+  src: url('../font/MyriadPro-Italic/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
+  url('../font/MyriadPro-Italic/MyriadPro-It.woff') format('woff'),
+  url('../font/MyriadPro-Italic/MyriadPro-It.ttf') format('truetype'),
+  url('../font/MyriadPro-Italic/MyriadPro-It.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// MyriadPro-Regular
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../font/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+  url('../font/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype'),
+  url('../font/MyriadPro-Regular/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// MyriadPro-Semibold
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url('../font/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../font/MyriadPro-Semibold/MyriadPro-Semibold.woff') format('woff'),
+  url('../font/MyriadPro-Semibold/MyriadPro-Semibold.ttf') format('truetype'),
+  url('../font/MyriadPro-Semibold/MyriadPro-Semibold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// MyriadPro-SemiboldIt
+@font-face {
+  font-family: 'MyriadPro-SemiboldIt';
+  src: url('../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+  url('../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.woff') format('woff'),
+  url('../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.ttf') format('truetype'),
+  url('../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// Shangrila Icons
+@font-face {
+  font-family: "shangrila-icons";
+  src:url("../font/Shangrila-Icons/shangrila-icons.eot");
+  src:url("../font/Shangrila-Icons/shangrila-icons.eot?#iefix") format("embedded-opentype"),
+    url("../font/Shangrila-Icons/shangrila-icons.woff") format("woff"),
+    url("../font/Shangrila-Icons/shangrila-icons.ttf") format("truetype"),
+    url("../font/Shangrila-Icons/shangrila-icons.svg#shangrila-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before,
+[data-icon]:after {
+  font-family: "shangrila-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "shangrila-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-angle-rgt:after {
+  content: "\71";
+}
+.icon-experiences:before {
+  content: "\61";
+}
+.icon-youtube:before {
+  content: "\62";
+}
+.icon-facebook:before {
+  content: "\63";
+}
+.icon-google-plus:before {
+  content: "\64";
+}
+.icon-instagram:before {
+  content: "\65";
+}
+.icon-map-view:before {
+  content: "\67";
+}
+
+.icon-new-opening:before {
+  content: "\6a";
+}
+.icon-restaurants-bars:before {
+  content: "\6b";
+}
+.icon-search:before {
+  content: "\6c";
+}
+.icon-special-offers:before {
+  content: "\6d";
+}
+.icon-twitter:before {
+  content: "\6e";
+}
+.icon-youku:before {
+  content: "\6f";
+}
+.icon-weibo:before {
+  content: "\70";
+}
+.icon-angle-right:before {
+  content: "\71";
+}
+.icon-angle-left:before {
+  content: "\72";
+}
+.icon-angle-up:before {
+  content: "\73";
+}
+.icon-angle-up-rgt:after {
+  content: "\73";
+}
+.icon-android-close:before {
+  content: "\74";
+}
+.icon-android-closeafter:after {
+  content: "\74";
+}
+.icon-angle-down:before {
+  content: "\75";
+}
+.icon-angle-down-rgt:after {
+  content: "\75";
+}
+.icon-awards:before {
+  content: "\76";
+}
+.icon-cost:before {
+  content: "\77";
+}
+.icon-cuisine:before {
+  content: "\78";
+}
+.icon-dress-code:before {
+  content: "\79";
+}
+.icon-renren:before {
+  content: "\aa";
+}
+.icon-geo-location:before {
+  content: "\bb";
+}
+.icon-telephone:before {
+  content: "\cc";
+}
+.icon-menu:before {
+  content: "\dd";
+}
+.icon-member-benefits:before {
+  content: "\ae";
+}
+.icon-golden-circle-recommended:before {
+  content: "\af";
+}
+.icon-calendar:before {
+  content: "\ff";
+}
+.icon-grid-view:before {
+  content: "\ee";
+}
+.icon-uncheck:before {
+  content: "\68";
+}
+.icon-exclamation-triangle:before {
+  content: "\e0";
+}
+.icon-ios-circle-outline:before {
+  content: "\b0";
+}
+.icon-search-plus:before {
+  content: "\b1";
+}
+.icon-export:before {
+  content: "\c1";
+}
+.icon-opening:before {
+  content: "\66";
+}
+.icon-ios-circle-filled:before {
+  content: "\7a";
+}
+.icon-less:before {
+  content: "\ab";
+}
+.icon-more:before {
+  content: "\ac";
+}
+.icon-website:before {
+  content: "\69";
+}
+.icon-play:before {
+  content: "\f1";
+}
+.icon-filter-calendar:before {
+  content: "\be";
+}
+.icon-email:before {
+  content: "\d1";
+}
+.icon-we-chat:before {
+  content: "\bc";
+}
+.icon-plus:before {
+  content: "\bf";
+}
+.icon-minus:before {
+  content: "\bd";
+}
+.icon-local-flavours:before {
+  content: "\ca";
+}
+.icon-full-screen:before {
+  content: "\cb";
+}
+.icon-mood:before {
+  content: "\cd";
+}
+.icon-indulge-instantly:before {
+  content: "\ce";
+}

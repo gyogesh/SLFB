@@ -1,0 +1,192 @@
+/*
+* Module : Redeem-result
+*/
+.thank-you-page{
+  background-color: $section-background-1;
+
+  .memberinfo {
+    p {
+      font-size:16px;
+      font-size:1.6rem;
+      font-family: $FuturaStd-Medium;
+      margin-bottom: 5px;
+    }
+
+    .membership-number {
+      @include breakpoint('sm'){
+        display: block;
+      }
+    }
+  }
+
+  .redeem-row {
+    margin-bottom: 30px;
+
+    @include breakpoint('sm'){
+      margin-bottom: 20px;
+    }
+  }
+
+  .thank-you-container {
+    text-align: center;
+    padding-top: 30px;
+    max-width: 670px;
+    margin: 0 auto; 
+  }
+
+  .thank-you-content {
+    @include breakpoint('sm'){
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .cta-group{
+    @include breakpoint('sm'){
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+    }
+
+    ul{
+      padding: 0 0 5px 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px;
+
+        @include breakpoint('xs'){
+          display: block;
+        }
+
+        a {
+          width: 158px;
+
+          @include breakpoint('xs'){
+            max-width: 400px;
+            width: 80%;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  } 
+
+  .digital-connect {
+    display: table;
+    margin: 90px auto 0 auto; 
+
+    @include breakpoint('sm'){
+      margin-top: 30px;
+    }
+
+    @include breakpoint('xs'){
+      display: block;
+      margin-top: 25px;
+    }
+
+    ol {
+      padding-left: 0;
+      display: table-row;
+
+      @include breakpoint('xs'){
+        display: block;
+      }
+
+      li {
+        list-style: none;
+        h4 {
+          font-size:16px;
+          font-size:1.6rem;
+          font-family: $FuturaStd-Medium;
+        }
+      }
+
+      > li {
+        display: table-cell;
+        padding: 0 52px;
+
+        @include breakpoint('xs'){
+          display: block;
+          padding: 0;
+        }
+
+        &:first-child {
+          border-right: 1px solid #ccc;
+        }
+
+        h4 {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+
+        @include gridBreakpoint('sm') {
+          width: 50%;
+          padding: 0;
+          text-align: center;
+          &:last-child {
+            padding-left: 50px;
+          }
+          
+          #divQrCode {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .digital-card {
+      display: none;
+      margin-bottom: 30px;
+      a {
+        font-family: $MyriadPro-Regular;
+        font-size: 16px;
+        font-size: 1.6rem;
+      }
+    }
+    @include breakpoint('xs'){
+      .qr-code-wrapper{
+        display: none;
+      }
+      .digital-card {
+        display: block;    
+      }
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 0;
+
+      @include breakpoint('xs'){
+        margin-top: 10px;
+      }
+
+      li {
+        text-align: center;
+        margin-bottom: 20px;
+        img {
+          width: 166px;  
+        }
+      }
+    }
+  }
+
+  .icon-digitalcard {
+    background: url(../img/icon/icon-digitalcard.png) 0 0 no-repeat;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,165 @@
+form#frmRedeemPackage(action="", method="post")
+  section.redeem-package.joining-form
+    .section-row
+      .container
+        .section-heading
+          h1 Join us
+        .redeem-package-container
+          .package-information-container
+            .form-container
+              .package-header
+                .row
+                  .col-xs-12
+                    .package-name
+                      h2 Tea Mixology Workshop
+                    .redeem-location
+                      ul
+                        li
+                          span Location:
+                          | Waterside Terrace, Island Shangri-La Hong Kong
+                        li
+                          span Date:
+                          | SEP 24,2016
+                        li
+                          span Time:
+                          | 8:00PM
+
+                    //.package-location
+                      //p on <strong>Sep 24, 2016</strong>,&nbsp;at <strong>Waterside Terrace</strong>,&nbsp;Island Shangri-La, Hong Kong
+              .package-body
+                .row
+                  .col-xs-6.col-sm-5
+                    .package-container
+                      h3 Package:
+                      .content Admits
+                        span.admit-qty 1
+                        input(type="hidden",name="txtAdmitQuantity",value="1")
+                      p.info Person
+                  .col-xs-6.col-sm-4
+                    .price-container
+                      h3 Redeem For:
+                      .content
+                        span.price 2,000
+                        input(type="hidden",name="txtPrice",value="2000")
+                      p.info GC Award Points
+                  .col-xs-12.col-sm-3
+                    .quantity-container
+                      .form-field
+                        label Quantity:
+                      .form-field
+                        .field-container.ui-select-wrapper
+                          .ui-select.label-quantity
+                            select#selQuantity(name="selQuantity")
+                              option(value="1") 1
+                              option(value="2") 2
+                              option(value="3") 3
+                              option(value="4") 4
+                              option(value="5") 5
+                              option(value="6") 6
+                              option(value="7") 7
+                              option(value="8") 8
+                              option(value="9") 9
+                              option(value="10") 10
+                        span.message <span class="selected-qty">5</span> of <span class="available-qty">20</span> packages left
+              .package-footer
+                .row
+                  .col-xs-12
+                    .member-gc-profile
+                      //- below message will be handled from serverside, can be handled via Ajax.
+                      .error-message.hide.package-shortage
+                        p
+                          strong Oops, we couldn't process your redemption request.
+                        p Your redemption request exceeds the number of packages available for this experience.
+                      //- below message will be handled from serverside, can be handled via Ajax.
+                      .error-message.hide.package-full
+                        p
+                          strong No more package left
+                        p All packages were fully redeemed while you were trying to reach this page.
+                      .gc-calculator-container
+                        .gc-needed-container
+                          h3 GC Award Points needed: <span><span class="points">2000</span> GC Award Points</span>
+                          input(type="hidden",name="txtGCNeeded",value="2000")
+                        .gc-balance-container
+                          h3 Your GC Award Points Balance: <span><span class="points">6,000</span> GC Award Points</span>
+                          input(type="hidden",name="txtGCBalance",value="6000")
+                        .info
+                          p Due to high demand it is possible this experience may sell out before you confirm your redemption.
+                        //- below messgae will be handled client side
+                        .error-message.hide
+                          p You do not have enough GC Award Points to redeem this experience.
+          .attendiees-container
+            .form-container
+              .attendee-header
+                h2 You're Almost There
+                .notes
+                  p <sup class="required-field">*</sup>Required
+              .attendee-body
+                .attendee.primary
+                  h3.heading Attending this experience
+                  .row
+                    .col-md-5
+                      .form-field
+                        label Member Name
+                    .col-md-7
+                      div.readonly-label
+                        span.name-title Mr.
+                        span.first-name Alan
+                        span.last-name Lau
+                  .row
+                    .col-xs-12
+                      p.description Please select the appropriate country code and update the mobile number where necessary.
+                  .row
+                    .col-md-5
+                      .form-field
+                        label Phone Number<sup class="required-field">*</sup>
+                    .col-md-7
+                      .form-field-group.no-top-margin
+                        .row
+                          .col-xs-5.col-md-6
+                            .form-field
+                              .field-container.ui-select-wrapper
+                                .ui-select.label-areacode
+                                  select#selAreaCode(name="selAreaCode" data-type="mobileCountryCode")
+                                    option(value="") Country
+                                    option(value="91") India (+91)
+                                    option(value="92") Pakistan (+92)
+                                    option(value="93") Afghanistan (+93)
+                                    option(value="94") Sri Lanka (+94)
+                          .col-xs-7.col-md-6.mobile-number
+                            .form-field
+                              .field-container
+                                .ui-textinput
+                                  input#txtMobile(type="text", data-type="tel", name="txtMobile")
+                        span.error-message Mobile Number is a required field
+                  .row
+                    .col-md-5
+                      .form-field
+                        label Email Address<sup class="required-field">*</sup>
+                    .col-md-7
+                      .form-field
+                        .field-container
+                          .ui-textinput
+                            input#txtEmail(type="text", name="txtEmail")
+                        span.error-message Email already registered
+                  .row
+                    .col-md-5
+                      .form-field
+                        label Special Request /<br/>Dietary Requirement
+                    .col-md-7
+                      .form-field
+                        .field-container
+                          .ui-textinput
+                            input#txtSpecialRequest(type="text", name="txtSpecialRequest")
+                  .notes
+                    p The personal information entered here will not be updated to your GC profile.
+              .attendee-footer
+                .form-field.clearfix.checkbox
+                      label
+                        input#chkTerms(type="checkbox", name="chkTerms")
+                        //- input(name="JoinNowFormModel.TermsAndConditions", type="hidden", value="false")
+                        span.icon-uncheck I have read and agree to the 
+                          a(href="javascript:void(0);", title="Terms and Conditions") Golden Circle&nbsp;Terms and Conditions
+                      span.error-message Please read and agree
+                .form-cta
+                  .golden-circle-btn
+                    input.button-primary(value="Confirm", type="submit")

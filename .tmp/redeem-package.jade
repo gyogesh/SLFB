@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Redeem Package"}
+  - var Meta = {description:"Module - Redeem Package", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/redeem-package

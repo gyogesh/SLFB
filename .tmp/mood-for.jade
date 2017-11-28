@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Mood For"}
+  - var Meta = {description:"Module - Mood For", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/mood-for

@@ -1,0 +1,10 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Member Profile"}
+  - var Meta = {description:"", keywords:""}
+
+block contentMain
+  include ../modules/header
+  include ../modules/member-profile
+  include ../modules/footer

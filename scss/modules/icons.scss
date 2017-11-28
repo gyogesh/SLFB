@@ -1,0 +1,20 @@
+.icon{
+  span{
+    background: #aea592;
+    @include borderRadius(50%);
+    color: $primary-color-1;
+    display: inline-block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    height: 33px;  
+    width: 33px;
+    text-align: center;
+    &:before{
+      line-height: 33px;
+      text-shadow: 1px 1px 0 rgba(139, 121, 86, 0.75);
+    }    
+    .no-borderradius & {
+      background: url(../img/icon/icons-bg.png) 0 0 no-repeat;
+    }
+  }
+}

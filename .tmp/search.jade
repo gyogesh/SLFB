@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Search"}
+  - var Meta = {description:"Module - Search", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/search

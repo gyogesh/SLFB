@@ -1,0 +1,263 @@
+// scss predefined variables, classes and mixins to be used.
+@import
+'fonts',
+'variables';
+
+@media print {
+
+  // Generic Print CSS
+  body {
+    margin: 0 -10px;
+    box-shadow: 0;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    opacity: 1 !important;
+    max-width: 998px;
+  }
+
+  .dynamic-print-page {
+    opacity: 1!important;
+  }
+
+  .safari{
+    body {
+      zoom:80%;
+    }
+  }
+
+  header{
+    display: none;
+  }
+
+  .hotel-logo-print {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+
+    img{
+      max-height: 65px !important;
+      //width: 210px;
+
+      .ie & {
+        width: 200px;
+      }
+    }
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+
+  .col-lg-8 {
+      width: 66.66666667%;
+      float: left;
+  }
+  a {
+    text-decoration: none;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #028883 !important;
+  }
+
+  // CSS for print-redemption-confirm
+
+  .print-redemption-confirm {
+    font-family: $FuturaStd-Medium;
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    p, li {
+      font-size: 14px;
+      font-size: 1.4rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .redemption-area {
+      margin-left: 15px;
+      padding-bottom: 0;
+      &.capital {
+        text-transform: uppercase;
+
+        .ie & {
+          font-size: 18px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .divider {
+      border-left: 1px solid #d5d5d5;
+    }
+
+    .section-row {
+      padding: 20px 0 52px 0;
+
+      .ie & {
+        padding-bottom: 20px;
+      }
+    }
+
+    .section-header {
+      text-align: center;
+
+      h1 {
+        text-transform: uppercase !important;
+        font-size: 36px;
+        font-size: 3.6rem;
+        margin-top: 10px;
+
+        .ie & {
+          font-size: 24px;
+        }
+      }
+
+      h4 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 25px 0 0 0;
+        font-family: verdana, arial, sans-serif;
+
+        .ie & {
+          font-size: 16px;
+        }
+      }
+      .address {
+        font-size: 23px;
+        font-size: 2.3rem;
+        margin-top: 5px;
+      }
+    }
+
+    .title-container {
+      h2 {
+        font-size: 24px;
+        font-size: 2.4rem;
+        margin-top: 0;
+      }
+
+      .ie & {
+        font-size: 18px;
+      }
+    }
+
+    .horizontal-rule {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #d5d5d5;
+    }
+    .horizontal-rule-bottom {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d5d5d5;
+    }
+
+    .redemption-block {
+      padding: 15px 15px 15px 0;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 35px;
+      margin-left: 15px;
+
+      .redemption-block-heading {
+        margin-top: 0;
+        border-bottom: 1px solid #d5d5d5;
+        text-transform: uppercase;
+
+        padding-bottom: 22px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-size: 3rem;
+      }
+
+      .redemption-block-title {
+        font-family: arial, verdana, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        font-size: 1.4rem;
+        
+        .ie & {
+          font-size: 11px;
+          margin-bottom: 0;
+          padding-right: 5px;
+          //width: 160px;
+        }
+
+
+      }
+
+      .print-redeem-instrcution {
+        padding-right: 30px;
+
+        p {
+          .ie & {
+            font-size: 11px;
+          }
+        }
+      }
+      
+      .print-redeem-tnc {
+        .redemption-block-title {
+          .ie & {
+            margin-top: 5px;  
+          }
+        }  
+      }
+      
+
+      li,
+      span,
+      p {
+        .ie & {
+          font-size: 11px;
+          margin-bottom: 0;
+        }  
+      }
+      
+    }
+
+    .redemption-block-intro {
+      line-height: 15px;
+      span {
+        font-size: 1.4rem;
+        font-size: 14px;
+      }
+    }
+
+    .print-footer {
+      margin: 15px 0 35px -10px;
+      
+      p {
+        .ie & {
+          font-size: 11px;
+        }  
+      }
+      
+    }
+  }
+}

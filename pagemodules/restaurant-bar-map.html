@@ -1,0 +1,243 @@
+<!DOCTYPE html><!--[if IE 8]><html  class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html  class="ie9 no-js"lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <title>Module - Restaurant Bar Map</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Module - Restaurant Bar Map">
+    <meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <!-- to avoid stripping of previous line--><!-- build:css ../content/css/vendors.css -->
+    <link rel="stylesheet" href="../content/css/vendors/bootstrap.css">
+    <link rel="stylesheet" href="../content/css/vendors/owl-carousel.css">
+    <link rel="stylesheet" href="../content/css/vendors/jquery-ui.min.css">
+    <link rel="stylesheet" href="../content/css/vendors/selectBoxIt.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" href="../content/css/base.css">
+    <link rel="stylesheet" href="../content/css/modules.css">
+    <link rel="stylesheet" href="../content/css/print.css">
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/modernizr-2.8.2.min.js-->
+    <script src="../content/js/vendors/modernizr-2.8.2.min.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/underscore.min.js-->
+    <script src="../content/js/vendors/underscore.min.js"></script>
+    <!-- endbuild-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file--><!-- build:js ../content/js/html5shiv.min.js -->
+    <!--[if lt IE 9]>
+    <script src="../content/js/vendors/html5shiv.min.js"></script><![endif]-->
+    <!-- endbuild -->
+    <!--build:js ../content/js/respond.min.js-->
+    <!--[if lt IE 9]>
+    <script src="../content/js/vendors/respond.min.js"></script><![endif]-->
+    <!--endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/jquery-1.10.2.min.js-->
+    <script src="../content/js/vendors/jquery-1.10.2.min.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/vendors.js-->
+    <script src="../content/js/vendors/jquery.unveil.js"></script>
+    <script src="../content/js/vendors/owl.carousel.min.js"></script>
+    <script src="../content/js/vendors/jquery-ui.min.js"></script>
+    <script src="../content/js/vendors/jquery.sticky.js"></script>
+    <script src="../content/js/vendors/wall-isotope.js"></script>
+    <script src="../content/js/vendors/widget.js"></script>
+    <script src="../content/js/vendors/jquery.selectBoxIt.v3.8.1.min.js"></script>
+    <script src="../content/js/vendors/jquery.twbsPagination.js"></script>
+    <script src="../content/js/vendors/jquery.cookie.js"></script>
+    <script src="../content/js/vendors/jquery.popupwindow.js"></script>
+    <script src="../content/js/vendors/BrightcoveExperiences.js"></script>
+    <script src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/masonry.js-->
+    <script src="../content/js/vendors/masonry.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body>
+    <!-- Module - Restaurant and Bar Map View - Starts-->
+    <section class="restaurant-bar-map">
+      <div class="no-result-message">Uh oh. We don't have a place exatly like that.</div>
+      <div class="container no-gutter">
+        <div class="map-view-container">
+          <div class="map-wrapper">
+            <div id="rb-map" data-service="./services/rb-map.json"></div>
+          </div>
+          <div class="title">
+            <h2 class="title-name">Restaurant and Bars nearby<span class="count"></span></h2>
+          </div>
+          <div class="detail-container">
+            <div class="container no-gutter">
+              <h3 class="hotel-name">Kowloon Shangri-La<span class="count">(32)</span></h3>
+              <div class="row">
+                <!-- This is a restaurant and bar of KSL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="KSL" data-venue-id="KSL_CAFEKOOL" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/lobster-bar-grill.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Sigi's Bar &amp; Grill On The Beach</a></h2>
+                      <p class="restaurant-bar-address">Island Shangri-La, Hong Kong Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">Grill and Steakhouse<span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call</a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is a restaurant and bar of KSL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="KSL" data-venue-id="KSL_DELIKOOL" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/waterside-terrace.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Waterside Terrace</a></h2>
+                      <p class="restaurant-bar-address">Kowloon Shangri-La, Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">THAI <span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call</a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is a restaurant and bar of KSL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="KSL" data-venue-id="KSL_NADAMAN" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/cafe-kool.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Café Kool</a></h2>
+                      <p class="restaurant-bar-address">Kowloon Shangri-La, Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">International<span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call</a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="hotel-name">Island Shangri-La<span class="count">(3)</span></h3>
+              <div class="row">
+                <!-- This is a restaurant and bar of ISL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="ISL" data-venue-id="ISL_LOBSTERBARANDGRILL" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/angelini.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Angelini</a></h2>
+                      <p class="restaurant-bar-address">Kowloon Shangri-La, Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">Italian<span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call     </a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is a restaurant and bar of ISL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="ISL" data-venue-id="ISL_CAFETOO" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/nadaman.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Nadaman</a></h2>
+                      <p class="restaurant-bar-address">Kowloon Shangri-La, Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">japanese<span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call</a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is a restaurant and bar of ISL-->
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                  <div data-hotel-id="ISL" data-venue-id="ISL_ISLANDGOURMET" class="restaurant-bar-container">
+                    <div class="image-container lazy-load-wrapper"><a href="#"><img src="content/img/content/placeholder.png" data-src="content/img/content/petrus.jpg" alt="" class="lazy-load"><span class="icon"><span class="icon-restaurants-bars"></span></span></a></div>
+                    <div class="content-container">
+                      <h2> <a href="#">Petrus</a></h2>
+                      <p class="restaurant-bar-address">Island Shangri-La, Hong Kong</p>
+                      <p class="restaurant-bar-address">Hong Kong</p>
+                      <p class="cuisine">French<span class="divider">|</span><span class="price">$$</span></p>
+                      <p class="offer">Offers (2)<span class="divider">|</span><span class="price">Experiences (1)</span></p>
+                      <p class="contact-info">+<span class="contact-number">852 12345678</span></p>
+                      <div class="button-container"><a href="#" class="call-us-btn button-secondary">Call</a><a href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link" class="book-now-btn button-secondary">Book a Table</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Module - Restaurant and Bar Map View - Ends-->
+    <script src="../content/js/common.js"></script>
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/modules.js-->
+    <script src="../content/js/modules/header.js"></script>
+    <script src="../content/js/modules/search.js"></script>
+    <script src="../content/js/modules/footer.js"></script>
+    <script src="../content/js/modules/user.js"></script>
+    <script src="../content/js/modules/carousels.js"></script>
+    <script src="../content/js/modules/experiences.js"></script>
+    <script src="../content/js/modules/restaurant-bar-list.js"></script>
+    <script src="../content/js/modules/special-offers.js"></script>
+    <script src="../content/js/modules/calendars.js"></script>
+    <script src="../content/js/modules/filters.js"></script>
+    <script src="../content/js/modules/tabs-module.js"></script>
+    <script src="../content/js/modules/destination-overlay.js"></script>
+    <script src="../content/js/modules/restaurant-bar-detail.js"></script>
+    <script src="../content/js/modules/photo-gallery.js"></script>
+    <script src="../content/js/modules/read-more.js"></script>
+    <script src="../content/js/modules/form-modules.js"></script>
+    <script src="../content/js/modules/maps.js"></script>
+    <script src="../content/js/modules/restaurant-bar-map.js"></script>
+    <script src="../content/js/modules/static-map.js"></script>
+    <script src="../content/js/modules/restaurant-bar-menu.js"></script>
+    <script src="../content/js/modules/book-table.js"></script>
+    <script src="../content/js/modules/member-benefits.js"></script>
+    <script src="../content/js/modules/select-boxit.js"></script>
+    <script src="../content/js/modules/moods.js"></script>
+    <script src="../content/js/modules/book-hotel-search.js"></script>
+    <script src="../content/js/modules/pagination.js"></script>
+    <script src="../content/js/modules/bright-cove.js"></script>
+    <script src="../content/js/modules/bright-cove-moods.js"></script>
+    <script src="../content/js/modules/bright-cove-all.js"></script>
+    <script src="../content/js/modules/member-profile.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line-->
+    <script type="text/javascript">
+      var loadMapApi = function(mapApiString) {
+        var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = mapApiString;
+            s.async = true;
+            document.getElementsByTagName('head')[0].appendChild(s);
+      };
+      
+      var mapApiString = "https://maps.googleapis.com/maps/api/js?v=3&callback=Shangrila.maps.init";
+      
+      if(window.jQuery){
+          (function(){
+            $.ajax({
+              url: 'http://api.snoopi.io/v1',
+              type: 'GET',
+              dataType: 'json'
+            })
+            .done( function (data) {
+              mapCountryCode = data.CountryCode;
+      
+              if(mapCountryCode && mapCountryCode.toUpperCase() == 'CN')
+                {
+                  mapApiString = "http://maps.google.cn/maps/api/js?v=3&callback=Shangrila.maps.init";
+                }
+            })
+            .always( function() {
+              loadMapApi(mapApiString);
+            });
+          })();
+      }
+    </script>
+  </body>
+</html>

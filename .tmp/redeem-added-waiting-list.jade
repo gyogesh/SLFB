@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Redeem Added Waiting List"}
+  - var Meta = {description:"Module - Redeem Added Waiting List", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/redeem-added-waiting-list

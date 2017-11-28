@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Landing Filter"}
+  - var Meta = {description:"Module - Landing Filter", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/landing-filter

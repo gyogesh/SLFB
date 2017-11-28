@@ -1,0 +1,126 @@
+// Section Experience Header starts here
+
+.section-experience-header{
+  background-color: $section-background-1;
+  position: relative;
+  .image-container{
+    img{
+      width: 100%;
+    }
+  }
+  .caption-block{
+    position: absolute;
+    top: 50%;
+    margin-left: 100px;
+    padding: 30px 50px 40px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    // min-height:474px; SHANGWEAS-47
+    .no-csstransforms & {
+      top: 50px;
+      transform: none;
+
+      @include breakpoint(sm) {
+        top: 0;
+      }
+
+    }
+    @include breakpoint('sm'){
+      position: relative;
+      top: 0;
+      margin-left: 0;
+      margin-bottom: -1px;
+      padding: 30px 10px 40px;
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      width: 100%;
+      // min-height: 343px; SHANGWEAS-47
+      &:after {
+        box-shadow: 1px 1px 2px #ccc;
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+      }
+    }
+
+    h4{
+     color: #333333;
+     font-family: $FuturaStd-Medium;
+     font-size: 13px;
+     font-size: 1.3rem;
+     line-height: 1;
+     margin-top: 15px;
+     text-transform: uppercase;
+    }
+    h3{
+      font-size: 36px;
+      font-size: 3.6rem;
+      text-transform: none;
+      margin-top: 15px;
+      @include breakpoint('sm'){
+        margin-top: 12px;
+        font-size: 24px;
+        font-size: 2.4rem;
+      }
+    }
+    h5{
+      font-family: $FuturaStd-Medium;
+      font-size: 16px;
+      font-size: 1.6rem;
+      @include breakpoint('sm'){
+        font-size: 13px;
+        font-size: 1.3rem;
+        font-family: $MyriadPro-Semibold;
+      }
+    }
+    h6{
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      @include breakpoint('xs'){
+        margin-bottom: 5px;
+      }
+    }
+    p.gc-points{
+      font-family: $MyriadPro-Semibold;
+      margin: 15px 0 17px;
+      @include breakpoint('sm'){
+        margin: 0 0 8px;
+      }
+    }
+    .callus-btn{
+      color: $primary-color-2;
+      display: block;
+      font-family: $MyriadPro-Semibold;
+      font-size: 13px;
+      font-size: 1.3rem;
+      margin: 12px 0 35px;
+      @include breakpoint('sm'){
+        margin: 0 0 10px;
+      }
+    }
+    .icon{
+      @include breakpoint('sm'){
+       margin-bottom: 20px;
+       margin-top: -45px;
+      }
+    }
+    .call-us-btn{
+      display: none;
+      @include breakpoint('xs'){
+        display: inline-block;
+      }
+    }
+    .button-primary{
+      @include breakpoint('xs'){
+        box-sizing: content-box;
+      }
+    }
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html><!--[if IE 8]><html  class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html  class="ie9 no-js"lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <title>Module - Member Profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Module - Member Profile">
+    <meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <!-- to avoid stripping of previous line--><!-- build:css ../content/css/vendors.css -->
+    <link rel="stylesheet" href="../content/css/vendors/bootstrap.css">
+    <link rel="stylesheet" href="../content/css/vendors/owl-carousel.css">
+    <link rel="stylesheet" href="../content/css/vendors/jquery-ui.min.css">
+    <link rel="stylesheet" href="../content/css/vendors/selectBoxIt.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" href="../content/css/base.css">
+    <link rel="stylesheet" href="../content/css/modules.css">
+    <link rel="stylesheet" href="../content/css/print.css">
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/modernizr-2.8.2.min.js-->
+    <script src="../content/js/vendors/modernizr-2.8.2.min.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/underscore.min.js-->
+    <script src="../content/js/vendors/underscore.min.js"></script>
+    <!-- endbuild-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file--><!-- build:js ../content/js/html5shiv.min.js -->
+    <!--[if lt IE 9]>
+    <script src="../content/js/vendors/html5shiv.min.js"></script><![endif]-->
+    <!-- endbuild -->
+    <!--build:js ../content/js/respond.min.js-->
+    <!--[if lt IE 9]>
+    <script src="../content/js/vendors/respond.min.js"></script><![endif]-->
+    <!--endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/jquery-1.10.2.min.js-->
+    <script src="../content/js/vendors/jquery-1.10.2.min.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/vendors.js-->
+    <script src="../content/js/vendors/jquery.unveil.js"></script>
+    <script src="../content/js/vendors/owl.carousel.min.js"></script>
+    <script src="../content/js/vendors/jquery-ui.min.js"></script>
+    <script src="../content/js/vendors/jquery.sticky.js"></script>
+    <script src="../content/js/vendors/wall-isotope.js"></script>
+    <script src="../content/js/vendors/widget.js"></script>
+    <script src="../content/js/vendors/jquery.selectBoxIt.v3.8.1.min.js"></script>
+    <script src="../content/js/vendors/jquery.twbsPagination.js"></script>
+    <script src="../content/js/vendors/jquery.cookie.js"></script>
+    <script src="../content/js/vendors/jquery.popupwindow.js"></script>
+    <script src="../content/js/vendors/BrightcoveExperiences.js"></script>
+    <script src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/masonry.js-->
+    <script src="../content/js/vendors/masonry.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body>
+    <!-- Member Profile - Starts-->
+    <section class="member-profile">
+      <div class="section-row">
+        <div class="container">
+          <div class="section-heading row">
+            <h1>Member Profile</h1>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="manage-profile hidden-lg"><a href="#" class="button-primary"><span>Manage Profile</span><span class="close hide">close <i class="icon-android-close"></i></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="member-profile-container">
+            <div class="row">
+              <!-- Sidebar Start-->
+              <div class="col-lg-3 col-lg-push-9 visible-lg menu-bar">
+                <div class="arrow-up hidden-lg"></div>
+                <aside class="member-sidebar">
+                  <ul class="row menu">
+                    <li class="col-lg-12 col-sm-4 col-xs-12">
+                      <h3 class="member-sidebar-heading">Your profile</h3>
+                      <ul class="sub-menu">
+                        <li><a href="#">Edit profile</a></li>
+                        <li><a href="#">Communications preference</a></li>
+                        <li><a href="#">Redemption group</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-lg-12 col-sm-4 col-xs-12">
+                      <h3 class="member-sidebar-heading">Your transactions</h3>
+                      <ul class="sub-menu">
+                        <li><a href="#">Transaction history</a></li>
+                        <li><a href="#">Download statement</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-lg-12 col-sm-4 col-xs-12">
+                      <h3 class="member-sidebar-heading">Member Services</h3>
+                      <ul class="last-ul sub-menu">
+                        <li><a href="#">Change password</a></li>
+                        <li><a href="#">Get Your Digital Card</a></li>
+                        <li><a href="#">Request membership card</a></li>
+                        <li><a href="#">Claim missing points/miles</a></li>
+                        <li><a href="#">Check claim status</a></li>
+                        <li><a href="#">Download mobile app</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p class="member-profile-note">For security reasons you will be requested to log in again when managing your account.</p>
+                </aside>
+              </div>
+              <!-- Main Section Start-->
+              <div class="col-lg-9 col-lg-pull-3 col-sm-12">
+                <main class="member-main">
+                  <h2 class="member-main-heading">Account summary</h2>
+                  <div class="member-profile-intro">
+                    <div class="row">
+                      <div class="col-sm-4 col-sm-push-8"><img src="content/img/content/membership-gold.png" alt="Thank you for joining golden circle"></div>
+                      <div class="col-sm-8 col-sm-pull-4">
+                        <h3>Welcome back Mr Lau</h3>
+                        <ul class="member-profile-info">
+                          <li><span class="headline">Golden Circle Award Points</span>230,000</li>
+                          <li><span class="headline">Current Tier</span>Gold</li>
+                          <li><span class="headline">Membership Number</span>87543912</li>
+                          <li><span class="headline">Member Since</span>October 2014</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="row member-profile-points">
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">0</span><span class="desc">Qualifying Nights Completed</span></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">20</span><span class="desc">Qualifying Nights to Upgrade to Jade Tier</span></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">50</span><span class="desc">Qualifying Nights Upgrade to Diamond Tier</span></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">0 </span><span class="desc">Qualifying Stays Completed</span></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">10 </span><span class="desc">Qualifying Stays to Upgrade to Jade Tier</span></div>
+                    </li>
+                    <li class="col-xs-12 col-sm-4">
+                      <div class="details"><span class="points">25</span><span class="desc">Qualifying Stays Upgrade to Diamond Tier</span></div>
+                    </li>
+                  </ul>
+                  <div>
+                    <h2 class="member-main-heading">Personal information</h2>
+                    <ul class="row member-profile-details">
+                      <li class="col-xs-12 col-lg-4 headline">Name</li>
+                      <li class="col-xs-12 col-lg-8">Mr Alan Lau</li>
+                      <li class="col-xs-12 col-lg-4 headline">Gender</li>
+                      <li class="col-xs-12 col-lg-8">Male</li>
+                      <li class="col-xs-12 col-lg-4 headline">Date of Birth</li>
+                      <li class="col-xs-12 col-lg-8">06 December 1985</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="member-main-heading">Contact information</h2>
+                    <ul class="row member-profile-details">
+                      <li class="col-xs-12 col-lg-4 headline">Mailing Address</li>
+                      <li class="col-xs-12 col-lg-8">15D Tower 19, 46 Hollywood Drive, Kowloon Tong, Kowloon.</li>
+                      <!--li.col-xs-12.col-lg-1-->
+                      <li class="col-xs-12 col-lg-4 headline">Email Address</li>
+                      <li class="col-xs-12 col-lg-8">alan.lau@digitaslbi.com</li>
+                      <!--li.col-xs-12.col-lg-1-->
+                      <li class="col-xs-12 col-lg-4 headline">Phone Number</li>
+                      <li class="col-xs-12 col-lg-8">60497471 (Mobile)</li>
+                      <!--li.col-xs-12.col-lg-1-->
+                      <li class="col-xs-12 col-lg-4 headline">Alternate Phone Number</li>
+                      <li class="col-xs-12 col-lg-8">60497471 (Mobile)</li>
+                      <!--li.col-xs-12.col-lg-1-->
+                      <li class="col-xs-12 col-lg-4 headline">Preferred Language</li>
+                      <li class="col-xs-12 col-lg-8">English</li>
+                      <!--li.col-xs-12.col-lg-1-->
+                      <li class="col-xs-12 col-lg-4 no-gutter no-margin">
+                        <ul>
+                          <li class="col-xs-12 col-lg-12 headline">Communication Preference</li>
+                        </ul>
+                      </li>
+                      <li class="col-xs-12 col-lg-8 no-gutter no-margin">
+                        <ul>
+                          <li class="col-xs-10 col-lg-10">Subscribe to Golden Circle and Shangri-La Hotels & Resorts Promotions</li>
+                          <li class="col-xs-2 col-lg-2 pull-right">No</li>
+                          <!--li.col-xs-12.col-lg-4-->
+                          <li class="col-xs-10 col-lg-10">Subscribe to Golden Circle Partners Promotions</li>
+                          <li class="col-xs-2 col-lg-2 pull-right">No</li>
+                          <!--li.col-xs-12.col-lg-4-->
+                          <li class="col-xs-10 col-lg-10">Subscribe to Golden Circle Membership e-Statement</li>
+                          <li class="col-xs-2 col-lg-2 pull-right">No</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="member-main-heading">My registered promotions</h2>
+                    <ul class="row member-profile-details">
+                      <li class="col-xs-12 col-lg-4 headline-light">15% off Summer Palace</li>
+                      <li class="col-xs-12 col-lg-8"><a href="#">View Details</a></li>
+                      <li class="col-xs-12 col-lg-4 headline-light">Sweet Escape</li>
+                      <li class="col-xs-12 col-lg-8"><a href="#">View Details</a></li>
+                      <li class="col-xs-12 col-lg-4 headline-light">Double Up</li>
+                      <li class="col-xs-12 col-lg-8"><a href="#">View Details</a></li>
+                    </ul>
+                  </div>
+                  <div class="redemption-group">
+                    <h2 class="member-main-heading">Redemption Group</h2>
+                    <ul class="row member-redemption-group">
+                      <li class="col-xs-12 col-lg-4 headline visible-lg">Name</li>
+                      <li class="col-xs-12 col-lg-4 headline visible-lg">Email</li>
+                      <li class="col-xs-12 col-lg-4 headline visible-lg">Relationship</li>
+                      <li class="col-xs-12 col-lg-4"><span class="col-xs-12 headline hidden-lg">Name</span><span class="col-xs-12">Lorem ipsum</span></li>
+                      <li class="col-xs-12 col-lg-4"><span class="col-xs-12 headline hidden-lg">Email</span><span class="col-xs-12">loremipsum@gmail.com</span></li>
+                      <li class="col-xs-12 col-lg-4"><span class="col-xs-12 headline hidden-lg">Relationship</span><span class="col-xs-12">Child</span></li>
+                      <!--ul.row.member-redemption-group.last-ul-->
+                      <li class="col-xs-12 col-lg-4"><span class="col-xs-12 headline hidden-lg">Name</span><span class="col-xs-12">Lorem ipsum</span></li>
+                      <li class="col-xs-12 col-lg-4"><span class="col-xs-12 headline hidden-lg">Email</span><span class="col-xs-12">loremipsum@gmail.com</span></li>
+                      <li class="col-xs-12 col-lg-4 last"><span class="col-xs-12 headline hidden-lg">Relationship</span><span class="col-xs-12">Child</span></li>
+                    </ul>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var flyoutcontent = {
+            member: {
+              loggedintitle: 'Member Logged In',
+              profile: {
+                  text: 'Member Profile',
+                  href: '/thetable/memberprofile/'
+                },
+              logout: {
+                  text: 'Log Out',
+                  href: '/thetable/logout/'
+                },
+              service: {
+                href : '/json/testlogin.json'
+              }
+            }
+        };
+      
+    </script>
+    <!-- Member Profile - Ends-->
+    <script src="../content/js/common.js"></script>
+    <!-- to avoid stripping of previous line--><!--build:js ../content/js/modules.js-->
+    <script src="../content/js/modules/header.js"></script>
+    <script src="../content/js/modules/search.js"></script>
+    <script src="../content/js/modules/footer.js"></script>
+    <script src="../content/js/modules/user.js"></script>
+    <script src="../content/js/modules/carousels.js"></script>
+    <script src="../content/js/modules/experiences.js"></script>
+    <script src="../content/js/modules/restaurant-bar-list.js"></script>
+    <script src="../content/js/modules/special-offers.js"></script>
+    <script src="../content/js/modules/calendars.js"></script>
+    <script src="../content/js/modules/filters.js"></script>
+    <script src="../content/js/modules/tabs-module.js"></script>
+    <script src="../content/js/modules/destination-overlay.js"></script>
+    <script src="../content/js/modules/restaurant-bar-detail.js"></script>
+    <script src="../content/js/modules/photo-gallery.js"></script>
+    <script src="../content/js/modules/read-more.js"></script>
+    <script src="../content/js/modules/form-modules.js"></script>
+    <script src="../content/js/modules/maps.js"></script>
+    <script src="../content/js/modules/restaurant-bar-map.js"></script>
+    <script src="../content/js/modules/static-map.js"></script>
+    <script src="../content/js/modules/restaurant-bar-menu.js"></script>
+    <script src="../content/js/modules/book-table.js"></script>
+    <script src="../content/js/modules/member-benefits.js"></script>
+    <script src="../content/js/modules/select-boxit.js"></script>
+    <script src="../content/js/modules/moods.js"></script>
+    <script src="../content/js/modules/book-hotel-search.js"></script>
+    <script src="../content/js/modules/pagination.js"></script>
+    <script src="../content/js/modules/bright-cove.js"></script>
+    <script src="../content/js/modules/bright-cove-moods.js"></script>
+    <script src="../content/js/modules/bright-cove-all.js"></script>
+    <script src="../content/js/modules/member-profile.js"></script>
+    <!-- endbuild-->
+    <!-- to avoid stripping of previous line-->
+    <script type="text/javascript">
+      var loadMapApi = function(mapApiString) {
+        var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = mapApiString;
+            s.async = true;
+            document.getElementsByTagName('head')[0].appendChild(s);
+      };
+      
+      var mapApiString = "https://maps.googleapis.com/maps/api/js?v=3&callback=Shangrila.maps.init";
+      
+      if(window.jQuery){
+          (function(){
+            $.ajax({
+              url: 'http://api.snoopi.io/v1',
+              type: 'GET',
+              dataType: 'json'
+            })
+            .done( function (data) {
+              mapCountryCode = data.CountryCode;
+      
+              if(mapCountryCode && mapCountryCode.toUpperCase() == 'CN')
+                {
+                  mapApiString = "http://maps.google.cn/maps/api/js?v=3&callback=Shangrila.maps.init";
+                }
+            })
+            .always( function() {
+              loadMapApi(mapApiString);
+            });
+          })();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+//Restaurant and Bar Grid
+
+//Restaurant Gird
+
+.restaurant-bar-grid{
+  .joinus-table{
+    background-color: $primary-color-1;
+    .icon{
+      margin-bottom: 25px;
+      margin-top: -10px;
+    }
+    .joinus-content{
+      height: auto;
+      padding: 40px 40px 70px;
+    }
+    .button-container{
+      bottom: 20px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      @include breakpoint('xs'){
+        position: static;
+      }
+    }
+  }
+  @include breakpoint('xs'){
+    .no-result-message{
+      margin: 10px;
+    }
+  }
+
+  .image-container{
+    .new-opening{
+      display: inline-block;
+      width: 100%;
+
+      position: absolute;
+      left: 0;
+      bottom: -9px;
+      z-index: 1;
+      @include breakpoint('sm'){
+        bottom: -8px;
+      }
+
+      .icon-new-opening{
+        position: relative;
+        &:before{
+          position: absolute;
+          left: 20px;
+          top: 4px;
+        }
+      }
+
+      span{
+        padding: 5px 30px 5px 45px;
+        background-color: #aea592;
+        font-family: $MyriadPro-Semibold;
+        font-size: 11px;
+        font-size: 1.1rem;
+        text-shadow: 1px 1px 0 rgba(139, 121, 86, 0.75);
+        color: $primary-color-1;      }
+        text-transform: uppercase;
+      }
+    }
+
+  .golden-circle-recommended{
+    position: relative;
+    background-color: $primary-color-1;
+
+    .image-container{
+      height: 245px;
+      @include breakpoint('sm'){
+        height: 300px;
+      }
+      @include breakpoint('xs'){
+        height: auto;
+      }
+    }
+    .content-container {
+      padding: 35px 30px 20px;
+      text-align: left;
+      position: relative;
+      @include breakpoint('xs'){
+        padding: 35px 5px 20px;
+        text-align: center;
+      }
+      .golden-circle-badge{
+        display: block;
+        position: absolute;
+        top: -11px;
+        left: 30px;
+        z-index: 1;
+        font-family: $MyriadPro-Semibold;
+        font-size: 11px;
+        font-size: 1.1rem;
+        padding: 4px 20px 2px 40px;
+        background-color: #aea592;
+        text-shadow: 1px 1px 0 rgba(139, 121, 86, 0.75);
+        color: $primary-color-1;
+        text-transform: uppercase;
+        &:before{
+          position: absolute;
+          left: 20px;
+          top: 4px;
+          font-size: 13px;
+          font-size: 1.3rem;
+        }
+        @include breakpoint('xs'){
+          margin: 0 auto;
+          width: 158px;
+          left: 0;
+          right: 0;
+        }
+      }
+      .golden-circle-contact{
+        text-align: center;
+        .button-container{
+          position: relative;
+          bottom: 0;
+          margin-top: 10px;
+          
+          @include gridBreakpoint ('sm'){
+            left: 7px;
+          }
+
+          @include gridBreakpoint ('md'){
+            left: 5px;
+          }
+
+          .button-primary{
+            @include breakpoint('sm'){
+              margin: 0 5px;
+              border-left: 2px solid $primary-color-3;
+              border-right: 2px solid $primary-color-3;
+           }
+          }
+        }
+      }
+    }
+    .golden-circle-detail{
+      display: block;
+      width: 100%;
+      & > div{
+        display: inline-block;
+        width: 49%;
+        @include breakpoint('xs'){
+          display: block;
+          width: 100%;
+        }
+      }
+      .information {
+        vertical-align: top;
+        min-height: 160px;
+
+        @include breakpoint('xs'){
+          min-height: auto;
+        }
+      }
+      .call-to-action{
+        vertical-align: bottom;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+
+/* Iframe Book a Reservation */
+.common-popup-block.reservation-wrapper {
+  max-width: 550px;
+  width: 80%;
+
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+}
+
+.book-reservation{
+  // max-width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  height: 450px; /* SHANGWEAS-81 */
+  height: 60vh;
+
+  iframe{
+    border: 0 none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.popup-book-table {
+  position: fixed;
+  @include breakpoint('xs'){
+    position: absolute;
+  }
+}
+
+//SHANGWEAS-19 fix
+.memberFavourite {
+  .restaurant-bar-container .content-container .contact-info {
+    @include gridBreakpoint ('sm'){
+      bottom: 50px;
+      left: 58px;
+    }
+
+    @include gridBreakpoint ('md'){
+      left: 53px;
+    }
+  }
+  
+}
+.restaurant-bar-grid {
+  .memberFavourite {
+    .golden-circle-recommended .golden-circle-detail {
+      @include gridBreakpoint ('md'){
+        min-height: 160px;
+      }
+      .call-to-action {
+        @include gridBreakpoint ('sm'){
+          padding-left: 42px;
+        }
+      }
+    }
+  }
+}

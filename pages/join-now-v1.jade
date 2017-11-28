@@ -1,0 +1,38 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Join Golden Circle"}
+  - var Meta = {description:"Golden Circle", keywords:"Golden Circle"}
+
+block contentMain
+  include ../modules/header
+  script(src="content/js/vendors/jquery.validate.js")
+  script(src="content/js/pages/join-now-v1.js")
+  script(type="text/javascript").
+    $(document).ready(function () {
+      ErrorMessage.CaptchaRequired = ("Captcha is a required field");
+      ErrorMessage.DobRequired = ("Date of birth is a required field");
+      ErrorMessage.DobInvalidFormat = ("Date format must be DD/MM/YYYY");
+      ErrorMessage.InvalidAge = ("User must be 18 years old");
+      ErrorMessage.EmailRequired = ("Email is a required field"); //EmailRequired
+      ErrorMessage.EmailInvalid = ("Invalid Email");//EmailInvalid
+      ErrorMessage.PasswordRequired = ("Password is a required field");
+      ErrorMessage.PasswordInvalid = ("Password must follow above format");
+      ErrorMessage.TCRequired = ("Please read and agree");
+      ErrorMessage.PPRequired = ("Please read and agree");
+      ErrorMessage.PhoneRequired = ("Phone No. is a required field");
+      ErrorMessage.InvalidPhone = ("Phone No. should be numeric ");
+      ErrorMessage.AreaCodeRequired = ("Please enter the area code");
+      ErrorMessage.InvalidAreaCode = ("Area code should be numeric");
+      ErrorMessage.FirstnameRequired = ("First Name is required field");
+      ErrorMessage.LastnameRequired = ("Last Name is required field");
+      ErrorMessage.NameonCardRequired = ("Preferred Name is a required field");
+      ErrorMessage.NameonCardEnglishText = ("Please enter the name you wish to appear on your card in English");
+      ErrorMessage.LnameInEnglishText = ("Please enter Last Name in English");
+      ErrorMessage.FnameInEnglishText = ("Please enter First Name in English");
+      ErrorMessage.EmailInEnglishText = ("Please enter Email in English ");
+    });
+
+  include ../modules/join-now-v1
+  include ../modules/footer
+  

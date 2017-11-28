@@ -1,0 +1,242 @@
+.book-hotel-slider,
+.login-flyout,
+.member-login-flyout{ 
+  position: fixed;
+  right: 0;
+  top: 35px;
+  //bottom: 0;
+  z-index: 9999;
+  display: none;
+  max-height: 100%;
+  overflow-y: auto;
+  margin-bottom: 36px;
+  @include breakpoint('md') {
+    bottom: 0;
+    display: block;
+    width: 100%;
+    left: 100%;
+    top:0;
+    //position: absolute;
+    max-height: none;
+    margin-bottom: 0;
+  }
+}
+.book-hotel-container, 
+.login-flyout-container,
+.member-login-container{
+  //min-width: 410px;
+  padding:12px;
+  background: $section-background-2;
+  @include breakpoint('md') {
+    min-width: auto;
+    bottom: 0;
+    height: 100%;
+    overflow-y: auto;
+    padding: 8px;
+    padding-top: 80px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    h2{
+      font-size: 15px;
+      font-size: 1.5rem;
+      text-align: center;
+      margin:0 0 5px;
+      text-transform: uppercase;
+    }
+  }
+  @include breakpoint(xs) {
+    padding-top: 70px;
+  }
+  .form-field, .room-block{
+    h3{
+      font-size:13px;
+      font-size:1.3rem;
+      text-transform: uppercase;
+      font-family: $FuturaStd-Medium;
+    }
+    .ui-search-input{
+      padding: 0 32px 0 0;
+      height: 32px;
+      line-height:32px;
+    }
+    .room-details {
+      color: $primary-color-2;
+      display: block;
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+  }
+  .form-field .field-container {
+    border: 1px solid $secondary-color-4;
+    height: 32px;
+    overflow: hidden;
+  }
+  .ui-textinput.icon-calendar.disable{
+    display: block;
+    position: relative;
+    &:after{
+      content: '';
+      background: $primary-color-1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    }
+  }
+  .submit-container{
+    padding: 10px 0 20px;
+    text-align: center;
+    input[type="submit"]{
+      display: inline-block;
+    }
+  }
+  .room-block{
+    h3{
+      padding: 0 10px;
+      margin-bottom: 0;
+      .remove-room {
+        color: #028883;
+        margin-left: 5px;
+        text-transform: none;
+      }
+    }
+    .ui-textinput{
+      position: relative;
+      .icon-plus, .icon-minus{
+        color: $primary-color-1;
+        background: $primary-color-3;
+        font-size: 14px;
+        line-height: 38px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        text-shadow: 1px 1px 1px #137a7a;
+        width: 32px;
+      }
+      .icon-plus{
+        right: -10px;
+      }
+      .icon-minus{
+        right: 23px;
+      }
+    }
+  }
+  .add-room-cta {
+    padding: 10px 10px 15px;
+    .add-room{
+      color: $secondary-color-2;
+      font-family: $MyriadPro-Semibold;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1;
+      &:before {
+        font-size: 12px;
+        padding-right: 3px;
+      }
+    }
+  }
+  .field-container.no-padding{
+    padding: 0;
+  }
+  .search{
+    background-color: $secondary-color-5;
+    .search-bar{
+      .form-bar{
+        input.input-val{
+          &#book-hotel-search {
+           .ie9 &{
+              line-height: 35px;
+            }
+          }
+          background-color: $secondary-color-5;
+          font-size: 1.3rem;
+          font-size: 13px;
+          height: 32px;
+          line-height: normal;
+          padding: 0 40px 0 15px;
+          text-transform: capitalize;
+        }
+      }
+      .submit-group{
+        height: 32px;
+        width: 32px;
+        .icon-search{
+          height: 32px;
+          width: 32px;
+          &:before{
+            font-size: 1.2rem;
+            height: 32px;
+            line-height: 32px;
+            width: 32px;
+          }
+          .submit-btn{
+            height: 32px;
+            width: 32px;
+          }
+        }
+        .close-form{
+          height: 32px;
+          width: 32px;
+          &:before{
+            font-size: 1.5rem;
+            height: 32px;
+            line-height: 32px;
+            width: 32px;
+          }
+        }
+      }
+      .search-dropdown{
+        @include boxShadow(#bebebe, 1px, 5px, 10px);
+        font-size: 1.3rem;
+        font-size: 13px;
+        height: 150px;
+        top: 32px;
+        &.no-message{
+          height: auto;
+        }
+        ul{
+          padding: 0 0 0 15px;
+          width: 95%;
+          li{
+            padding: 10px 0;
+          }
+        }
+        p.no-result-message{
+          border: medium none;
+          font-family: $MyriadPro-Regular;
+          font-size: 13px;
+          margin: 10px;
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+#book-hotel-autocomplate{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  .ui-autocomplete {
+    position: relative;
+    width: 100%;
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    li, li:hover, li.ui-state-focus{
+      background: none;
+      border-bottom: 1px solid $secondary-color-4;
+      padding: 5px;
+    }
+  }
+}

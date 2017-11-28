@@ -1,0 +1,68 @@
+// Module - Book a Hotel - Search - Starts
+.book-hotel-slider
+  .back-btn-container                                    
+    a.back-btn.icon-angle-left(href="javascript:void(0);") BACK TO MENU
+  .book-hotel-container
+    h2.hidden-md.hidden-lg Book A Hotel
+    .form-container
+      .row
+        .col-md-12
+          .form-field#divError
+            #book-hotel-autocomplate
+            .field-container.no-padding
+              .search
+                .search-bar
+                  .form-bar
+                    input.input-val(type="text", placeholder="Enter your hotel or destination" id="book-hotel-search" data-service="./services/book-hotel-search.json")
+                    input(type="hidden", id="hdnHid")
+                    .submit-group
+                      .search-link.icon-search
+                        input.submit-btn(type="submit", value="")
+                      .close-search.close-form.icon-android-close
+                    
+                    div(id="header-search-dropdown", class="search-dropdown js-dropdown-hidden no-message")
+                      ul(class="list-unstyled", id="ulAutoPopulateHeaderSearch")
+                      p.no-search-result.hidden(style="position:absolute; width:100%; padding:10px; background-color:#fff; z-index:1;") Unfortunately there are no results matching your search... 
+
+      .row
+        .col-sm-6
+          .form-field
+            h3 Check-In
+            .field-container
+              .ui-textinput.icon-calendar
+                input(type="text" id="checkInSelector" class="checkInSelector bookHotelCheckIn")
+            
+        .col-sm-6
+          .form-field
+            h3 Check-Out
+            .field-container
+              .ui-textinput.icon-calendar
+                input(type="text" id="checkOutSelector" class="checkOutSelector bookHotelCheckOut")         
+
+      .row
+        .room-addition-block
+          .room-block.clearfix
+            h3 
+              span Room 1
+              a(href="#" class="remove-room") (Remove)
+            .col-sm-6
+              .form-field.adults
+                span.room-details Adult (Max3)                   
+                .field-container
+                  .ui-textinput
+                    input(type="text" class="numAdult" value="1" disabled)
+                    a.icon-plus(href="javascript:void(0);")
+                    a.icon-minus(href="javascript:void(0);")
+            .col-sm-6
+              .form-field.children
+                span.room-details Children (Max2) 
+                .field-container
+                  .ui-textinput
+                    input(type="text" class="numChildren" value="0" disabled)
+                    a.icon-plus(href="javascript:void(0);")
+                    a.icon-minus(href="javascript:void(0);")
+          .add-room-cta
+            a(href="#" class="add-room icon-plus") Add Room
+      .submit-container
+        input(class="button-secondary" value="Book Now" type="submit" data-url="http://www.shangri-la.com/landing/reservations/?hid=$hid&amp;check_in=$checkin&amp;check_out=$checkout&amp;lang=$lang&amp;num_rac=$num_rac" data-fbcode="FBCODE" id="btnBookNow")
+// Module - Book a Hotel Search - Ends

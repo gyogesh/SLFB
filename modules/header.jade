@@ -1,0 +1,148 @@
+// Module - Header - Starts
+header
+  .container-fluid.no-gutter
+    .header-container
+      
+
+      section.secondary-nav-wrapper
+        .container.no-gutter
+          nav.secondary.clearfix
+            ul
+              li
+                a(href="javascript:void(0);", title="Shangri-La.com")
+                  | Shangri-La.com
+              li(class="book-hotel")
+                a(href="javascript:void(0);", title="Book A Hotel")
+                  | Book A Hotel
+              li(class="login-flyout-trigger")
+                a(href="javascript:void(0);", title="Log In")
+                  | Log in
+              //- li(class="member-login-trigger")
+                a(href="javascript:void(0);", title="Member Logged In")
+                  | 
+                  span(class="member-name") Mr Alan Lau 
+                  span(class="member-points") 
+                    img(src='content/img/content/icon-redeem-point.png', alt='Redeem Points') 
+                    | 230,000 GC Points
+              li
+                a(href="join-golden-circle.html", title="Login/Sign Up")
+                  | Join Now
+              
+      section.primary-nav-wrapper
+
+        .container.no-gutter
+          ul.mobile-menu        
+            li.hidden
+              a.search-call(href="#")
+                span.icon-search
+            li
+              a.mobile-nav(href="#")
+                span.icon-menu
+          .row
+            .col-xs-6.col-sm-6.col-md-3.col-lg-2
+              h1.logo
+                a(href="javascript:void(0);")
+                  img(src="content/img/content/shangrila-logo.png", alt="The Table - From Golden Circle")
+            .col-xs-12.col-sm-12.col-md-9.col-lg-10
+              .nav-wraper
+                .back-btn-container                                    
+                  a.back-btn.icon-angle-left(href="javascript:void(0);") BACK
+                    span.icon-menu
+                .nav-inner-container
+                  nav.primary.clearfix
+                    ul
+                      li
+                        a(class={active: currentUrl === 'restaurants-bars'}, href="javascript:void(0);", title="restaurants & bars")
+                          | restaurants &amp; bars
+                      li
+                        a(class={active: currentUrl === 'experiences'}, href="javascript:void(0);", title="experiences")
+                          | experiences
+                      li
+                        a(class={active: currentUrl === 'special-offers'}, href="javascript:void(0);", title="special offers")
+                          | special offers
+                      li
+                        a(class={active: currentUrl === 'member-benefits'}, href="javascript:void(0);", title="member benefits")
+                          | member benefits
+                      li
+                        a(class={active: currentUrl === 'social-gallery'}, href="javascript:void(0);", title="Social Gallery")
+                          | Social Gallery
+                      li.cta-search.hidden
+                        a(href="javascript:void(0);", title="search")
+                          | search
+                          span.icon-search
+
+                  nav.secondary.clearfix
+                    ul
+                      //- li.member-login-mobile
+                        ul
+                          li
+                            a(href="javascript:void(0);", title="Member Login")
+                              span(class="member-name") Mr Alan Lau 
+                              span(class="member-points") 
+                                img(src='content/img/content/icon-redeem-point.png', alt='Redeem Points') 
+                                | 230,000 GC Points
+                          li
+                            a(href="#") Member Profile
+                          li
+                            a(href="#") Log Out
+                      li
+                        a.icon-angle-right(href="javascript:void(0);", title="Shangri-La.com")
+                          | Shangri-La.com
+                      li(class="book-hotel")
+                        a.icon-angle-right(href="javascript:void(0);", title="Book A Hotel")
+                          | Book A Hotel
+                      li(class="login-flyout-trigger")
+                        a.icon-angle-right(href="javascript:void(0);", title="Log In")
+                          | Log in
+                      li
+                        a.icon-angle-right(href="join-golden-circle.html", title="Login/Sign Up")
+                          | Join Now
+
+        .container-fluid.no-gutter
+          .row
+            .search-panel
+              .search-wrapper
+                .row
+                  .hidden-xs.hidden-sm.col-md-3.no-gutter
+                  .col-xs-12.col-md-9.no-gutter
+                    .search-bar
+                      .form-bar
+                        input.input-val(type="text" autofocus)
+                        .submit-group
+                          .icon-search
+                            input.submit-btn(type="submit", value="")
+                          .close-form.icon-android-close
+                      .search-dropdown.js-dropdown-hidden
+                        ul.list-unstyled
+                          li 
+                            span Italian 
+                            | ipsum dolor sit amet, consectetur adipiscing elit.
+                          li Lorem ipsum dolor sit amet, 
+                            span Italian 
+                            | adipiscing elit.
+                          li Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            span Italian
+                            | .
+                          li 
+                            span Italian 
+                            | ipsum dolor sit amet, consectetur adipiscing elit.
+                          li Lorem ipsum dolor sit amet, 
+                            span Italian 
+                            | adipiscing elit.
+                          li Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            span Italian
+                            | .
+                          li 
+                            span Italian 
+                            | ipsum dolor sit amet, consectetur adipiscing elit.
+                          li Lorem ipsum dolor sit amet, 
+                            span Italian 
+                            | adipiscing elit.
+                          li Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            span Italian
+                            | .
+
+      include ../modules/book-hotel-search
+      include ../modules/login-flyout
+      //- include ../modules/member-login-flyout
+// Module - Header - Ends

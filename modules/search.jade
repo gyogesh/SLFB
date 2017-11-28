@@ -1,0 +1,33 @@
+// Module Explore tables around the world (Search) - Starts
+section.search
+  .section-row
+    .container
+      .row
+        .hidden-sm.col-md-2
+        .col-sm-12.col-md-8
+          div.section-heading
+            h1 explore tables around the world
+          .search-bar
+            .form-bar.ui-widget
+              //input.input-val(type="text", placeholder="Find a restaurant, bar or destination")
+              input.input-val(type="text", placeholder="Enter your hotel or destination" id="home-hotel-search" data-service="./services/all-hotel-search.json")
+              .submit-group
+                .search-link.icon-search
+                  input.submit-btn(type="submit", value="")
+                .close-search.close-form.icon-android-close
+            //.search-dropdown.js-dropdown-hidden
+            div(id="allRestaurants")
+            div(id="home-search-dropdown", class="search-dropdown js-dropdown-hidden no-message")
+              a(id="aShowAllRestaurants", href="http://www.google.com" class="button-secondary") See all Restaurants and Bars
+              ul(class="list-unstyled", id="ulAutoPopulateHomeSearch")
+              //ul.list-unstyled
+                //li Taiwan
+                //li Tapas Bar, Kowloon Shangri-La, Hong Kong
+                //li Taiwan
+                //li Tapas Bar, Kowloon Shangri-La, Hong Kong
+                //li Taiwan
+                //li Tapas Bar, Kowloon Shangri-La, Hong Kong
+              //.button-container
+                //a.button-secondary See all Restaurants and Bars
+        .hidden-sm.col-md-2
+// Module Explore tables around the world (Search) - Ends

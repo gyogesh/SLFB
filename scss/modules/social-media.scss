@@ -1,0 +1,112 @@
+/*
+* Moudule : Social Media
+*/
+
+// Social Media
+
+.social-media {
+  background-color: $section-background-2;
+  .social-info {
+    text-align: center;
+    text-transform: uppercase;
+    p{
+      line-height: 2.25;
+      margin: 10px 0 0;
+        @include breakpoint('md') {
+          margin: 0;
+          line-height: 1.75;
+        }
+        @include breakpoint('xs') {
+          line-height: 1.5;
+        }
+    }
+    h1{
+      font-family: $FuturaStd-Medium;
+      font-size: 36px;
+      font-size: 3.6rem;
+      line-height: 1.2;
+      margin: 2px 0 30px;
+      @include breakpoint('md') {
+        margin: 2px 0 20px;
+      }
+      @include breakpoint('sm') {
+        font-size: 30px;
+        font-size: 3rem;
+        margin: 2px 0 12px;
+      }
+      @include breakpoint('xs') {
+        font-size: 24px;
+        font-size: 2.4rem;
+        line-height: 1.25;
+      }
+    }
+    .button-secondary {
+      width: auto;
+      padding: 14px 10px 10px;
+    }
+  }
+
+}
+
+
+.social-images {
+
+  .row {
+    & > div {
+      position: relative;
+      div.instagram {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 10px 10px 0;
+        background-color: rgba(0,0,0,0.4);
+        span {
+          font-size: 20px;
+          font-size: 2rem;
+          color: $primary-color-1;
+        }
+      }
+    }
+  }
+}
+
+// Social Media Experience
+
+.social-media-experience {
+  background-color: $section-background-2;
+  .social-images {
+    margin-top: 25px;
+    @include breakpoint('xs') {
+      padding: 0 5px;
+      margin-top: 15px;
+    }
+    .lazy-load-wrapper {
+      margin-top: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .row{
+      & > div {
+        div.instagram {
+          @include breakpoint('xs') {
+            padding: 5px 5px 0;
+            span{
+              @include breakpoint('xs') {
+                font-size: 10px;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint('xs') {
+    .col-xs-6 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

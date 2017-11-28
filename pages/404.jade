@@ -1,0 +1,11 @@
+extends ../templates/custom-error
+
+append config
+  - var Page = {title:"Shangri-La - 404"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "social-gallery"
+
+block contentMain
+
+  include ../modules/header-custom
+  include ../modules/404

@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Header Custom"}
+  - var Meta = {description:"Module - Header Custom", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/header-custom

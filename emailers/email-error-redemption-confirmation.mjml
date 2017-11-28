@@ -1,0 +1,699 @@
+<mjml>
+  <mj-head>
+    <mj-title>Dining Experience with Chef Jay Warden Confirmed</mj-title>
+    <mj-attributes>
+    <mj-text padding="0" />
+    <mj-class name="clear-v-padding"   padding-top="0"     padding-bottom="0" />
+    <mj-class name="clear-gutter"      padding-right="0"   padding-left="0"/>
+    <mj-class name="column-gutter"     padding-left="30px" padding-right="30px" />
+    
+    <mj-class name="left-gutter"       padding-left="30px" />
+    <mj-class name="left-only-gutter"  padding-left="30px" padding-right="0" />
+    <mj-class name="right-gutter"      padding-right="30px" />
+    <mj-class name="right-only-gutter" padding-right="30px" padding-left="0" />
+    
+    <mj-class name="padding-bottom-20" padding-bottom="20px" />
+    <mj-class name="padding-top-20"    padding-top="20px" />
+    <mj-class name="green-color"       color="#028883" />
+    <mj-class name="error"             color="#aa2525" />
+    <mj-class name="bg-grey"           background-color="#f1f3f2" />
+    <mj-class name="bg-white"          background-color="#ffffff" />
+
+    <mj-class name="font-helvetica"    font-style="normal" font-size="13" font-family="Helvetica, Arial, sans-serif"/>
+    <mj-class name="font-bold"         font-weight="bold" />
+    <mj-class name="text-heading"      font-size="18" />
+    <mj-class name="label"             width="45%" font-weight="bold" />
+    <mj-class name="label-2"           width="50%" font-weight="bold" padding="5px 0 5px 5px" />
+    <mj-all font-family="Helvetica, Arial, sans-serif"/>
+    <!--
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="text/css" http-equiv="Content-Style-Type" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi" name="viewport" />
+    <meta content="width=device-width,initial-scale=1.0,target-densitydpi=device-dpi" name="viewport" />
+    <meta content="noindex,nofollow" name="robots" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no">
+    -->
+  </mj-attributes>
+  
+    <mj-style>
+
+       .font-helvetica {
+         font-style: normal;
+         font-size: 13px;
+         font-family: Helvetica, Arial, sans-serif;
+       }
+       .browser-view {
+         padding-left: 10px;
+         margin-left: 11px;
+         border-left: solid 1px #cecece !important;
+         color: #028883 !important;
+         text-decoration: none;
+       }
+
+       .redemption-confirmed {
+        color: #333333;
+        font-weight: bold;
+        verticle-align: top;
+       }
+
+       .redemption-confirmed-text {
+        color: #333333;
+        font-weight: normal;
+        verticle-align: top;
+       }
+       
+       .inline-link {
+        color: #028883;
+        text-decoration: none;
+       }
+
+       .border-left {
+        border-left: solid 1px #cccccc;
+        margin-left: 5px;
+        padding-left: 4px;
+       }
+
+       .green-color         {color: #028883 !important;}
+       .error               {color: #aa2525;}
+       .label               {width: 45%; font-weight: bold;}
+       .label-2             {width: 50%; font-weight: bold; padding: 5px 0 5px 5px;}
+       .left-gutter         {padding-left: 30px;}
+       .right-gutter        {padding-right: 30px;}
+       .clear-gutter        {padding-left: 0; padding-right: 0;}
+       .clear-left-gutter   {padding-left: 0;}
+       .clear-right-gutter  {padding-right: 0;}
+       .clear-v-padding     {padding-top: 0; padding-bottom: 0;}
+       .clear-v-margin      {margin-top: 0; margin-bottom: 0;}
+       .text-left           {text-align: left;}
+       .v-align-top         {verticle-align:top;}
+       .text-cell-padding   {padding: 5px 0;word-break:inherit;}
+       .width-10            {width: 10%;}
+       .width-20            {width: 20%;}
+       .width-30            {width: 30%;}
+       .width-35            {width: 35%;}
+       .width-40            {width: 40%;}
+       .width-45            {width: 45%;}
+       .width-50            {width: 50%;}
+       .width-55            {width: 55%;}
+       .width-60            {width: 60%;}
+       .width-70            {width: 70%;}
+       .width-80            {width: 80%;}
+       .width-138           {width: 120px;}
+       .padding-left-5      {padding-left: 5px;}
+       .p-text              {margin: 5px 0;}
+       .cell-2              {padding: 5px 0;}
+       .padding-top-bottom  {padding-top: 5px;padding-bottom: 5px;}
+       .clear-padding-top   {padding-top:0;}
+       .clear-padding-bottom {padding-bottom:0;}
+
+        /*Media Queries for Mobile Devices*/
+        .text-reset,
+        .text-reset a {
+          color: #000 !important;
+          text-decoration: none;
+         }
+         @media only screen and (max-width: 480px) {
+           .small-padding-clear {
+            padding-left: 15px !important;
+            padding-right: 0 !important;
+           }
+         }
+        @media only screen and (max-width: 600px) {
+          /* Generic Styles */
+          table[class=mainwrapmob]{width: 100% !important; height: auto !important;}
+          table[class=emailwrapto100pc], td[class=emailwrapto100pc], img[class=emailwrapto100pc] {width: 100% !important; height: auto !important; padding: 0 !important;}
+          table[class=emailnomob], td[class=emailnomob], img[class=emailnomob], span[class=emailnomob] {display: none !important;}
+          span[class=dispblock], td[class=dispblock] {display: block !important;}
+          *[class=gmail] { display:block!important; width:auto!important; overflow:visible!important; float:none !important; height:inherit!important; max-height:inherit!important;}
+          td[class=emailnopadding] {padding: 0 !important;}
+          td[class=paddingTop10px], span[class=paddingTop10px] {padding-top:10px !important; display:inline-block !important;}
+          td[class=paddingleft10], span[class=paddingleft10] {padding-left: 10px !important;}
+
+
+
+          td[class=footergc-logo]{padding: 0 !important; text-align: center; border: 1px solid #d6d6d3; border-radius: 5px; height: 53px !important; vertical-align: middle !important;}
+          td[class=footertwo-logo]{padding: 0 !important; text-align: center; border: 1px solid #d6d6d3; border-radius: 5px; width: 136px !important; vertical-align: middle !important; height: 53px !important;}
+          td[class=padrht]{padding-right: 5px !important;}
+
+          /*footer links*/
+          img[class=gc-brand]{width: 37px !important; height: auto !important;}
+          img[class=shangri-la-brand]{width: 73px !important; height: auto !important;}
+          img[class=kh-brand]{width: 87px !important; height: auto !important;}
+          img[class=hotel-j-brand]{width: 55px !important; height: auto !important;}
+          img[class=trad-brand]{width: 37px !important; height: auto !important;}
+
+          td[class=footer-logo]{padding: 23px 20px 0 !important; height: auto !important; background-color: #f6f6f6 !important; border-top: 2px solid #309b95;}
+          td[class=width3]{width: 4px !important; height: 53px !important;}
+          td[id=footerLinksWrap] {width: 100% !important;}
+          table[class=footertableWrap] {width: 100% !important;}
+          td[id=footerLinksWrap] {padding-top: 4px !important;}
+          td[id=footerLinks] {display: block !important; margin-top: 0px !important; background: #dad6d3 !important; padding-top: 10px !important; padding-bottom: 0 !important;}
+          td[class=emailnopadding] {padding: 0 !important;}
+          a[class=emailfooternav] {display: block !important; font-weight: bold !important; padding: 8px 4px 8px 4px !important; font-size: 14px !important; background: #777777 !important; border-radius: 10px !important; margin: 15px 10px 0 10px !important; text-align: center; color: #ffffff !important; text-decoration: none !important;}
+          span[class=footerLinkHead] {font-size: 12px !important; display: block !important; padding-top: 12px !important; padding-bottom: 2px !important;}
+        }
+     </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-container>
+      <!-- Heading -->
+
+      <mj-section full-width="full-width" padding="0">
+        <mj-column mj-class="bg-grey" vertical-align="middle">
+          <mj-text mj-class="column-gutter green-color font-helvetica" padding-top="5px" padding-bottom="5px">Dining Experience with Chef Jay Warden Confirmed<span style="color: #cecece;">  |  </span><a href="" target="_blank" style="display: inline-block;color: #028883;text-decoration: none;">View in browser</a></mj-text>
+        </mj-column>
+      </mj-section>
+      
+      <!-- Header -->
+      <mj-section full-width="full-width" mj-class="clear-v-padding">
+        <mj-column mj-class="bg-white" vertical-align="middle">
+          <mj-image mj-class="clear-v-padding column-gutter" width="228" height="80" align="left" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/logo.jpg" href="http://www.golden-circle.com/thetable/" />
+        </mj-column>
+      </mj-section>
+
+      <!-- confirmation content -->
+      <mj-section full-width="full-width" padding="0">
+        <mj-column vertical-align="middle" mj-class="bg-grey">
+          <mj-text mj-class="column-gutter text-heading" text-transform="uppercase" padding="20px 0">Redemption Confirmed!</mj-text>
+          <mj-text mj-class="column-gutter">Dear Mr Lau,</mj-text>
+          <mj-text mj-class="column-gutter" padding="20px 0">Thank you for redeeming our [One Off Culinary Experience Title] experience at Shang Palace, Island Shangri-La, Hong Kong. Your redemption is confirmed as per the details below.</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- hero content -->
+      <mj-hero
+        mode="fluid-height"
+        background-width="600px"
+        background-height="250px"
+        background-url="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/bg.jpg"
+        background-color="#2a3448"
+        height="250px"
+        padding="125px 0px">
+        <!--mj-hero-content width="220px" background-color="#FFFFFF" align="left">
+          <mj-text
+          padding="30px"
+          color="#333333"
+          align="left"
+          font-size="18"
+          line-height="22px">
+            5 Course Tasting Menu with unique wine pairing
+          </mj-text>
+        </mj-hero-content-->
+      </mj-hero>
+
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="middle">
+          <mj-text mj-class="column-gutter text-heading green-color" text-transform="uppercase" padding="20px 0">5 Course tasting menu with unique wine pairing</mj-text>
+        </mj-column>
+      </mj-section>
+
+      
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="middle">
+          <mj-text mj-class="column-gutter text-heading" padding-bottom="20px">Member Exclusive: Dining Experience with Chef Jay Warden</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- location and date details start -->
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-raw>
+            <div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0"  style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+              <tbody>
+              <tr>
+                <td class="width-45 left-gutter" valign="top" align="left">
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                    <tr>
+                      <td valign="top" class="label text-cell-padding" align="left">Location:</td>
+                    </tr>
+                    <tr>
+                      <td valign="top" class="text-cell-padding" align="left">Shang Palace, Island,<br/> Shangri-La, Hong Kong</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td class="width-55 left-gutter right-gutter small-padding-clear" valign="top" align="left">
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <tbody>
+                    <tr>
+                      <td valign="top" align="left" width="50%">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tbody>
+                          <tr>
+                            <td valign="top" class="label text-cell-padding" align="left">Date:</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class="text-cell-padding" align="left"><span class="text-reset">Jan 06, 2016</span></td>
+                          </tr>
+                          </tbody>
+                        </table>  
+                      </td>
+                      <td class="" valign="top" align="left">
+                        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0" style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tbody>
+                          <tr>
+                            <td valign="top" class="label text-cell-padding" align="left">Time:</td>
+                          </tr>
+                          <tr>
+                            <td valign="top" class="text-cell-padding" align="left"><span class="text-reset">06:00pm</span></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            </div>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+      <!-- location and date details ends -->
+
+      
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-divider border-width="1px" border-style="solid" border-color="#e4e4e4" padding-left="30" padding-right="30" padding-top="20" padding-bottom="20" />
+        </mj-column>
+      </mj-section>
+      <!-- redemption details start -->
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top" width="45%">
+          <mj-table vertical-align="top" padding-top="0">
+            <tr>
+              <td class="label-2 clear-padding-top" valign="top" align="left">Redeemed On:</td>
+              <td class="cell-2  clear-padding-top text-reset" valign="top" align="left"><span class="text-reset">Apr 24, 2016</span></td>
+            </tr>
+            <tr>
+              <td class="label-2" valign="top" align="left">GC Points Used:</td>
+              <td class="cell-2" valign="top" align="left">8000 GC Points</td>
+            </tr>
+            <tr>
+              <td class="label-2" valign="top" align="left">Packages:</td>
+              <td class="cell-2" valign="top" align="left">4</td>
+            </tr>
+            <tr>
+              <td class="label-2 clear-padding-bottom" valign="top" align="left">Admits:</td>
+              <td class="cell-2 clear-padding-bottom" valign="top" align="left">Admits 4 People</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column vertical-align="top" width="55%">
+          <mj-table vertical-align="top" padding-top="0">
+            <tr>
+              <td class="label-2 clear-padding-top" valign="top" align="left">Name:</td>
+              <td class="cell-2 clear-padding-top" valign="top" align="left">Mr Alan Lau</td>
+            </tr>
+            <tr>
+              <td class="label-2" valign="top" align="left">GC Membership:</td>
+              <td class="cell-2" valign="top" align="left">6902941234</td>
+            </tr>
+            <tr>
+              <td class="label-2" valign="top" align="left">Contact Email:</td>
+              <td class="cell-2 text-reset" valign="top" align="left"><a class="text-reset" href="mailto:alan.lau@gmail.com" style="color:#000 !important;">alan.lau@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td class="label-2 clear-padding-bottom" valign="top" align="left">Contact Number:</td>
+              <td class="cell-2 clear-padding-bottom text-reset" valign="top" align="left"><span class="text-reset">89351235</span></td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <!-- redemption details ends -->
+
+
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-divider border-width="1px" border-style="solid" border-color="#e4e4e4" padding-left="30" padding-right="30" padding-top="20" padding-bottom="20" />
+        </mj-column>
+      </mj-section>
+      <!-- redemption confirmation details start -->
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top" width="45%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="label padding-left-5" valign="top" align="left">Redemption #5FB855663556006</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column vertical-align="top" width="55%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="padding-left-5" valign="top" align="left">Mr Alan Lau - No special request or dietary requirements</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top" width="45%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="label padding-left-5 error" valign="top" align="left">No Redemption Code</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column vertical-align="top" width="55%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="padding-left-5 error" valign="top" align="left">Mrs Suzy Lee - No fish</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top" width="45%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="label padding-left-5 error" valign="top" align="left">No Redemption Code</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column vertical-align="top" width="55%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="padding-left-5 error" valign="top" align="left">Mr Bruce Lee - No vegetables</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top" width="45%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="label padding-left-5 error" valign="top" align="left">No Redemption Code</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+        <mj-column vertical-align="top" width="55%">
+          <mj-table vertical-align="top" padding-top="5" padding-bottom="5">
+            <tr>
+              <td class="padding-left-5 error" valign="top" align="left">Dr Stephen Strange - No special request or dietary requirements</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-text mj-class="column-gutter error" padding-top="20px">Please contact (852) 2331 6608 or our 24-hour international toll-free numbers to confirm your redemption code. Due to high demand, it’s possible this experience will be unavaliable before you confirm your redemption.</mj-text>
+      </mj-column>
+      </mj-section>
+      <!-- redemption confirmation details ends -->
+
+
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-divider border-width="1px" border-style="solid" border-color="#e4e4e4" padding-left="30" padding-right="30" padding-top="20" padding-bottom="20" />
+        </mj-column>
+      </mj-section>
+      <!-- instruction starts -->
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-text mj-class="column-gutter font-bold">Instruction:</mj-text>
+          <mj-text mj-class="column-gutter" padding-bottom="20px">Head to the lobby Shang Palace no later than <span class="text-reset">8:45pm</span> and you will be directed by Jamie Wong to the dining area. Dress code is format with pants and shirt.</mj-text>
+
+          <mj-text mj-class="column-gutter font-bold">Terms &amp; Conditions:</mj-text>
+          <mj-text mj-class="column-gutter" padding-bottom="20px">Please read terms &amp; conditions avaliable <a href="" target="_blank" class="green-color">online.</a></mj-text>
+
+          <mj-text mj-class="column-gutter" padding-bottom="20px">If you have any questions please don’t hesitate to call <span class="text-reset">(852) 2331 6608</span> or our <a href="http://www.shangri-la.com/en/corporate/golden-circle/worldwide-tollfree-numbers/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" target="_blank" class="green-color">24-hour international toll-free numbers.</a></mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- instruction ends -->
+
+      
+
+      <mj-section mj-class="clear-v-padding bg-white" full-width="full-width">
+        <mj-column vertical-align="top">
+          <mj-raw>
+            <div class="mj-column-per-100 outlook-group-fix" style="vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;">
+              <table role="presentation" cellpadding="0" cellspacing="0" style="vertical-align:top;" width="100%" border="0" style="font-style: normal; font-size: 13px; font-family: Helvetica, Arial, sans-serif; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <tbody>
+                  <tr>
+                     <td align="left" height="86" valign="top" class="footer-logo" style="background-color: #ebebeb;">
+                        <table align="left" height="86" valign="top" cellspacing="0" cellpadding="0" border="0" class="emailwrapto100pc" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                           <tbody>
+                              <tr>
+                                 <td align="left" height="86" valign="middle" style="padding: 0 18px 0 29px;" class="footergc-logo">
+                                  <a href="http://www.shangri-la.com/corporate/golden-circle/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="display: block; text-decoration: none;">
+                                    <img class="gc-brand" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/gc-brand.png" width="31" height="37" style="display:inline-block; border-style:none" border="0" alt="Golden Circle"/>
+                                  </a>
+                                </td>
+                                <td align="left" height="86" valign="middle" style="padding: 0;" class="emailnomob">
+                                  <img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/break-desk.png" style="display:inline-block; border-style:none" border="0" alt=""/>
+                                </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <!--[if !mso 9]><!-->
+                        <div class="gmail" style="display: none; width: 0; overflow: hidden; float: left; max-height: 0; mso-hide:all;">
+                           <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                 <td style="font-size:1px; line-height:1px; height:4px;" height="4" >&nbsp;</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <!--<![endif]-->
+                        <table align="left" height="86" valign="top" cellspacing="0"  cellpadding="0" border="0" class="emailwrapto100pc" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                           <tbody>
+                              <tr>
+                                  <td align="left" height="86" valign="middle" style="padding:0 7px 0 19px;" class="footertwo-logo">
+                                    <a href="http://www.shangri-la.com?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="display: block; text-decoration: none;">
+                                      <img class="shangri-la-brand" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/shangri-la-brand.png" width="60" height="30" style="display:inline-block; border-style:none" border="0" alt="SHANGRI-LA"/>
+                                    </a>
+                                  </td>
+                                  <td align="left" height="86" valign="middle" style="font-size: 1px; line-height: 1px; width: 20px;" class="width3">&nbsp;</td>
+                                  <td align="left" height="86" valign="middle" style="padding:0 12px 0 0;" class="footertwo-logo">
+                                    <a href="http://www.shangri-la.com/kerry/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="display: block; text-decoration: none;">
+                                      <img class="kh-brand" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/kh-brand.png" width="72" height="12" style="display:inline-block; border-style:none" border="0" alt="KERRY HOTELS"/>
+                                    </a>
+                                  </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <!--[if !mso 9]><!-->
+                        <div class="gmail" style="display: none; width: 0; overflow: hidden; float: left; max-height: 0; mso-hide:all;">
+                           <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                              <tr>
+                                 <td style="font-size:1px; line-height:1px; height:4px;" height="4" >&nbsp;</td>
+                              </tr>
+                           </table>
+                        </div>
+                        <!--<![endif]-->
+                        <table align="left" height="86" valign="top" cellspacing="0"  cellpadding="0" border="0" class="emailwrapto100pc" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                           <tbody>
+                              <tr>
+                                  <td align="left" height="86" valign="middle" style="padding:0 25px 0 11px;" class="footertwo-logo">
+                                    <a href="http://www.hoteljen.com?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="display: block; text-decoration: none;">
+                                      <img class="hotel-j-brand" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/hotel-j-brand.png" width="46" height="18" style="display:inline-block; border-style:none" border="0" alt="HOTEL JEN" /></a>
+                                  </td>
+                                  <td align="left" height="86" valign="middle" style="font-size: 1px; line-height: 1px; width: 1px;" class="width3">&nbsp;</td>
+                                  <td align="left" height="86" valign="middle" style="padding: 0 30px 0 0px" class="footertwo-logo">
+                                    <a href="http://www.shangri-la.com/traders/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="display: block; text-decoration: none;">
+                                      <img class="trad-brand" src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/trad-brand.png" width="32" height="28" style="display:inline-block; border-style:none" border="0" alt="Traders Hotels"/>
+                                    </a>
+                                  </td>
+                                  <td align="left" height="86" valign="middle" style="padding: 0 0px 0 0px;" class="emailnomob">
+                                    <img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/break-desk.png" style="display:inline-block; border-style:none" border="0" alt=""/>
+                                  </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        
+                        <table class="emailnomob" align="left" height="86" valign="top" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" >
+                           <tbody>
+                              <tr>
+                                 <td align="center" valign="top" class="emailnomob">
+                                    <table align="left" cellspacing="0" cellpadding="0" border="0" width="129" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                       <tbody>
+                                          <tr>
+                                             <td align="left" valign="top">
+                                                <table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="left" valign="top" style="padding: 16px 0px 0px 20px;">
+                                                            <img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/barcode-img.png" style="display:block; border-style:none" border="0" alt=""/>
+                                                         </td>
+                                                         <td align="left" valign="top" style="padding: 16px 0px 0px 20px;">
+                                                            <table align="left" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                                               <tbody>
+                                                                <tr>
+                                                                   <td>
+                                                                    <a href="https://itunes.apple.com/app/id530103397?mt=8&om_rid=AAaaND&om_mid=_BXh4JKB9PvNr4e&om_slim=149636355&WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN">
+                                                                      <img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/app-store-desk.png" style="display:block; border-style:none" width="69" height="20" border="0" alt=" Downlaod on the App Store"/>
+                                                                    </a>
+                                                                   </td>
+                                                                </tr>
+                                                                <tr>
+                                                                   <td style="padding-top: 5px;">
+                                                                    <a href="https://play.google.com/store/apps/details?id=com.shangri_la&hl=en&om_rid=AAaaND&om_mid=_BXh4JKB9PvNr4e&om_slim=149636355&WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN">
+                                                                      <img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/gplay-desk.png" width="69" height="20" style="display:block; border-style:none" border="0" alt="Google Play Store"/>
+                                                                    </a>
+                                                                   </td>
+                                                                </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" valign="top" style="padding: 6px 0 0 19px; font-family: Arial,Helvetica,sans-serif; font-size: 9px; line-height: 10px; color: #828282;">Download the Shangri-La app</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" class="emailnomob" style="min-width: 600px;">
+                        <table align="left" cellspacing="0" width="600" cellpadding="0" border="0" bgcolor="#309b95" style=" background: #309b95;">
+                           <tbody>
+                              <tr>
+                                 <td align="left" valign="top" height="9" style="font-size:1px; line-height:1px; height:9px;">&nbsp;</td>                           
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                       <tbody>
+                                          <tr>
+                                             <td align="left" valign="top" style="font-size:1px; line-height:1px; width:30px;">&nbsp;</td>
+                                             <td style="font-family: Arial,Helvetica,sans-serif; font-size: 9px; line-height: 13px; color:#ffffff;letter-spacing: 0.2px;">©2016 Shangri-La International Hotel Management Limited. All Rights Reserved.</td>
+                                             <td align="center">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:10px;">&nbsp;</td>
+                                                         <td><a href="https://www.facebook.com/shangrila?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/fb-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Facebook"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td><a href="https://twitter.com/shangrilahotels?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/twt-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Twitter"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td><a href="https://plus.google.com/+shangrila/posts?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/gplus-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Google Plus"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td><a href="https://www.youtube.com/user/shangrilaintl?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/ytub-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Youtube"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td><a href="http://i.youku.com/i/UMjYwNzYxOTYw?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/yoko-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Youkou"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td><a href="http://www.weibo.com/login.php?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/w-desk-icon.png" style="display:inline-block; border-style:none;" width="20" height="19" border="0" alt="Weibo"></a></td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                             <td align="left" valign="top" style="font-size:1px; line-height:1px; width:30px;">&nbsp;</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left" valign="top" height="9" style="font-size:1px; line-height:1px; height:9px;">&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                    </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <!--[if !mso 9]><!-->
+                        <div class="gmail" style="display: none; width: 0; overflow: hidden; float: left; max-height: 0; mso-hide:all;">
+                           <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#f6f6f6" style="background-color: #f6f6f6;">
+                              <tbody><tr>
+                                 <td align="left" valign="top" style="font-size:1px; line-height:1px; height:20px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td align="center" valign="top">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                       <tbody>
+                                          <tr>
+                                             <td align="center" valign="top" style="padding-bottom: 18px; font-family: Arial,Helvetica,sans-serif; font-size: 10px; line-height: 10px; color: #aea592;">Download the Shangri-La App</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="center" valign="top">
+                                                <table width="231" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td><a href="https://itunes.apple.com/app/id530103397?mt=8&amp;om_rid=AAaaND&amp;om_mid=_BXh4JKB9PvNr4e&amp;om_slim=149636355&amp;WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/app-store-mob.png" style="display:block; border-style:none;" alt="Download on the App Store" width="110" height="32"></a></td>
+                                                         <td><a href="https://play.google.com/store/apps/details?id=com.shangri_la&amp;hl=en&amp;om_rid=AAaaND&amp;om_mid=_BXh4JKB9PvNr4e&amp;om_slim=149636355&amp;WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/gstore-mob.png" width="105" height="32" style="display:block; border-style:none;" alt=" ANDROID APP ON Google play"></a></td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" valign="top" style="font-size:1px; line-height:1px; height:20px;">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="center" valign="top">
+                                                <table width="210" border="0" cellspacing="0" cellpadding="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td align="left" valign="top"><a href="https://www.facebook.com/shangrila?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/fb-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="Facebook"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td align="left" valign="top"><a href="https://twitter.com/shangrilahotels?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/twt-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="Twitter"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td align="left" valign="top"><a href="https://plus.google.com/+shangrila/posts?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/gplus-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="Googlepuls"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td align="left" valign="top"><a href="https://www.youtube.com/user/shangrilaintl?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/ytub-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="Youtube"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td align="left" valign="top"><a href="http://i.youku.com/i/UMjYwNzYxOTYw?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/youku-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="Youku"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                         <td align="left" valign="top"><a href="http://www.weibo.com/login.php?WT.mc_id=SLIM_20160907_GCMEM_EDM_GCDB_GEN_TEXTLINK_THETABLEGC_FnBLaunch_EN"><img src="http://stg01.vizualize.com/Shangri-la/lbi-int/emailers/email-assets/wiebo-mob.png" style="display:inline-block; border-style:none;" width="29" height="28" alt="wiebo"></a></td>
+                                                         <td align="left" valign="top" style="font-size:1px; line-height:1px; width:6px;">&nbsp;</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" valign="top" style="font-size:1px; line-height:1px; height:20px;">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="center" valign="top" style="font-family: Arial,Helvetica,sans-serif; font-size: 10px; line-height: 10px; color: #828282;">©2016 Shangri-La International Hotel Management Limited. <br>All Rights Reserved.</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" valign="top" style="font-size:1px; line-height:1px; height:20px;">&nbsp;</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td align="left" valign="top" style="font-size:1px; line-height:1px; height:2px; background-color: #309b95;"></td>
+                              </tr>
+                           </tbody></table>
+                        </div>
+                        <!--<![endif]-->
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" valign="top" style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 12px; color: #309b95; padding-top: 23px; padding-bottom: 23px;">
+                        <a href="https://www.shangri-la.com/corporate/golden-circle/gcsignin/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="text-decoration:none;color: #309b95;">Update&nbsp;Your&nbsp;Profile</a><span style="color: #929292;">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://www.shangri-la.com/en/corporate/golden-circle/privacy-policy/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="text-decoration:none;color: #309b95;">Privacy&nbsp;Policy</a><span style="color: #929292;">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="https://www.shangri-la.com/corporate/golden-circle/gcsignin/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" style="text-decoration:none;color: #309b95;">Unsubscribe</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" valign="top" style="font-family: Arial,Helvetica,sans-serif; font-size: 12px; line-height: 15px; color: #929292;">
+                        Please do not reply to this e-mail.<span class="dispblock"></span>Contact us at <a href="mailto:golden.circle@shangri-la.com" style="text-decoration:none; color:#309b95">golden.circle@shangri-la.com,</a><br>call <a href="tel:(85​2) 30​69 96​88" target="_blank" class="text-reset" style="color: #929292;">(85​2) 3069 96​88</a> or our&nbsp;<span class="dispblock"></span>&nbsp;<a href="http://www.shangri-la.com/en/corporate/golden-circle/worldwide-tollfree-numbers/?WT.mc_id=SLIM_20161118_GCMEM_EDM_GCDB_GEN_TEXTLINK_TheTableGC_EN" target="_blank" style="text-decoration:none; color: #309b95; font-size: 12px; line-height: 15px;">2​4​-hour international toll-free numbers.</a>
+                      </td>
+                  </tr>
+                  <tr>
+                     <td align="center" valign="top" height="50px">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <!--Social only for Desktop-->
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+
+    </mj-container>
+  </mj-body>
+</mjml>

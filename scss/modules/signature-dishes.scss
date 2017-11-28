@@ -1,0 +1,44 @@
+/*
+* Moudule : Venue Detail - Signature Dishes
+*/
+
+.signature-dishes{
+  .panel-container{
+    margin: 0 100px;
+    overflow: hidden;
+    @include breakpoint('sm'){
+      margin: 0;
+    }
+  }
+  .item-container{
+    height: 330px;
+    @include breakpoint('md') {
+      height: 255px;
+    }
+    @include breakpoint('sm') {
+      height: 306px;
+    }
+    @include breakpoint('xs') {
+      height: auto;
+    }
+  }
+  .owl-nav{
+    div{
+      top: 130px;
+      background: rgba(0,0,0,0.2);
+      &:before{
+        color: $primary-color-1;
+      }
+    }
+  }
+  .caption-block-wrapper{
+    width: 470px;
+    @include breakpoint('sm') {
+      width: 85%;
+    }
+    @include breakpoint('xs') {
+      width: 100%;
+      margin-top: -25px;
+    }
+  }
+}

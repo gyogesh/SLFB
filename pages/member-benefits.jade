@@ -1,0 +1,19 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Member Benefits"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "member-benefits"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-image-header-member-benefits
+  include ../modules/member-benefits-intro
+  include ../modules/member-benefits-benefit
+  include ../modules/member-benefits-expanded-benefit
+  include ../modules/member-benefits-about-golden-circle
+  include ../modules/member-benefits-gc-member-tier
+  include ../modules/member-benefits-benefit-type
+  include ../modules/member-benefits-point
+  include ../modules/member-benefits-generic-banner
+  include ../modules/footer

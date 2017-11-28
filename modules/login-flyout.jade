@@ -1,0 +1,36 @@
+// Module - Login flyout starts
+.login-flyout
+  .back-btn-container                                    
+    a.back-btn.icon-angle-left(href="javascript:void(0);") BACK TO MENU
+  .login-flyout-container
+    h2.hidden-md.hidden-lg Login
+    .form-container
+      form(name="flyoutform", id="flyoutform", action="/login", method="post")
+        .row
+          .col-md-12.col-lg-7
+            .login-field-wrapper
+              .form-field
+                h3 Membership Number
+                .field-container
+                  .ui-textinput
+                    input(type="text", name="txtflyooutMembershipNumber", id="txtflyooutMembershipNumber", autocapitalize="none")
+                span.error-message Membership Number is a required field
+              .form-field
+                h3 Password
+                .field-container
+                  .ui-textinput
+                    input(type="password", name="txtflyoutPassword", id="txtflyoutPassword", autocapitalize="none")
+                span.error-message Password is a required field
+
+                a(href="#" class="forget-passwprd") Forgot password
+              .submit-container
+                input(class="button-primary" value="Login" type="submit")
+          .col-md-12.col-lg-5
+            .login-content-wrapper
+              .form-field
+                h3 Become A Member
+                p Golden Circle is our way of recognising and rewarding returning guests. Not a member yet? Sign up today.
+                a.button-secondary(href="#") Join Now
+              .form-field
+                p Exisitng member but don't have an online account? Activate your account here.
+                a.button-secondary(href="#") Activate my account

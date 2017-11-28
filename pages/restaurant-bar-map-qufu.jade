@@ -1,0 +1,14 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - R&B Map"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "restaurants-bars"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-image-header-rb-landing
+  include ../modules/restaurant-bar-map-qufu
+  include ../modules/mood-for
+  include ../modules/destination
+  include ../modules/footer

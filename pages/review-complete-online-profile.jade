@@ -1,0 +1,80 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Review and Complete online profile"}
+  - var Meta = {description:"Review and Complete online profile", keywords:"Golden Circle, Review and Complete online profile"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/review-profile
+  script(type="text/javascript").
+    var options = {
+      rules: {
+        selDD:            {validate_dob: ['.select-dob']},
+        selMM:            {validate_dob: ['.select-dob']},
+        selYYYY:          {validate_dob: ['.select-dob']},
+        txtPassword:      {required: true, strongPassword: true},
+        txtRePassword:    {equalTo: "#txtPassword"},
+        txtAdressLine1:   {require_from_group: [1,'.txtaddress']},
+        txtAdressLine2:   {require_from_group: [1,'.txtaddress']},
+        txtAdressLine3:   {require_from_group: [1,'.txtaddress']},
+        selCountry:       {required: true},
+        txtEmail:         {required: true, email: true},
+        txtReEmail:       {equalTo: "#txtEmail"},
+        selAreaCode:      {
+                            required: true, 
+                            validateMobile: ['#selAreaCode','#txtMobile']
+                          },
+        txtMobile:        {
+                            required: true,
+                            digits: true,
+                            minlength: 5,
+                            validateMobile: ['#selAreaCode','#txtMobile']
+                          },
+        selpreferredLanguage: {required: true},
+        txtCaptchaKeyword:{required: true},
+        chkTerms:         {required: true},
+        chlPrivacy:       {required: true}
+      },
+      messages: {
+        selDD:            {validate_dob: "Date of Birth is a required field"},
+        selMM:            {validate_dob: "Date of Birth is a required field"},
+        selYYYY:          {validate_dob: "Date of Birth is a required field"},
+        txtPassword:      {required: "Password is a required field", strongPassword:"Password must follow above format"},
+        txtRePassword:    {equalTo: "Passwords do not match"},
+        txtAdressLine1:   {require_from_group: "Mailing Address is a required field" },
+        txtAdressLine2:   {require_from_group: "Mailing Address is a required field" },
+        txtAdressLine3:   {require_from_group: "Mailing Address is a required field" },
+        selCountry:       {required: "Country/Region is a required field"},
+        txtEmail:         {required: "Email is a required field", email: "Email is invalid"},
+        txtReEmail:       {equalTo: "The Email Address fields do no match"},
+        selAreaCode:      {required: "Mobile Number is a required field", validateMobile: "Mobile Number is a required field"},
+        txtMobile:        {required: "Mobile Number is a required field", digits: "Mobile Number requires digits", minlength: "Mobile Number is a required field", validateMobile: "Mobile Number is a required field"},
+        selpreferredLanguage: {required: "Preferred language is a required field"},
+        txtCaptchaKeyword:{required: "Captcha Keyword is a required field"},
+        chkTerms:         {required: "Please read and agree"},
+        chlPrivacy:       {required: "Please read and agree"}
+      },
+      messagesCN: {
+        selDD:            {validate_dob: "Date of Birth is a required field"},
+        selMM:            {validate_dob: "Date of Birth is a required field"},
+        selYYYY:          {validate_dob: "Date of Birth is a required field"},
+        txtPassword:      {required: "Password is a required field", strongPassword:"Password must follow above format"},
+        txtRePassword:    {equalTo: "Passwords do not match"},
+        txtAdressLine1:   {require_from_group: "Mailing Address required should be English" },
+        txtAdressLine2:   {require_from_group: "Mailing Address required should be English" },
+        txtAdressLine3:   {require_from_group: "Mailing Address required should be English" },
+        selCountry:       {required: "Country/Region is a required field"},
+        txtEmail:         {required: "Email required should be English", email: "Email is invalid"},
+        txtReEmail:       {equalTo: "The Email Address fields do no match"},
+        selAreaCode:      {required: "Mobile Number is a required field", validateMobile: "Mobile Number is a required field"},
+        txtMobile:        {required: "Mobile Number is a required field", digits: "Mobile Number requires digits", minlength: "Mobile Number is a required field", validateMobile: "Mobile Number is a required field"},
+        selpreferredLanguage: {required: "Preferred language is a required field"},
+        txtCaptchaKeyword:{required: "Captcha Keyword is a required field"},
+        chkTerms:         {required: "Please read and agree"},
+        chlPrivacy:       {required: "Please read and agree"}
+      }
+    };
+  script(src="content/js/vendors/jquery.validate.js")
+  script(src="content/js/pages/review-profile.js")
+  include ../modules/footer

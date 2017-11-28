@@ -1,0 +1,163 @@
+.destination-overlay {
+  position: fixed;
+  bottom: 0;
+  z-index: 15;
+  width: 100%;
+  background-color: $primary-color-1;
+  display: none;
+
+  @include breakpoint('sm') {
+    padding-bottom: 10px;
+  }
+
+  @include breakpoint('xs') {
+    top: 0;
+    height: 100%;
+  }
+
+  .close {
+    text-align: right;
+
+    > span {
+      display: inline-block;
+      padding: 10px 5px 5px;
+      background-color: #39aaa6;
+    }
+
+    .icon-android-close {
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding: 10px;
+      color: $primary-color-1;
+    }
+
+    @include breakpoint('xs') {
+      margin-top: -1px;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      background-color: $primary-color-1;
+    }
+  }
+
+  .destination-wrapper {
+    max-height: 480px;
+    overflow-y: auto;
+    padding: 0 75px 20px;
+    @include breakpoint('md') {
+      padding: 0 20px 20px;
+    }
+
+    @include breakpoint('xs') {
+      max-height: none;
+      height: 100%;
+      padding: 42px 0 20px;
+      z-index: 1;
+    }
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        a {
+          font-family: $FuturaStd-Medium;
+          font-size: 13px;
+          font-size: 1.3rem;
+          line-height: 1.7;
+          color: #257e8a;
+          text-transform: capitalize;
+          @include breakpoint('xs'){
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+
+    ul[data-ref] {
+      @include breakpoint('xs') {
+          display: none;
+          padding-bottom: 10px;
+        }
+    }
+
+  }
+  .reset-destination {
+    cursor: pointer;
+    font-family: $FuturaStd-Medium;
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 13px;
+    display: block;
+
+    @include breakpoint('xs') {
+      border-top: 1px solid #cccccc;
+      cursor: pointer;
+      position: relative;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin: 0;
+    }
+  }
+  .accordion-header {
+    cursor: pointer;
+    font-family: $FuturaStd-Medium;
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 13px;
+
+    @include breakpoint('xs') {
+      border-top: 1px solid #cccccc;
+      cursor: pointer;
+      position: relative;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin: 0;
+
+
+
+      &:before {
+          content: "\75";
+          font-family: "shangrila-icons" !important;
+          font-style: normal !important;
+          font-weight: normal !important;
+          font-variant: normal !important;
+          text-transform: none !important;
+          speak: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-size: 20px;
+          font-size: 2rem;
+          position: absolute;
+          right: 10px;
+          top: 16px;
+        }
+
+        &.active:before {
+          content: "\73";
+        }
+    }
+
+    &:first-child {
+      margin-top: 0;
+
+      @include breakpoint('xs') {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      color: $black;
+    }
+  }
+
+  *[class*="col-sm-4"] .accordion-header {
+    border: 0;
+  }
+}

@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Book Hotel Search"}
+  - var Meta = {description:"Module - Book Hotel Search", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/book-hotel-search

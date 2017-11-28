@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Contextual Menu"}
+  - var Meta = {description:"Module - Contextual Menu", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/contextual-menu

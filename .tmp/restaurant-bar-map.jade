@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Restaurant Bar Map"}
+  - var Meta = {description:"Module - Restaurant Bar Map", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/restaurant-bar-map

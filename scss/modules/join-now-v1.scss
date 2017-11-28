@@ -1,0 +1,183 @@
+/*
+* Moudule : Join Goldern Circle
+*/
+
+.join-golden-circle{
+  background-color: $section-background-1;
+  padding: 0 0 20px;
+  .section-image-header{
+    h1{
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    }
+  }
+  .form-container{
+    h1{
+      color: $primary-color-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 24px;
+      font-size: 2.4rem;
+      line-height: 1.5;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px 0 5px;
+      margin: 0;
+    }
+    & > p{
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    label{
+      color: $primary-color-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      display: inline-block;
+      text-transform: uppercase;
+      span.two-line{
+        display: block;
+        margin: -5px 0 0;
+      }
+    }
+    p.description{
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 1.3;
+      margin: 20px 0;
+    }
+    .golden-circle-btn{
+      text-align: center;
+      margin-top: 20px;
+      .button-secondary{
+        @include breakpoint('xs'){
+          width: 100%;
+          margin: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .form-field{
+
+      .label-title .dropdown-menu{
+        .ie9 & {
+          width: auto !important;
+          min-width: 264px !important;
+          @include breakpoint('md'){
+            min-width: 217px !important;
+          }
+          @include breakpoint('sm'){
+            min-width: 100% !important;
+          }        
+        }
+      }
+
+      .label-areacode .dropdown-menu{
+        .ie9 & {
+          width: auto !important;
+          min-width: 140px !important;
+          @include breakpoint('md'){
+            min-width: 115px !important;
+          }
+          @include breakpoint('sm'){
+            min-width: 100% !important;
+          }        
+        }
+      }
+
+      &.radio-group{
+        label{
+          width: 90px;
+          margin-top: 10px;
+
+          /* Base for label styling */
+          [type="radio"]:not(:checked),
+          [type="radio"]:checked {
+            position: absolute;
+            left: -9999px;
+          }
+          [type="radio"] + span.icon-ios-circle-outline:before{
+            color: $secondary-color-6;
+            cursor: pointer;
+            margin-right: 15px;
+            position: relative;
+            top: 1px;
+          }
+
+          /* radio aspect */
+          [type="radio"]:checked + span.icon-ios-circle-outline:before {
+            color: $secondary-color-6;
+            content: "\7a";
+          }
+
+          span{
+            .ie8 &{
+              margin-left: 10px;
+            }
+            .ie8 &.icon-ios-circle-outline:before{
+              display: none;
+            }
+          }
+
+        }
+      }
+
+      &.form-field.checkbox{
+        display: block;
+        label{
+          display: block;
+          margin: 0 0 5px;
+          input{
+            margin-right: 15px;
+          }
+          span {
+            text-transform: none;
+            .ie8 &.icon-uncheck:before{
+              display: none;
+            }
+          }
+          a{
+            color: $secondary-color-2;
+          }
+
+        }
+
+        /* Base for label styling */
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked {
+          position: absolute;
+          left: -9999px;
+        }
+        [type="checkbox"] + span.icon-uncheck:before{
+          color: $secondary-color-6;
+          cursor: pointer;
+          margin-right: 15px;
+          position: relative;
+          top: 1px;
+        }
+
+        /* checkbox aspect */
+        [type="checkbox"]:checked + span.icon-uncheck:before {
+          background-color: $secondary-color-6;
+          color: $secondary-color-6;
+        }
+        &.error{
+          [type="checkbox"] + span.icon-uncheck:before{
+            color:#a7042a;
+          }
+        }
+        .error-message{
+          margin: 0;
+        }
+      }
+    }
+  }
+}

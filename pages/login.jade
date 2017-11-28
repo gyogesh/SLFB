@@ -1,0 +1,27 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Login to Golden Circle"}
+  - var Meta = {description:"Login to Golden Circle", keywords:"Golden Circle, Login"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/login
+  script(type="text/javascript").
+    var options = {
+      rules: {
+      	txtMembershipNumber: {required: true},
+        txtPassword:      	 {required: true}
+      },
+      messages: {
+      	txtMembershipNumber: {required: "Membership Number is a required field"},
+        txtPassword:      	 {required: "Password is a required field"}
+      },
+      messagesCN: {
+      	txtMembershipNumber: {required: "Membership Number is a required field"},
+        txtPassword:      	 {required: "Password is a required field"}
+      }
+    };
+  script(src="content/js/vendors/jquery.validate.js")
+  script(src="content/js/pages/login.js")
+  include ../modules/footer

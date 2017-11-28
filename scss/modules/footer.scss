@@ -1,0 +1,344 @@
+/*
+* Moudule : Footer
+*/
+
+footer{
+  .section-row{
+    padding-bottom:0;
+  }
+  .logo-container{
+    @include breakpoint('sm'){
+      background-color: $section-background-1;
+    }
+    .row{
+      margin: 0 auto;
+      max-width: 1170px;
+      @include breakpoint('md'){
+        max-width: 970px;
+      }
+      @include breakpoint('sm'){
+        max-width: 768px;
+      }
+    }
+  }
+
+  .sitelinks{
+    border-right: 1px solid $secondary-color-4;
+      @include breakpoint('sm'){
+        border-right: none;
+        padding-bottom: 10px;
+      }
+
+    & > li {
+
+      .accordion-header {
+        @include breakpoint('sm'){
+          &:before {
+            content: "\75";
+            font-family: "shangrila-icons" !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 20px;
+            font-size: 2rem;
+            position: absolute;
+            right: 10px;
+            top: 12px;
+          }
+        }
+
+        &.active {
+          &:before {
+            content: "\73";
+          }
+        }
+      }
+
+      @include breakpoint('sm'){
+        border-bottom: 1px solid $secondary-color-4;
+      }
+    }
+
+
+    li{
+
+      h4{
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+        font-family: $FuturaStd-Medium;
+          @include breakpoint('md'){
+            font-size: 17px;
+            font-size: 1.7rem;
+          }
+          @include breakpoint('sm'){
+            padding: 15px 0;
+            margin: 0;
+            cursor: pointer;
+            font-size: 13px;
+            font-size: 1.3rem;
+          }
+      }
+
+        ul{
+           @include breakpoint('sm'){
+            display: none;
+            padding: 0 0 0 10px;
+          }
+          li{
+            margin: 0 0 10px;
+            @include breakpoint('sm'){
+              margin: 0 0 25px;
+              line-height: 1;
+            }
+            a{
+              font-size: 13px;
+              font-size: 1.3rem;
+              line-height: 1.6;
+              color: $primary-color-2;
+              text-transform: uppercase;
+              font-family: $MyriadPro-Regular;
+                @include breakpoint('md'){
+                  font-size: 12px;
+                  font-size: 1.2rem;
+                }
+                @include breakpoint('sm'){
+                  font-size: 13px;
+                  font-size: 1.3rem;
+                  line-height: 1;
+                  font-family: $MyriadPro-Regular;
+                  text-transform: capitalize;
+                }
+            }
+
+          }
+
+        }
+
+
+    }
+  }
+
+  .connect-withus, .table-from-gc{
+    padding: 0 0 0 20px;
+    margin: 0;
+    @include breakpoint('sm'){
+      padding: 0 0 20px;
+      border-bottom: 1px solid $secondary-color-4;
+      margin: 0 0 30px;
+    }
+
+    h4{
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-family: $FuturaStd-Medium;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+        @include breakpoint('md'){
+          font-size: 14px;
+          font-size: 1.4rem;
+        }
+        @include breakpoint('sm'){
+          font-size: 13px;
+          font-size: 1.3rem;
+          margin: 0;
+        }
+    }
+
+    p{
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.6;
+        a, &.hashtag{
+          font-family: $MyriadPro-Bold;
+          color: $primary-color-2;
+      }
+      @include breakpoint('sm'){
+        font-size: 11px;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+      }
+
+    }
+
+    p.download-app {
+      margin: -10px 0 0;
+      @include breakpoint('sm'){
+        margin: 0;
+      }
+      a{
+        font-family: $MyriadPro-Regular;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .table-from-gc{
+    margin: 0 0 15px;
+    padding: 0 0 5px 20px;
+    position: relative;
+    border: none;
+    @include breakpoint('sm'){
+      padding: 0 0 1px 0;
+    }
+    &:before{
+      background-color: $black;
+      bottom: 0;
+      content: "";
+      height: 1px;
+      left: 20px;
+      position: absolute;
+      width: 10px;
+      @include breakpoint('sm'){
+        left: 0;
+      }
+    }
+    h4{
+      margin: 0 0 5px;
+    }
+    span{
+      font-family: $MyriadPro-Regular;
+      display: block;
+    }
+  }
+
+
+  .logo-list{
+    padding: 5px 0 15px;
+      @include breakpoint('sm'){
+        padding: 15px 0;
+        text-align: center;
+      }
+      @include breakpoint('xs'){
+        margin: 0 -10px;
+      }
+
+      li {
+        @include breakpoint('sm'){
+          background-color: #f1f2f2;
+          border:solid thin #d0cdc5;
+          @include borderRadius(10px);
+          display: inline-block;
+          height: 75px;
+          line-height: 75px;
+          margin: 0 0.5%;
+          text-align: center;
+          width: 18.5%;
+        }
+        @include breakpoint('xs'){
+          margin: 6px 1%;
+          width: 46%;
+        }
+
+        &:first-child{
+          padding: 0 35px 0 0;
+          margin: 0;
+          border-right: 1px solid $secondary-color-4;
+          img{
+              height:45px;
+          }
+          @include breakpoint('sm'){
+            padding: 0;
+            margin: 0 0.5% 0 0;
+            img{
+              height: 80%;
+            }
+          }
+          @include breakpoint('xs'){
+            margin: 0 0 6px;
+            width: 95%;
+          }
+        }
+        &:nth-child(2){
+          margin-left: 28px;
+          margin-right: 0;
+          @include breakpoint('sm'){
+          margin: 0 0.5%;
+          }
+        }
+        // float: left;
+        display: inline-block;
+        margin: 0 0 0 38px;
+
+
+      }
+      img{
+        height: 50px;
+      }
+  }
+
+  .right-reserve{
+    background-color: $section-background-1;
+    padding: 15px 10px 5px;
+
+    p{
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      font-family: $MyriadPro-Regular;
+
+    }
+  }
+}
+
+
+.social-icons{
+  position: relative;
+
+  ul{
+    padding: 0 20px 0 0;
+  }
+
+  li.social-hide{ display: none;}
+
+  li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 17px 0 0;
+    transition: all 0.5s ease;
+    @include breakpoint('md'){
+      margin: 0 20px 0 0;
+    }
+    @include breakpoint('xs'){
+      margin: 0 28px 0 0;
+    }
+
+    a{
+      font-size: 20px;
+      font-size: 2rem;
+      color: #504c4d;
+      &:hover, &:focus{
+        text-decoration: none;
+      }
+      &.icon-more,
+      &.icon-less{
+        color:#808080;
+      }
+    }
+    img{
+      vertical-align: top;
+    }
+  }
+}
+
+footer {
+  .social-icons{
+    li {
+      &.social-more,
+      &.social-less {
+        position: absolute;
+        right: 10px;
+        top: 0;
+      }
+    }
+  }
+}

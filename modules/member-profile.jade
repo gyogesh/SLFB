@@ -1,0 +1,207 @@
+// Member Profile - Starts
+section.member-profile
+  .section-row
+    .container
+      .section-heading.row
+        h1 Member Profile
+      .row
+        .col-xs-12
+          .manage-profile.hidden-lg
+            //- input.button-primary(value="Manage Profile", type="button")
+            //- input.button-primary.close-mark.hide(value="close", type="button")
+            a.button-primary(href="#")
+              span Manage Profile
+              span.close.hide close <i class="icon-android-close"></i>
+
+      .member-profile-container
+        .row
+          // Sidebar Start
+          .col-lg-3.col-lg-push-9.visible-lg.menu-bar
+            div.arrow-up.hidden-lg
+            aside.member-sidebar
+              ul.row.menu
+                li.col-lg-12.col-sm-4.col-xs-12
+                  h3.member-sidebar-heading Your profile
+                  ul.sub-menu
+                    li
+                      a(href="#") Edit profile
+                    li
+                      a(href="#") Communications preference
+                    li
+                      a(href="#") Redemption group
+
+                li.col-lg-12.col-sm-4.col-xs-12
+                  h3.member-sidebar-heading Your transactions
+                  ul.sub-menu
+                    li
+                      a(href="#") Transaction history
+                    li
+                      a(href="#") Download statement
+
+                li.col-lg-12.col-sm-4.col-xs-12
+                  h3.member-sidebar-heading Member Services
+                  ul.last-ul.sub-menu
+                    li
+                      a(href="#") Change password
+                    li
+                      a(href="#") Get Your Digital Card
+                    li
+                      a(href="#") Request membership card
+                    li
+                      a(href="#") Claim missing points/miles
+                    li
+                      a(href="#") Check claim status
+                    li
+                      a(href="#") Download mobile app
+              p.member-profile-note For security reasons you will be requested to log in again when managing your account.
+
+          // Main Section Start
+          .col-lg-9.col-lg-pull-3.col-sm-12
+            main.member-main
+              h2.member-main-heading Account summary
+              div.member-profile-intro
+                div.row
+                  .col-sm-4.col-sm-push-8
+                    img(src='content/img/content/membership-gold.png', alt='Thank you for joining golden circle')
+                  .col-sm-8.col-sm-pull-4
+                    h3 Welcome back Mr Lau
+                    ul.member-profile-info
+                      li
+                        span.headline Golden Circle Award Points
+                        | 230,000
+                      li
+                        span.headline Current Tier
+                        | Gold
+                      li
+                        span.headline Membership Number
+                        | 87543912
+                      li
+                        span.headline Member Since
+                        | October 2014
+              ul.row.member-profile-points
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 0
+                    span.desc Qualifying Nights Completed
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 20
+                    span.desc Qualifying Nights to Upgrade to Jade Tier
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 50
+                    span.desc Qualifying Nights Upgrade to Diamond Tier
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 0 
+                    span.desc Qualifying Stays Completed
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 10 
+                    span.desc Qualifying Stays to Upgrade to Jade Tier
+                li.col-xs-12.col-sm-4
+                  div.details
+                    span.points 25
+                    span.desc Qualifying Stays Upgrade to Diamond Tier
+
+              div
+                h2.member-main-heading Personal information
+                ul.row.member-profile-details
+                  li.col-xs-12.col-lg-4.headline Name
+                  li.col-xs-12.col-lg-8 Mr Alan Lau
+                  li.col-xs-12.col-lg-4.headline Gender
+                  li.col-xs-12.col-lg-8 Male
+                  li.col-xs-12.col-lg-4.headline Date of Birth
+                  li.col-xs-12.col-lg-8 06 December 1985
+
+              div
+                h2.member-main-heading Contact information
+                ul.row.member-profile-details
+                  li.col-xs-12.col-lg-4.headline Mailing Address
+                  li.col-xs-12.col-lg-8 15D Tower 19, 46 Hollywood Drive, Kowloon Tong, Kowloon.
+                  //li.col-xs-12.col-lg-1
+                  li.col-xs-12.col-lg-4.headline Email Address
+                  li.col-xs-12.col-lg-8 alan.lau@digitaslbi.com
+                  //li.col-xs-12.col-lg-1
+                  li.col-xs-12.col-lg-4.headline Phone Number
+                  li.col-xs-12.col-lg-8 60497471 (Mobile)
+                  //li.col-xs-12.col-lg-1
+                  li.col-xs-12.col-lg-4.headline Alternate Phone Number
+                  li.col-xs-12.col-lg-8 60497471 (Mobile)
+                  //li.col-xs-12.col-lg-1
+                  li.col-xs-12.col-lg-4.headline Preferred Language
+                  li.col-xs-12.col-lg-8 English
+                  //li.col-xs-12.col-lg-1
+                  li.col-xs-12.col-lg-4.no-gutter.no-margin
+                    ul
+                      li.col-xs-12.col-lg-12.headline Communication Preference
+                  li.col-xs-12.col-lg-8.no-gutter.no-margin
+                    ul
+                      li.col-xs-10.col-lg-10 Subscribe to Golden Circle and Shangri-La Hotels & Resorts Promotions
+                      li.col-xs-2.col-lg-2.pull-right No
+                      //li.col-xs-12.col-lg-4
+                      li.col-xs-10.col-lg-10 Subscribe to Golden Circle Partners Promotions
+                      li.col-xs-2.col-lg-2.pull-right No
+                      //li.col-xs-12.col-lg-4
+                      li.col-xs-10.col-lg-10 Subscribe to Golden Circle Membership e-Statement
+                      li.col-xs-2.col-lg-2.pull-right No
+
+              div
+                h2.member-main-heading My registered promotions
+                ul.row.member-profile-details
+                  li.col-xs-12.col-lg-4.headline-light 15% off Summer Palace
+                  li.col-xs-12.col-lg-8
+                    a(href="#") View Details
+                  li.col-xs-12.col-lg-4.headline-light Sweet Escape
+                  li.col-xs-12.col-lg-8
+                    a(href="#") View Details
+                  li.col-xs-12.col-lg-4.headline-light Double Up
+                  li.col-xs-12.col-lg-8
+                    a(href="#") View Details
+
+              div.redemption-group
+                h2.member-main-heading Redemption Group
+                ul.row.member-redemption-group
+                  li.col-xs-12.col-lg-4.headline.visible-lg Name
+                  li.col-xs-12.col-lg-4.headline.visible-lg Email
+                  li.col-xs-12.col-lg-4.headline.visible-lg Relationship
+                  li.col-xs-12.col-lg-4
+                    span.col-xs-12.headline.hidden-lg Name
+                    span.col-xs-12 Lorem ipsum
+                  li.col-xs-12.col-lg-4
+                    span.col-xs-12.headline.hidden-lg Email
+                    span.col-xs-12 loremipsum@gmail.com
+                  li.col-xs-12.col-lg-4
+                    span.col-xs-12.headline.hidden-lg Relationship
+                    span.col-xs-12 Child
+                  //ul.row.member-redemption-group.last-ul
+                  li.col-xs-12.col-lg-4
+                    span.col-xs-12.headline.hidden-lg Name
+                    span.col-xs-12 Lorem ipsum
+                  li.col-xs-12.col-lg-4
+                    span.col-xs-12.headline.hidden-lg Email
+                    span.col-xs-12 loremipsum@gmail.com
+                  li.col-xs-12.col-lg-4.last
+                    span.col-xs-12.headline.hidden-lg Relationship
+                    span.col-xs-12 Child
+
+
+script(type="text/javascript").
+  var flyoutcontent = {
+        member: {
+          loggedintitle: 'Member Logged In',
+          profile: {
+              text: 'Member Profile',
+              href: '/thetable/memberprofile/'
+            },
+          logout: {
+              text: 'Log Out',
+              href: '/thetable/logout/'
+            },
+          service: {
+            href : '/json/testlogin.json'
+          }
+        }
+    };
+
+// Member Profile - Ends

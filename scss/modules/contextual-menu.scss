@@ -1,0 +1,71 @@
+/*
+* Moudule : Contextual Menu
+*/
+
+.left-column-wrapper{
+  position: relative;
+  height: 100%;
+  .aligner{
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+  }
+}
+
+aside.left-column{
+  max-width: 232px;
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  li{
+    margin-bottom: 12px;
+    &.active{
+      a{
+        border-bottom: 2px solid $primary-color-3;
+      }
+    }
+    a{
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1;
+      text-transform: uppercase;
+      &:hover, &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+  .button-primary{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  .button-secondary{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+    box-sizing: border-box;
+  }
+  h3{
+    color: $primary-color-2;
+    font-family: $FuturaStd-Medium;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+  p{
+    color: $primary-color-2;
+    font-family: $FuturaStd-Medium;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+}

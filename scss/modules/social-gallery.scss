@@ -1,0 +1,46 @@
+/*
+* Moudule : Social Gallery
+*/
+
+.social-gallery{
+  background-color: $section-background-1;
+  .section-heading p{
+     font-family: $MyriadPro-Regular;
+     margin: 25px auto;
+     max-width: 720px;
+     text-align: center;
+     text-transform: none;
+  }
+  .candid-wall-load-more{
+    color: $primary-color-1;
+    background-color: $secondary-color-6;
+    box-sizing: content-box;
+    border-radius: 0;
+    margin: 5px auto;
+    opacity: 1;
+    padding: 7px 20px 5px;
+    text-shadow: 1px 1px 0 rgba(28, 107, 65, 0.75);
+    text-align: center;
+    width: 100px;
+    &:hover{
+      background-color: #028883;
+    }
+  }
+}
+
+.social-gallery-list{
+  .row > div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .candid-container{
+    margin: 0 60px;
+    @include breakpoint('md'){
+      margin: 0 18px;  
+    }
+  }
+}
+
+.gallery-container, .candid-by-container,.candid-zoom-overlay-footer{
+  display: none;
+}

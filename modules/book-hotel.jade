@@ -1,0 +1,74 @@
+// Module - Book a Hotel - Starts
+.book-hotel-slider
+  .back-btn-container                                    
+    a.back-btn.icon-angle-left(href="javascript:void(0);") BACK TO MENU
+  .book-hotel-container
+    h2.hidden-md.hidden-lg Book A Hotel
+    .form-container
+      .row
+        .col-md-12
+          .form-field.error
+            .field-container.no-padding
+              .search
+                .search-bar
+                  .form-bar
+                    input.input-val(type="text", placeholder="Enter your hotel or destination")
+                    .submit-group
+                      .search-link.icon-search
+                        input.submit-btn(type="submit", value="")
+                      .close-search.close-form.icon-android-close
+                  .search-dropdown.js-dropdown-hidden.no-message
+                    ul.list-unstyled
+                      li Hong Kong
+                      li Island Shangri-La, Hong Kong
+                      li Kowloon Shangri-La, Hong Kong
+                      li Hotel Jen, Hong Kong
+                      li Hong Kong
+                      li Island Shangri-La, Hong Kong
+                      li Kowloon Shangri-La, Hong Kong
+                      li Hotel Jen, Hong Kong
+     
+                    p.no-result-message.hidden Unfortunately there are no results matching your search... 
+
+      .row
+        .col-sm-6
+          .form-field
+            h3 Check-In
+            .field-container
+              .ui-textinput.icon-calendar
+                input(type="text" class="checkInSelector")
+            
+        .col-sm-6
+          .form-field
+            h3 Check-Out
+            .field-container
+              .ui-textinput.icon-calendar
+                input(type="text" class="checkOutSelector")         
+
+      .row
+        .room-addition-block
+          .room-block.clearfix
+            h3 
+              span Room 1
+              a(href="#" class="remove-room") (Remove)
+            .col-sm-6
+              .form-field.adults
+                span.room-details Adult (Max3)                   
+                .field-container
+                  .ui-textinput
+                    input(type="text" value="1" disabled)
+                    a.icon-plus(href="javascript:void(0);")
+                    a.icon-minus(href="javascript:void(0);")
+            .col-sm-6
+              .form-field.children
+                span.room-details Children (Max2) 
+                .field-container
+                  .ui-textinput
+                    input(type="text" value="0" disabled)
+                    a.icon-plus(href="javascript:void(0);")
+                    a.icon-minus(href="javascript:void(0);")
+          .add-room-cta
+            a(href="#" class="add-room icon-plus") Add Room
+      .submit-container
+        input(class="button-secondary" value="Book Now" type="submit")
+// Module - Book a Hotel - Ends

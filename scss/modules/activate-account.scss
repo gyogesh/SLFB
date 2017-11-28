@@ -1,0 +1,55 @@
+/*
+* Moudule : activate-account form
+*/
+ 
+.activate-account{ 
+  .activate-account-container {
+    @include gridBreakpoint('md') {
+      .col-md-8 {
+        max-width: 275px;
+      }
+      .description {
+        max-width: 465px;
+      }
+    }
+  }
+  .notes {
+    @include gridBreakpoint('sm') {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @include gridBreakpoint('md') {
+      max-width: 700px;
+    }
+  }
+  .personal-info-container,
+  .revlalidate-info-container {
+    @include gridBreakpoint('md') {
+      max-width: 530px;
+      margin: 0 auto;
+    }
+  }
+  .revlalidate-info-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: solid 1px $secondary-color-4;
+  }
+}
+
+.multiple-fields {
+  padding-right: 30px;
+
+  span {
+    font-family: $FuturaStd-Medium;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 33px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+}
+
+
+ 

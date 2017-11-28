@@ -1,0 +1,47 @@
+/*
+* Moudule : Member Benefits About Golden Circle
+*/
+ 
+.member-benefits-about-golden-circle{
+  background-color: $section-background-1;
+  padding-bottom: 15px;
+  .section-heading{
+    margin: 0 0 25px;
+    h1{
+      @include breakpoint('sm'){
+        font-size: 24px;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .intro-container{
+    padding-bottom: 15px;
+    text-align: center;
+    p{
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.46;
+      margin-bottom: 18px;
+    }
+    .button-container{
+      padding-top: 15px;
+      @include breakpoint('sm'){
+        padding-top: 5px;
+      }
+      a.button-primary {
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+      }
+      a.button-primary, a.button-secondary{
+        margin: 10px 20px;
+        box-sizing: content-box;
+        @include breakpoint('xs'){
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}

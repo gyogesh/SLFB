@@ -1,0 +1,23 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Redeem Experience Unavailable"}
+  - var Meta = {description:"Redeem Experience Unavailable", keywords:"Golden Circle, Redeem Experience Unavailable"}
+
+block contentMain
+  div.site-wrapper
+    div.dynamic-print-page.print-redemption-confirm
+      include ../modules/header 
+      script(type="text/javascript").
+        $(document).ready(function () {
+          window.print();
+          //return;
+
+          setTimeout(function(){
+            window.close();
+          },500);
+        });
+
+      include ../modules/print-redemption-header
+      include ../modules/print-redemption-detail
+      include ../modules/print-redemption-footer

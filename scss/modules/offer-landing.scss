@@ -1,0 +1,72 @@
+//Restaurant and Bar Header starts here
+
+.offer-landing{
+  background-color: $section-background-1;
+  .no-result-message{
+    padding-top: 20px;
+  }
+  .special-offer-container{
+    p.descreption{
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding-bottom: 5px;
+    }
+    // .content-container{
+    //   padding-bottom: 60px;
+    // }
+    @include breakpoint('sm'){
+      .inner-container{
+        padding-top: 0;
+        .image-container{
+          padding-bottom: 30px;
+          img{
+            width: 100%;
+          }
+        }
+        h3{
+          font-size: 24px;
+          font-size: 2.4rem;
+        }
+      }
+    }
+    @include breakpoint('xs'){
+      .inner-container{
+        h3{
+          font-size: 21px;
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}
+
+aside.column-left{
+  .joinus-table{
+    border: 2px solid $section-background-2;
+    max-width: 270px;
+    .joinus-content{
+      background-color: $section-background-1;
+      margin: 0;
+      padding: 30px 25px;
+      height: auto;
+      h1{
+        font-size: 21px;
+        font-size: 2.1rem;
+        margin: 15px 0 10px;
+      }
+      p{
+        font-size: 13px;
+        font-size: 1.3rem;
+        margin: 0 0 5px;
+      }
+      ul.joinus-list{
+        li{
+          font-size: 13px;
+          font-size: 1.3rem;
+          line-height: 1.6;
+          padding: 14px 0 10px;
+        }
+      }
+    }
+  }
+}

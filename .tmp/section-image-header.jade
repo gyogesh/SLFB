@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Section Image Header"}
+  - var Meta = {description:"Module - Section Image Header", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/section-image-header

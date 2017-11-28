@@ -1,0 +1,10 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Redeem Experience Unavailable"}
+  - var Meta = {description:"Redeem Experience Unavailable", keywords:"Golden Circle, Redeem Experience Unavailable"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/redemption-confirmation
+  include ../modules/footer 

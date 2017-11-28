@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Venue Detail Special Offers"}
+  - var Meta = {description:"Module - Venue Detail Special Offers", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/venue-detail-special-offers

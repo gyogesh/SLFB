@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Mood Filter"}
+  - var Meta = {description:"Module - Mood Filter", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/mood-filter

@@ -1,0 +1,32 @@
+//Restaurant and bar Details starts here
+include ../modules/section-image-header
+section.restaurant-details.scroll-nav-container
+  .section-row
+    .venue-button
+      .row
+        .col-xs-6.col-sm-12
+          a.call-btn.button-secondary(href="tel:+852 1234 5678") Call
+        .col-xs-6.col-sm-12
+          a.book-btn.button-primary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+    .container
+      .row
+        .col-md-3.hidden-xs.hidden-sm
+          include ../modules/contextual-menu
+
+        .col-sm-12.col-md-9
+          .right-column
+            include ../modules/venue-detail-about
+            include ../modules/venue-detail-menu
+            include ../modules/signature-dishes
+            include ../modules/photo-gallery
+            include ../modules/venue-detail-experiences
+            include ../modules/venue-detail-special-offers
+            .venue-map-description
+              .venue-description
+                .venue-map
+                  a.map.icon-search-plus(data-type='static-map')
+                    img(class="img-responsive" src="content/img/content/placeholder.png", data-longitude="114.164415", data-latitude="22.277106" data-mapurl="https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=255x170&maptype=roadmap&markers=icon:"  alt="")
+                .venue-map-info
+                  h3 Island Shangri-La, Hong Kong
+                  p Pacific Place, Supreme Court Road Central, Hong Kong
+                  a.button-secondary(href="#") Book a room

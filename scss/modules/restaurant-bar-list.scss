@@ -1,0 +1,164 @@
+//Restaurant and Bar list starts here
+.restaurant-bar-list {
+  background-color: $section-background-1;
+}
+
+.restaurant-bar-container{
+  margin-top: 20px;
+  background-color: $primary-color-1;
+  text-align: center;
+  position: relative;
+  @include boxShadow(#ccc, 1px, 1px, 2px);
+  p{
+    margin: 0;
+  }
+
+  .image-container{
+    position: relative;
+    //padding-bottom:66.66%;
+    height:180px;
+    .col-md-4 & {
+      height:246px;
+      @include breakpoint('md'){
+        height: auto;
+      }
+    }
+    @include breakpoint('md'){
+      height:148px;
+    }
+    @include breakpoint('sm'){
+      height:236px;
+    }
+    @include breakpoint('xs'){
+      height:auto;
+    }
+    img{
+      width: 100%;
+    }
+    .icon{
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom:-15px;
+      z-index: 1;
+    }
+  }
+  .content-container{
+    background: $primary-color-1;
+    padding: 35px 15px 100px;
+    @include breakpoint('xs'){
+      padding: 35px 15px 20px;
+    }
+    h2{
+      font-family: $FuturaStd-Medium;
+      position: relative;
+      bottom: 6px;
+      text-transform: capitalize;
+      font-size: 21px;
+      font-size: 2.1rem;
+      line-height: 1.38;
+      margin: 0;
+      a{
+        color: $primary-color-2;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+      }
+    }
+    .restaurant-bar-address{
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.62;
+    }
+    .cuisine{
+      font-family: $MyriadPro-Regular;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1.73;
+      padding-top: 10px;
+      .divider{
+        margin: 0 8px;
+      }
+      @include breakpoint('xs'){
+        line-height: 2.73;
+        padding-top: 4px;
+      }
+    }
+    .offer{
+      font-family: $MyriadPro-Regular;
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1.73;
+      text-transform: uppercase;
+      .divider{
+        margin: 0 8px;
+      }
+      @include breakpoint('xs'){
+        line-height: 2.73;
+        padding-top: 4px;
+      }
+    }
+    .contact-info{
+      font-family: $MyriadPro-Semibold;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.62;
+      padding-top: 5px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 70px;
+
+      @include breakpoint('xs'){
+        display: none;
+      }
+    }
+    .button-container{
+      background: $primary-color-1;
+      position: absolute;
+      left:0;
+      bottom:20px;
+      width: 100%;
+      @include breakpoint('xs'){
+        position: static;
+      }
+      .call-us-btn{
+        display: none;
+        @include breakpoint('xs'){
+          display: inline-block;
+          /* margin: 7px 7px 0; */
+        }
+      }
+     /* .book-now-btn{
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        @include breakpoint('xs'){
+          margin: 5px 5px 0;
+        }
+      }*/
+    }
+  }
+
+  .button-primary {
+    box-sizing: content-box;
+  }
+}
+
+
+.pagination-holder{
+  text-align: center;
+  margin: 40px 0;
+  p{
+    font-family: $MyriadPro-Regular;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}
+
+
+.book-reservation{}

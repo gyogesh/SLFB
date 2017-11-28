@@ -1,0 +1,121 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Redeem Package"}
+  - var Meta = {description:"Golden Circle Redeem Package", keywords:"Golden Circle, Redeem Package"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/redeem-package
+  script(type="text/javascript").
+    var options = {
+      rules: {
+        selQuantity:      {required: true, max: 5, min: 1},
+        selAreaCode:      {
+                            required: true, 
+                            validateMobile: ['#selAreaCode','#txtMobile']
+                          },
+        txtMobile:        {
+                            required: true,
+                            digits: true,
+                            minlength: 5,
+                            validateMobile: ['#selAreaCode','#txtMobile']
+                          },
+        txtEmail:         {required: true, email: true},
+        chkTerms:         {required: true}
+      },
+      messages: {
+        selAreaCode:      {required: "Phone Number is a required field", validateMobile: "Phone Number a is required field"},
+        txtMobile:        {required: "Phone Number is a required field", digits: "Phone Number requires digits", minlength: "Phone Number is a required field", validateMobile: "Phone Number is a required field"},
+        txtEmail:         {required: "Email Address is a required field", email: "Email Address is invalid"},
+        chkTerms:         {required: "Please read and agree"}
+      },
+      messagesCN: {
+        selAreaCode:      {required: "Phone Number a is required field"},
+        txtMobile:        {required: "Phone Number a is required field", digits: "Phone Number requires digits", minlength: "Phone Number is a required field", validateMobile: "Phone Number is a required field"},
+        txtEmail:         {required: "Email Address is a required field", email: "Email is invalid"},
+        chkTerms:         {required: "Please read and agree"}
+      }
+    };
+  
+  script#attendeeTemplate(type="text/template").
+    <div class="attendee others">
+      <h3 class="heading">Please provide details of other guests attending.</h3>
+      <div class="row">
+        <div class="col-md-5">
+           <div class="form-field">
+              <label>Title<sup class="required-field">*</sup></label>
+           </div>
+        </div>
+        <div class="col-md-7">
+           <div class="form-field">
+              <div class="field-container ui-select-wrapper">
+                 <div class="ui-select label-title">
+                    <select id="{{ selTitle }}" name="{{ selTitle }}">
+                       <option value="Mr">Mr</option>
+                       <option value="Mrs">Mrs</option>
+                       <option value="Sir">Sir</option>
+                       <option value="Dr">Dr</option>
+                       <option value="Mdm">Mdm</option>
+                       <option value="Professor">Professor</option>
+                    </select>
+                 </div>
+              </div>
+              <span class="error-message">Last Name is a required field</span>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+           <div class="form-field">
+              <label>Last Name<sup class="required-field">*</sup></label>
+           </div>
+        </div>
+        <div class="col-md-7">
+           <div class="form-field">
+              <div class="field-container">
+                 <div class="ui-textinput">
+                    <input type="text" name="{{txtSurname}}" id="{{txtSurname}}">
+                 </div>
+              </div>
+              <span class="error-message">Last Name is a required field</span>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+           <div class="form-field">
+              <label>First Name<sup class="required-field">*</sup></label>
+           </div>
+        </div>
+        <div class="col-md-7">
+           <div class="form-field">
+              <div class="field-container">
+                 <div class="ui-textinput">
+                    <input type="text" name="{{txtFirstName}}" id="{{txtFirstName}}">
+                 </div>
+              </div>
+              <span class="error-message">First Name is a required field</span>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+           <div class="form-field">
+              <label>Special Request /<br/>Dietary Requirement</label>
+           </div>
+        </div>
+        <div class="col-md-7">
+           <div class="form-field">
+              <div class="field-container">
+                 <div class="ui-textinput">
+                    <input type="text" name="{{txtSpecialRequest}}" id="{{txtSpecialRequest}}">
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>     
+  script(src="content/js/vendors/jquery.validate.js")
+  script(src="content/js/pages/redeem-package.js")
+  include ../modules/footer

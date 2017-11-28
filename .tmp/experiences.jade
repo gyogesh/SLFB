@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Experiences"}
+  - var Meta = {description:"Module - Experiences", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/experiences

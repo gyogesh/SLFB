@@ -1,0 +1,37 @@
+/*
+* Module : Standard Content Block
+*/
+
+.standard-content-block {
+  ul {
+      text-align: left;
+      padding-left: 1.25rem;
+  }
+  h4 {
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  h3 {
+      font-size: 21px;
+      font-weight: bold;
+  }
+  h2 {
+    color: #333333;
+    font-family: "FuturaStd-Medium", verdana, arial, sans-serif;
+    font-size: 2.1rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  h1,h2,h3 {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: none;
+    font-family: "MyriadPro-Regular", verdana, arial, sans-serif;
+  }
+}

@@ -1,0 +1,27 @@
+// experience list ooce - starts
+
+.experiences-list .experience-panel{
+  .item {
+
+    &.one-off-culinary {
+
+      .caption-block {
+
+        // background-color: $section-background-2;
+
+        p.gc-points {
+          margin-bottom: 0;
+          text-transform: uppercase;
+        }
+
+        .gc-package-count {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-size: 1.3rem;
+        }
+      }  
+    }
+    
+  }
+}
+// experience list ooce - ends

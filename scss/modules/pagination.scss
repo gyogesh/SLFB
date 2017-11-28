@@ -1,0 +1,139 @@
+// Pagination starts here
+
+.pagination-holder{
+  text-align: center;
+  margin: 40px 0 0;
+  p{
+    font-family: $MyriadPro-Regular;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}
+
+.pagination{
+  ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+  }
+  li{
+    display: inline-block;
+    margin: 0 5px;
+    @include breakpoint('xs'){
+      margin: 0 3px;
+    }
+    &.active{
+      a{
+        background-color: $primary-color-3;
+        color: $primary-color-1;
+        text-shadow: 1px 1px 0 rgba(57, 126, 93, 0.75);
+      }
+    }
+    a{
+      background-color: $primary-color-1;
+      color: $primary-color-2;
+      display: block;
+      font-family: $MyriadPro-Semibold;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 32px;
+      height: 32px;
+      text-align: center;
+      width: 32px;
+      @include boxShadow(#ccc, 1px, 1px, 2px);
+    }
+  }
+  .prev-btn, .next-btn, .ellipse{
+    background-color: $primary-color-1;
+    color: $primary-color-2;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $MyriadPro-Semibold;
+    font-size: 21px;
+    font-size: 2.1rem;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    width: 32px;
+    margin: 0 5px;
+    vertical-align: middle;
+    @include boxShadow(#ccc, 1px, 1px, 2px);
+    &:before{
+      line-height: 32px;
+    }
+  }
+  .ellipse{
+    background-color: $secondary-color-5;
+    @include boxShadow($secondary-color-5, 1px, 1px, 2px);
+  }
+  .disabled-btn{
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    cursor: default;
+  }
+}
+
+
+// Pagination for Offers and Experience
+
+.paginationjs-pages {
+  ul {
+    padding: 0;
+  }
+  li {
+  display: inline-block;
+  margin: 0 5px;
+  @include breakpoint('xs'){
+    margin: 0 3px;
+  }
+    a,
+    span {
+      @include boxShadow($secondary-color-4, 1px, 1px, 2px);
+      color: $primary-color-2;
+      background-color: $primary-color-1;
+      display: block;
+      font-size: 1.6rem;
+      font-family: $MyriadPro-Semibold;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      width: 32px;
+      @include breakpoint('xs'){
+        font-size: 1.4rem;
+        font-size: 14px;
+        height: 26px;
+        line-height: 28px;
+        width: 26px;
+      }
+    }
+    &.active a {
+      color: $primary-color-1;
+      background-color: $primary-color-3;
+      text-shadow: 1px 1px 0 rgba(57, 126, 93, 0.75);
+    }
+    &.disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+    &.paginationjs-ellipsis {
+      @include boxShadow($secondary-color-5, 1px, 1px, 2px);
+      background-color: $secondary-color-5;
+      font-size: 2.1rem;
+      opacity: 1;
+    }
+  }
+}
+
+
+.pagination-holder {
+    .pagination {
+        .first,
+        .last {
+            display: none;
+        }
+    }
+}

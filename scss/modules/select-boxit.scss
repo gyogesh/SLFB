@@ -1,0 +1,122 @@
+/* selectBoxIt css overwrite for select element - starts */
+.selectboxit-container .selectboxit {
+  height: 33px;
+  background-color: $primary-color-1; 
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  box-shadow: none;
+}
+
+.selectboxit-container .selectboxit-options,
+.selectboxit-text {
+  font-family: $MyriadPro-Regular;
+  font-size: 13rem;
+  font-size: 13px;
+  line-height: 32px;
+  color: #333;
+  background-color: $primary-color-1;
+}
+
+.form-field.error .selectboxit-container .selectboxit {
+  height: 33px;
+}
+.selectboxit-options .selectboxit-option.active .selectboxit-option-anchor {
+  color: #257e8a; width:100%;
+}
+.selectboxit-options.dropdown-menu .active > a,
+.selectboxit-options.dropdown-menu .active > a:hover{
+  background-color: $primary-color-1;
+}
+.selectboxit-arrow-container {
+  display: none;
+}
+.selectboxit-text {
+  padding: 7px 40px 6px 10px;
+}
+.form-container {
+  .form-field {
+    &.error {
+      .ui-select,
+      .selectboxit,
+      .selectboxit-text {
+        background-color: #f6e5e9;
+      }
+    }
+
+    .field-container {
+      &.ui-select-wrapper {
+        padding: 0;
+
+        .ui-select {
+          padding: 0;
+
+          .ie8 & {
+            padding: 0;
+          }  
+        }
+      }
+    }
+  }
+}
+
+.selectboxit-container .selectboxit-options {
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+.selectboxit-option {
+  border-top: 1px solid #ccc;
+  white-space: normal;
+}
+.selectboxit-option.selectboxit-option-first {
+  border-top: 0;
+}
+
+.selectboxit.btn,
+.selectboxit-btn
+ {
+  &.icon-angle-down:before{
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.375;
+    color: $primary-color-1;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    text-align: center;
+    
+    background: $primary-color-3;
+    pointer-events: none;
+  }
+
+  &.icon-angle-down[aria-expanded="true"]:before {
+    content: "s";  
+  }
+}
+.error .selectboxit.btn,
+.error .selectboxit-btn {
+  &.icon-angle-down:before{
+    border-right: solid 1px #a7042a; 
+  }
+}
+.selectboxit-option .selectboxit-option-anchor {
+  padding: 0;
+}
+/* selectBoxIt css overwrite for select element - ends */
+
+.touch {
+  &.ios {
+    .form-container .form-field .field-container .ui-select,
+    .ui-select-wrapper select {
+      height: 38px;
+    }
+    .ui-select-wrapper:before {
+      line-height: 1.6;
+    }
+  }
+}

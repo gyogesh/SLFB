@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Photo Gallery"}
+  - var Meta = {description:"Module - Photo Gallery", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/photo-gallery

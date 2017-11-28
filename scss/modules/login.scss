@@ -1,0 +1,185 @@
+.login-wrapper {
+  background-color: $section-background-1;
+  // max-width: 1300px;
+  padding: 10px 0;
+  margin: 0 auto;
+  @include gridBreakpoint('sm') {
+    padding: 0;
+  }
+  p,a {
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .form-container {
+    @include gridBreakpoint('md') {
+      max-width: 730px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      padding-top: 40px;
+    }
+    label,
+    h3 {
+      color: $primary-color-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+      span.two-line{
+        display: block;
+        margin: -5px 0 0;
+      }
+      @include gridBreakpoint('md') {
+        display: inline-block;
+      }
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      @include gridBreakpoint('md') {
+        margin-top: 10px;
+      }
+    }
+  }
+  .forgot-password{
+    display: block;
+    margin: 10px 0 20px 0;
+    color: $secondary-color-7;
+  }
+
+  //Button Style
+  .button-primary,
+  .button-secondary {
+    padding: 0;
+    @include gridBreakpoint('md') {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  a.button-primary,
+  a.button-secondary {
+    display: inline-block;
+    line-height: 2.9;
+  }
+  .button-primary {
+    min-width: 200px;
+    height: 40px;
+    @include gridBreakpoint('md') {
+      width: 100%;
+    }
+  }
+  .button-secondary {
+    min-width: 190px;
+    height: 36px;
+    @include gridBreakpoint('md') {
+      min-width: 196px;
+    }
+  }
+
+  //layout
+  .join-now-cta,
+  .activate-account-cta,
+  .form-cta {
+    @include breakpoint('sm') {
+      text-align: center;
+    }
+  }
+  .form-cta {
+    @include gridBreakpoint('md') {
+      // position: absolute;
+      // bottom: -54px;
+      width: 260px;
+    }
+  }
+  .notes {
+    max-width: 570px;
+    margin: 0 auto;
+    @include breakpoint('sm') {
+      padding: 0 15px;
+    }
+    p {
+      @include breakpoint('sm') {
+        text-align: center;
+      }
+    }
+  }
+  .col-left {
+    @include breakpoint('sm') {
+      padding: 10px 0 20px 0;
+    }
+    @include gridBreakpoint('md') {
+      padding: 0 40px 10px 0;
+      width: 300px;
+      float: right;
+      //height: 302px;
+    }
+    &.error{
+      .field-container{
+        border: 1px solid #a7042a;
+        background: #f6e5e9;
+      }
+      > span.error-message{
+          display: block;
+          font-size: 13px;
+          font-size: 1.3rem;
+          color: #aa2525;
+          margin-top: 10px;
+          line-height: 1.2;
+        }
+    }
+    > span.error-message {
+      display: none;
+    }
+  }
+  .col-right {
+    border-top: solid 1px #ccc;
+    @include gridBreakpoint('md') {
+      border-top: none;
+      padding: 0 0 10px 40px;
+      //height: 302px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #ccc;
+      }
+    }
+
+  }
+  .activate-wrapper {
+    padding-top: 30px;
+    /*@include gridBreakpoint('md') {
+      padding-top: 15px;
+      bottom: 5px;
+      position: absolute;
+    }*/
+  }
+
+  &.promotion {
+    .col-left {
+      @include gridBreakpoint('md') {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: #ccc;
+        }
+      }
+    }
+    .col-right {
+      &:before {
+        content: none;
+      }
+    }
+  }
+}

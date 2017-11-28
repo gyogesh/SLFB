@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Signature Dishes"}
+  - var Meta = {description:"Module - Signature Dishes", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/signature-dishes

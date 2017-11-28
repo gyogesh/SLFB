@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Social Gallery List"}
+  - var Meta = {description:"Module - Social Gallery List", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/social-gallery-list

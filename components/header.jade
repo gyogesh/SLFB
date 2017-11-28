@@ -1,0 +1,71 @@
+head
+  title #{Page.title}
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="description", content=Meta.description)
+  meta(name="keywords", content=Meta.keywords)
+  meta(name="HandheldFriendly", content="True")
+  meta(name="MobileOptimized", content="320")
+  meta(name="format-detection", content="telephone=no")
+  meta(name="viewport", content="width=device-width,initial-scale=1.0,maximum-scale=1.0")
+  // to avoid stripping of previous line
+  <!-- build:css #{Basepath.path}content/css/vendors.css -->
+  link(rel="stylesheet", href= Basepath.path + "content/css/vendors/bootstrap.css")
+  link(rel="stylesheet", href= Basepath.path + "content/css/vendors/owl-carousel.css")
+  link(rel="stylesheet", href= Basepath.path + "content/css/vendors/jquery-ui.min.css")
+  link(rel="stylesheet", href= Basepath.path + "content/css/vendors/selectBoxIt.css")   
+  // endbuild
+
+  link(rel="stylesheet", href= Basepath.path + "content/css/base.css")
+  link(rel="stylesheet", href= Basepath.path + "content/css/modules.css")
+  link(rel="stylesheet", href= Basepath.path + "content/css/print.css")
+
+  // to avoid stripping of previous line
+  <!--build:js #{Basepath.path}content/js/modernizr-2.8.2.min.js-->
+  script(src= Basepath.path + "content/js/vendors/modernizr-2.8.2.min.js")
+  // endbuild
+
+  // to avoid stripping of previous line
+  <!--build:js #{Basepath.path}content/js/underscore.min.js-->
+  script(src= Basepath.path + "content/js/vendors/underscore.min.js")
+  // endbuild
+
+  // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file
+  <!-- build:js #{Basepath.path}content/js/html5shiv.min.js -->
+  <!--[if lt IE 9]>
+  script(src= Basepath.path + "content/js/vendors/html5shiv.min.js")
+  <![endif]-->
+  <!-- endbuild -->
+  
+  <!--build:js #{Basepath.path}content/js/respond.min.js-->
+  <!--[if lt IE 9]>
+  script(src= Basepath.path + "content/js/vendors/respond.min.js")
+  <![endif]-->
+  <!--endbuild-->
+
+  // to avoid stripping of previous line
+  <!--build:js #{Basepath.path}content/js/jquery-1.10.2.min.js-->
+  script(src= Basepath.path + "content/js/vendors/jquery-1.10.2.min.js")
+  // endbuild
+
+  // to avoid stripping of previous line
+  <!--build:js #{Basepath.path}content/js/vendors.js-->
+  script(src= Basepath.path + "content/js/vendors/jquery.unveil.js")
+  script(src= Basepath.path + "content/js/vendors/owl.carousel.min.js")
+  script(src= Basepath.path + "content/js/vendors/jquery-ui.min.js")
+  script(src= Basepath.path + "content/js/vendors/jquery.sticky.js")
+  script(src= Basepath.path + "content/js/vendors/wall-isotope.js")
+  script(src= Basepath.path + "content/js/vendors/widget.js")
+  script(src= Basepath.path + "content/js/vendors/jquery.selectBoxIt.v3.8.1.min.js")
+  script(src= Basepath.path + "content/js/vendors/jquery.twbsPagination.js")
+  script(src= Basepath.path + "content/js/vendors/jquery.cookie.js")
+  script(src= Basepath.path + "content/js/vendors/jquery.popupwindow.js")
+  script(src= Basepath.path + "content/js/vendors/BrightcoveExperiences.js")
+  script(src="http://admin.brightcove.com/js/api/SmartPlayerAPI.js")
+  // endbuild
+
+  // to avoid stripping of previous line
+  <!--build:js #{Basepath.path}content/js/masonry.js-->
+  script(src= Basepath.path + "content/js/vendors/masonry.js")
+  // endbuild

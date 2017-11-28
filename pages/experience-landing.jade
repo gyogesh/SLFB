@@ -1,0 +1,14 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Experiences Landing"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "experiences"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-image-header-experience-landing
+  include ../modules/experiences-list
+  include ../modules/social-media-experience
+  include ../modules/destination
+  include ../modules/footer

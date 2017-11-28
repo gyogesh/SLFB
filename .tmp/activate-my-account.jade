@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Activate My Account"}
+  - var Meta = {description:"Module - Activate My Account", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/activate-my-account

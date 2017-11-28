@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Golden Circle Recommended"}
+  - var Meta = {description:"Module - Golden Circle Recommended", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/golden-circle-recommended

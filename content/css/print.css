@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'FuturaStd-Medium';
+  src: url("../font/FuturaStd-Medium/FuturaStd-Medium.eot?#iefix") format("embedded-opentype"), url("../font/FuturaStd-Medium/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium/FuturaStd-Medium.ttf") format("truetype"), url("../font/FuturaStd-Medium/FuturaStd-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'futurano2dregular';
+  src: url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.eot");
+  src: url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.eot?#iefix") format("embedded-opentype"), url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.woff2") format("woff2"), url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.woff") format("woff"), url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.ttf") format("truetype"), url("../font/FuturaNo2D-Reg/futurano2d-boo-webfont.svg#futurano2dregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'FuturaNo2D-Med';
+  src: url("../font/FuturaNo2D-Med/FuturaNo2D-Med.eot?#iefix") format("embedded-opentype"), url("../font/FuturaNo2D-Med/FuturaNo2D-Med.woff") format("woff"), url("../font/FuturaNo2D-Med/FuturaNo2D-Med.ttf") format("truetype"), url("../font/FuturaNo2D-Med/FuturaNo2D-Med.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("../font/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadPro-Bold/MyriadPro-Bold.woff") format("woff"), url("../font/MyriadPro-Bold/MyriadPro-Bold.ttf") format("truetype"), url("../font/MyriadPro-Bold/MyriadPro-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-Italic';
+  src: url("../font/MyriadPro-Italic/MyriadPro-It.eot?#iefix") format("embedded-opentype"), url("../font/MyriadPro-Italic/MyriadPro-It.woff") format("woff"), url("../font/MyriadPro-Italic/MyriadPro-It.ttf") format("truetype"), url("../font/MyriadPro-Italic/MyriadPro-It.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("../font/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"), url("../font/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype"), url("../font/MyriadPro-Regular/MyriadPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url("../font/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"), url("../font/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype"), url("../font/MyriadPro-Semibold/MyriadPro-Semibold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-SemiboldIt';
+  src: url("../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.woff") format("woff"), url("../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.ttf") format("truetype"), url("../font/MyriadPro-SemiboldIt/MyriadPro-SemiboldIt.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "shangrila-icons";
+  src: url("../font/Shangrila-Icons/shangrila-icons.eot");
+  src: url("../font/Shangrila-Icons/shangrila-icons.eot?#iefix") format("embedded-opentype"), url("../font/Shangrila-Icons/shangrila-icons.woff") format("woff"), url("../font/Shangrila-Icons/shangrila-icons.ttf") format("truetype"), url("../font/Shangrila-Icons/shangrila-icons.svg#shangrila-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before,
+[data-icon]:after {
+  font-family: "shangrila-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+  font-family: "shangrila-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-angle-rgt:after {
+  content: "\71"; }
+
+.icon-experiences:before {
+  content: "\61"; }
+
+.icon-youtube:before {
+  content: "\62"; }
+
+.icon-facebook:before {
+  content: "\63"; }
+
+.icon-google-plus:before {
+  content: "\64"; }
+
+.icon-instagram:before {
+  content: "\65"; }
+
+.icon-map-view:before {
+  content: "\67"; }
+
+.icon-new-opening:before {
+  content: "\6a"; }
+
+.icon-restaurants-bars:before {
+  content: "\6b"; }
+
+.icon-search:before {
+  content: "\6c"; }
+
+.icon-special-offers:before {
+  content: "\6d"; }
+
+.icon-twitter:before {
+  content: "\6e"; }
+
+.icon-youku:before {
+  content: "\6f"; }
+
+.icon-weibo:before {
+  content: "\70"; }
+
+.icon-angle-right:before {
+  content: "\71"; }
+
+.icon-angle-left:before {
+  content: "\72"; }
+
+.icon-angle-up:before {
+  content: "\73"; }
+
+.icon-angle-up-rgt:after {
+  content: "\73"; }
+
+.icon-android-close:before {
+  content: "\74"; }
+
+.icon-android-closeafter:after {
+  content: "\74"; }
+
+.icon-angle-down:before {
+  content: "\75"; }
+
+.icon-angle-down-rgt:after {
+  content: "\75"; }
+
+.icon-awards:before {
+  content: "\76"; }
+
+.icon-cost:before {
+  content: "\77"; }
+
+.icon-cuisine:before {
+  content: "\78"; }
+
+.icon-dress-code:before {
+  content: "\79"; }
+
+.icon-renren:before {
+  content: "\aa"; }
+
+.icon-geo-location:before {
+  content: "\bb"; }
+
+.icon-telephone:before {
+  content: "\cc"; }
+
+.icon-menu:before {
+  content: "\dd"; }
+
+.icon-member-benefits:before {
+  content: "\ae"; }
+
+.icon-golden-circle-recommended:before {
+  content: "\af"; }
+
+.icon-calendar:before {
+  content: "\ff"; }
+
+.icon-grid-view:before {
+  content: "\ee"; }
+
+.icon-uncheck:before {
+  content: "\68"; }
+
+.icon-exclamation-triangle:before {
+  content: "\e0"; }
+
+.icon-ios-circle-outline:before {
+  content: "\b0"; }
+
+.icon-search-plus:before {
+  content: "\b1"; }
+
+.icon-export:before {
+  content: "\c1"; }
+
+.icon-opening:before {
+  content: "\66"; }
+
+.icon-ios-circle-filled:before {
+  content: "\7a"; }
+
+.icon-less:before {
+  content: "\ab"; }
+
+.icon-more:before {
+  content: "\ac"; }
+
+.icon-website:before {
+  content: "\69"; }
+
+.icon-play:before {
+  content: "\f1"; }
+
+.icon-filter-calendar:before {
+  content: "\be"; }
+
+.icon-email:before {
+  content: "\d1"; }
+
+.icon-we-chat:before {
+  content: "\bc"; }
+
+.icon-plus:before {
+  content: "\bf"; }
+
+.icon-minus:before {
+  content: "\bd"; }
+
+.icon-local-flavours:before {
+  content: "\ca"; }
+
+.icon-full-screen:before {
+  content: "\cb"; }
+
+.icon-mood:before {
+  content: "\cd"; }
+
+.icon-indulge-instantly:before {
+  content: "\ce"; }
+
+@media print {
+  body {
+    margin: 0 -10px;
+    box-shadow: 0;
+    width: intrinsic;
+    /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
+    opacity: 1 !important;
+    max-width: 998px; }
+
+  .dynamic-print-page {
+    opacity: 1 !important; }
+
+  .safari body {
+    zoom: 80%; }
+
+  header {
+    display: none; }
+
+  .hotel-logo-print {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px; }
+    .hotel-logo-print img {
+      max-height: 65px !important; }
+      .ie .hotel-logo-print img {
+        width: 200px; }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important; }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left; }
+
+  .col-lg-4 {
+    width: 33.33333333%;
+    float: left; }
+
+  .col-lg-8 {
+    width: 66.66666667%;
+    float: left; }
+
+  a {
+    text-decoration: none; }
+
+  a[href]:after {
+    content: none !important; }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #028883 !important; }
+
+  .print-redemption-confirm {
+    font-family: "FuturaStd-Medium", verdana, arial, sans-serif; }
+    .print-redemption-confirm ul {
+      padding-left: 0; }
+      .print-redemption-confirm ul li {
+        list-style: none; }
+    .print-redemption-confirm p, .print-redemption-confirm li {
+      font-size: 14px;
+      font-size: 1.4rem; }
+    .print-redemption-confirm a {
+      text-decoration: none; }
+    .print-redemption-confirm .redemption-area {
+      margin-left: 15px;
+      padding-bottom: 0; }
+      .print-redemption-confirm .redemption-area.capital {
+        text-transform: uppercase; }
+        .ie .print-redemption-confirm .redemption-area.capital {
+          font-size: 18px;
+          margin-top: 10px; }
+    .print-redemption-confirm .divider {
+      border-left: 1px solid #d5d5d5; }
+    .print-redemption-confirm .section-row {
+      padding: 20px 0 52px 0; }
+      .ie .print-redemption-confirm .section-row {
+        padding-bottom: 20px; }
+    .print-redemption-confirm .section-header {
+      text-align: center; }
+      .print-redemption-confirm .section-header h1 {
+        text-transform: uppercase !important;
+        font-size: 36px;
+        font-size: 3.6rem;
+        margin-top: 10px; }
+        .ie .print-redemption-confirm .section-header h1 {
+          font-size: 24px; }
+      .print-redemption-confirm .section-header h4 {
+        font-size: 20px;
+        font-size: 2rem;
+        margin: 25px 0 0 0;
+        font-family: verdana, arial, sans-serif; }
+        .ie .print-redemption-confirm .section-header h4 {
+          font-size: 16px; }
+      .print-redemption-confirm .section-header .address {
+        font-size: 23px;
+        font-size: 2.3rem;
+        margin-top: 5px; }
+    .print-redemption-confirm .title-container h2 {
+      font-size: 24px;
+      font-size: 2.4rem;
+      margin-top: 0; }
+    .ie .print-redemption-confirm .title-container {
+      font-size: 18px; }
+    .print-redemption-confirm .horizontal-rule {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #d5d5d5; }
+    .print-redemption-confirm .horizontal-rule-bottom {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d5d5d5; }
+    .print-redemption-confirm .redemption-block {
+      padding: 15px 15px 15px 0;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 35px;
+      margin-left: 15px; }
+      .print-redemption-confirm .redemption-block .redemption-block-heading {
+        margin-top: 0;
+        border-bottom: 1px solid #d5d5d5;
+        text-transform: uppercase;
+        padding-bottom: 22px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-size: 3rem; }
+      .print-redemption-confirm .redemption-block .redemption-block-title {
+        font-family: arial, verdana, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        font-size: 1.4rem; }
+        .ie .print-redemption-confirm .redemption-block .redemption-block-title {
+          font-size: 11px;
+          margin-bottom: 0;
+          padding-right: 5px; }
+      .print-redemption-confirm .redemption-block .print-redeem-instrcution {
+        padding-right: 30px; }
+        .ie .print-redemption-confirm .redemption-block .print-redeem-instrcution p {
+          font-size: 11px; }
+      .ie .print-redemption-confirm .redemption-block .print-redeem-tnc .redemption-block-title {
+        margin-top: 5px; }
+      .ie .print-redemption-confirm .redemption-block li, .ie
+      .print-redemption-confirm .redemption-block span, .ie
+      .print-redemption-confirm .redemption-block p {
+        font-size: 11px;
+        margin-bottom: 0; }
+    .print-redemption-confirm .redemption-block-intro {
+      line-height: 15px; }
+      .print-redemption-confirm .redemption-block-intro span {
+        font-size: 1.4rem;
+        font-size: 14px; }
+    .print-redemption-confirm .print-footer {
+      margin: 15px 0 35px -10px; }
+      .ie .print-redemption-confirm .print-footer p {
+        font-size: 11px; } }
+
+/*# sourceMappingURL=print.css.map */

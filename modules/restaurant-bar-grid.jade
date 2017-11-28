@@ -1,0 +1,376 @@
+// Module - Restaurant and Bar Grid View - Starts
+section.restaurant-bar-grid
+  .container.no-gutter
+    p.no-result-message Unfortunately we didn't find the exactly what you're looking for. 
+      span But check out the other restaurants we have on tap.
+
+    .row
+      // This is a restaurant and bar container 1
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/lobster-bar-grill-2.jpg", alt="")
+              span.new-opening
+                span.icon-new-opening New Opening
+          .content-container
+            h2 
+              a(href="#") Lobster &amp; bar Grill
+            p.restaurant-bar-address Island Shangri-La, Hong Kong Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Grill and Steakhouse
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-primary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 2
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/waterside-terrace.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Waterside Terrace
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine THAI 
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar Member Benefit
+      .col-xs-12.col-md-6.memberBenefitBlock
+        .restaurant-bar-container
+          .joinus-table
+            .joinus-content
+              .aligned-content
+                .icon
+                  span.icon-member-benefits
+                h1 Member benefits
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at diam eu massa scelerisque dapibus vel vitae felis.
+                ul.joinus-list.hidden-xs
+                  li Rewards &amp; Benefits
+                  li Exclusive Experiences
+                  li Local Events                
+                .button-container
+                  a(href='javascript:void(0);').button-primary Find Out More
+      // This is a restaurant and bar Golden Circle Recommended
+      .col-xs-12.col-md-6.memberFavourite
+        include golden-circle-recommended
+      // This is a restaurant and bar container 3
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/cafe-kool.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Café Kool
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine International
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table                  
+      // This is a restaurant and bar container 4
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/angelini.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Angelini
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Italian
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call     
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 5
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/nadaman.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Nadaman
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine japanese
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 6
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/petrus.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Petrus
+            p.restaurant-bar-address Island Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine French
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 7
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/lobster-bar-grill.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Sigi's Bar &amp; Grill On The Beach
+            p.restaurant-bar-address Island Shangri-La, Hong Kong Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Grill and Steakhouse
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 8
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/shang-palace.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Shang Palace
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine International
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 9
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/cafe-malacca.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Cafe Malacca
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Italian
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 10
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/summer-palace.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Summer Palace
+            p.restaurant-bar-address Island Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Chinese
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar Golden Circle Recommended
+      .col-xs-12.col-md-6.restaurantItem.memberFavourite
+        include golden-circle-recommended
+
+      // This is a restaurant and bar container 11
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/cafe-too.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") CAFE TOO
+            p.restaurant-bar-address Island Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine International
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 12
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/deli-kool.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Déli Kool
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Gourmet
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 13
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/island-gourmet.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Island Gourmet
+            p.restaurant-bar-address Island Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine Gourmet
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+      // This is a restaurant and bar container 14
+      .col-xs-12.col-sm-6.col-md-3.restaurantItem
+        .restaurant-bar-container
+          .image-container.lazy-load-wrapper
+            a(href="#")
+              img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/cafe-kool.jpg", alt="")
+              span.icon
+                span.icon-restaurants-bars
+          .content-container
+            h2 
+              a(href="#") Café Kool
+            p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+            p.restaurant-bar-address Hong Kong
+            p.cuisine International
+              span.divider |
+              span.price $$
+            p.offer Offers (2)
+              span.divider |
+              span.price Experiences (1)
+            p.contact-info +
+              span.contact-number 852 12345678
+            .button-container
+              a.call-us-btn.button-secondary(href="#") Call
+              a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+    include ../modules/paginationjs
+    include ../modules/merchandising-fullwidth-block-variation-1
+    include ../modules/merchandising-fullwidth-block-variation-2
+    include ../modules/merchandising-fullwidth-block-variation-3
+    include ../modules/merchandising-fullwidth-block-variation-4
+    include ../modules/merchandising-fullwidth-block-variation-5
+    include ../modules/merchandising-fullwidth-block-variation-6
+    include ../modules/merchandising-fullwidth-block-variation-7
+
+// Module - Restaurant and Bar Grid View - Ends

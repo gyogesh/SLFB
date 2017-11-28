@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Restaurant Bar List Two Venues"}
+  - var Meta = {description:"Module - Restaurant Bar List Two Venues", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/restaurant-bar-list-two-venues

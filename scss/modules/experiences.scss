@@ -1,0 +1,58 @@
+.experiences {
+    background-color: $section-background-2;
+    overflow: hidden;
+    .slider-content-pod {
+        .item {
+            .caption-block {
+                .page-info {
+                    display: none;
+                }
+                padding: 25px 40px 150px;
+                p.member-exclusive {
+                    position: absolute;
+                    bottom: 80px;
+                    left: 50%;
+                    margin-left: -70px;
+                }
+                @include breakpoint ('md') {
+                  .icon {
+                      margin-top: -15px;
+                      margin-bottom: 20px;
+                  }
+                }
+                @include breakpoint ('sm') {
+                    padding: 0 40px 120px;
+                    .icon {
+                        margin-top: -15px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .eqHeight {
+                @include breakpoint ('md') {
+                    height: auto !important;
+                }
+                @include breakpoint ('sm') {
+                    height: auto !important;
+                }
+                @include breakpoint ('xs') {
+                    height: auto !important;
+                }
+            }
+            .button-secondary {
+                position: absolute;
+                bottom: 25px;
+                left: 50%;
+                margin-left: -70px;
+                width: 96px;
+                @include breakpoint ('xs') {
+                    margin-left: -70px;
+                    width: 116px;
+                }
+            }
+        }
+    }
+    .no-result-message {
+        border: 2px solid $section-background-1;
+    }
+}

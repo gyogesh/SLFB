@@ -1,0 +1,32 @@
+[
+  {
+    "id" : "SLQF",
+    "name" : "SLQF",
+    "lat" : 35.580271,
+    "lng" : 116.991474,
+    "venueCount" : 5,
+    "venues" : 
+    [
+      {
+        "id" : "SLQF_LOBBYLOUNGE",
+        "name" : "Lobby Lounge"
+      },
+      {
+        "id" : "SLQF_STREAMINGBAR",
+        "name" : "Streaming Bar"
+      },
+      {
+        "id" : "SLQF_CAFEKONG",
+        "name" : "Café Kong"
+      },
+      {
+        "id" : "SLQF_GRAINHOUSEOPENINGSOON",
+        "name" : "Grain House  (Opening soon)"
+      },
+      {
+        "id" : "SLQF_SHANGPALACE",
+        "name" : "Shang Palace"
+      }
+    ]
+  }
+]

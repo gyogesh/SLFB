@@ -1,0 +1,70 @@
+
+script(src= Basepath.path + "content/js/common.js")
+
+// to avoid stripping of previous line
+<!--build:js #{Basepath.path}content/js/modules.js-->
+script(src= Basepath.path + "content/js/modules/header.js")
+script(src= Basepath.path + "content/js/modules/search.js")
+script(src= Basepath.path + "content/js/modules/footer.js")
+script(src= Basepath.path + "content/js/modules/user.js")
+script(src= Basepath.path + "content/js/modules/carousels.js")
+script(src= Basepath.path + "content/js/modules/experiences.js")
+script(src= Basepath.path + "content/js/modules/restaurant-bar-list.js")
+script(src= Basepath.path + "content/js/modules/special-offers.js")
+script(src= Basepath.path + "content/js/modules/calendars.js")
+script(src= Basepath.path + "content/js/modules/filters.js")
+script(src= Basepath.path + "content/js/modules/tabs-module.js")
+script(src= Basepath.path + "content/js/modules/destination-overlay.js")
+script(src= Basepath.path + "content/js/modules/restaurant-bar-detail.js")
+script(src= Basepath.path + "content/js/modules/photo-gallery.js")
+script(src= Basepath.path + "content/js/modules/read-more.js")
+script(src= Basepath.path + "content/js/modules/form-modules.js")
+script(src= Basepath.path + "content/js/modules/maps.js")
+script(src= Basepath.path + "content/js/modules/restaurant-bar-map.js")
+script(src= Basepath.path + "content/js/modules/static-map.js")
+script(src= Basepath.path + "content/js/modules/restaurant-bar-menu.js")
+script(src= Basepath.path + "content/js/modules/book-table.js")
+script(src= Basepath.path + "content/js/modules/member-benefits.js")
+script(src= Basepath.path + "content/js/modules/select-boxit.js")
+script(src= Basepath.path + "content/js/modules/moods.js")
+script(src= Basepath.path + "content/js/modules/book-hotel-search.js")
+script(src= Basepath.path + "content/js/modules/pagination.js")
+script(src= Basepath.path + "content/js/modules/bright-cove.js")
+script(src= Basepath.path + "content/js/modules/bright-cove-moods.js")
+script(src= Basepath.path + "content/js/modules/bright-cove-all.js")
+script(src= Basepath.path + "content/js/modules/member-profile.js")
+// endbuild
+
+// to avoid stripping of previous line
+script(type="text/javascript").
+
+  var loadMapApi = function(mapApiString) {
+    var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = mapApiString;
+        s.async = true;
+        document.getElementsByTagName('head')[0].appendChild(s);
+  };
+
+  var mapApiString = "https://maps.googleapis.com/maps/api/js?v=3&callback=Shangrila.maps.init";
+
+  if(window.jQuery){
+      (function(){
+        $.ajax({
+          url: 'http://api.snoopi.io/v1',
+          type: 'GET',
+          dataType: 'json'
+        })
+        .done( function (data) {
+          mapCountryCode = data.CountryCode;
+
+          if(mapCountryCode && mapCountryCode.toUpperCase() == 'CN')
+            {
+              mapApiString = "http://maps.google.cn/maps/api/js?v=3&callback=Shangrila.maps.init";
+            }
+        })
+        .always( function() {
+          loadMapApi(mapApiString);
+        });
+      })();
+  }

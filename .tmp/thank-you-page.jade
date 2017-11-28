@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Thank You Page"}
+  - var Meta = {description:"Module - Thank You Page", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/thank-you-page

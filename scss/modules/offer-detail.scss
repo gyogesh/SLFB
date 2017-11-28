@@ -1,0 +1,154 @@
+/*
+* Moudule : Offer Details
+*/
+
+.offer-detail{
+  background-color: $section-background-1;
+  .special-offer-container .inner-container{
+    padding: 40px 0 20px;
+    width: 80%;
+    @include breakpoint('sm'){
+      padding: 0 0 20px;
+      width: 100%;
+    }
+    .image-container{
+      @include breakpoint('sm'){
+        img{
+          width: 100%;
+          height: auto;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .content-container{
+      padding-left: 40px;
+      width: 132%;
+      @include breakpoint('sm'){
+        padding: 0 30px;
+        width: 100%;
+      }
+      @include breakpoint('xs'){
+        padding: 0 10px;
+      }
+
+      h3{
+        font-size: 36px;
+        font-size: 3.6rem;
+        padding-top: 15px;
+        @include breakpoint('sm'){
+         font-size: 21px;
+         font-size: 2.1rem;
+         padding-top: 8px;
+        }
+      }
+      h5{
+        padding-bottom: 5px;
+        padding-top: 10px;
+        @include breakpoint('sm'){
+         padding: 10px 0;
+        }
+      }
+      p{
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        @include breakpoint('sm'){
+         font-size: 13px;
+         font-size: 1.3rem;
+        }
+      }
+      p.offer-period{
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.9;
+      }
+      p.descreption{
+        font-size: 21px;
+        font-size: 2.1rem;
+        line-height: 1.4;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        @include breakpoint('sm'){
+         font-size: 16px;
+         font-size: 1.6rem;
+         padding: 10px 0;
+        }
+      }
+      p.avalabilty{
+        font-size: 16px;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        @include breakpoint('sm'){
+         font-size: 13px;
+         font-size: 1.3rem;
+        }
+      }
+      p.telephone{
+        padding-top: 10px;
+      }
+      p.member-exclusive{
+        font-size: 13px;
+        font-size: 1.3rem;
+        margin: 15px 0 20px;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+      .button-container{
+        margin-bottom: 25px;
+        position: static;
+        @include breakpoint('sm'){
+          padding: 0;
+        }
+        @include breakpoint('xs'){
+          margin-bottom: 15px;
+        }
+        .call-us-btn{
+          display: none;
+          @include breakpoint('xs'){
+            display: inline-block;
+            margin-left: 0;
+          }
+        }
+      }
+      p.telephone{
+        a{
+          color: $primary-color-2;
+          font-family: $MyriadPro-Semibold;
+        }
+      }
+    }
+    .button-primary{
+      margin-left: 0;
+      box-sizing: content-box;
+      width: 96px;
+    }
+  }
+  .need-to-know{
+    margin-bottom: 40px;
+    @include breakpoint('sm'){
+      margin-bottom: 25px;
+    }
+  }
+  .detail-breadcrums-wrapper .breadcrumbs{
+    line-height: 1;
+    margin: 0 0 40px;
+  }
+  .social-share{
+    margin-bottom: 20px;
+    span{
+      display: inline-block;
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 16px;
+      font-size: 1.6rem;
+      margin-right: 25px;
+      vertical-align: middle;
+    }
+    .social-icons-wrapper{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

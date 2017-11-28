@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Restaurant Bar Grid"}
+  - var Meta = {description:"Module - Restaurant Bar Grid", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/restaurant-bar-grid

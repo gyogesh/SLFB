@@ -1,0 +1,46 @@
+/*
+* Module : F&B Tactical Campaign/Promotion Template
+*/
+
+.campaign-promotion {
+  [data-imagizer] {
+    img {
+      object-fit: cover;
+      font-family: 'object-fit: cover';
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+
+  [data-imagizer="fit"] {
+    img {
+      object-fit: contain;
+      font-family: 'object-fit: contain';
+    }
+  }
+
+  .button-primary {
+    width: auto;
+  }
+
+  &.join-golden-circle-new {
+    &.joining-form {
+      .notes {
+        padding: 20px 0 0;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.promotion-popup-block, .join-golden-circle-new {
+  .form-cta .button-primary {
+    width: auto;
+    height: auto;
+    line-height: 1;
+    padding: 16px 20px 12px;
+  }
+}

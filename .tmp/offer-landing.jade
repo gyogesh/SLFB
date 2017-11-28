@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Offer Landing"}
+  - var Meta = {description:"Module - Offer Landing", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/offer-landing

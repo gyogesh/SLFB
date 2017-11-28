@@ -1,0 +1,92 @@
+header,
+footer {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.fix-width-container,
+.fix-width-container .form-container {
+  max-width: 1062px;
+  margin: 0 auto;
+}
+
+.header .header-container {
+	@media (min-width: 1300px) {
+		width: 68%;
+		left: 50%;
+		margin-left: -34%;
+	}
+}
+.book-hotel-slider{
+	@media (min-width: 1300px) {
+		width: 360px;
+		margin-left: -138px;
+	}
+}
+
+.login-flyout {
+	@media (min-width: 1300px) {
+		width: 540px;
+	    margin-left: -245px;
+	}
+
+	@media (min-width: 1630px) {
+		width: 540px;
+	}
+}
+
+.member-login-flyout {
+	@media (min-width: 1300px) {
+		min-width: 200px;
+		left: auto;
+	    right: 0;
+	}
+}
+.section-heading{
+	h1{
+		&:before,
+    	&:after {
+    		@include gridBreakpoint('sm') {
+    			width: 60px;
+    		}
+    		@include gridBreakpoint('md') {
+				width: 100px;
+    		}
+    	}
+		&:before {
+			@include gridBreakpoint('sm') {
+	      		right: -80px;
+	      	}
+	      	@include gridBreakpoint('md') {
+				right: -130px;
+    		}
+	    }
+
+	    &:after {
+	    	@include gridBreakpoint('sm') {
+	      		left: -80px;
+	      	}
+	      	@include gridBreakpoint('md') {
+				left: -130px;
+    		}
+	    }
+	}
+}
+
+.member-exclusive-tag-wrapper {
+  text-align: center;
+
+  .member-exclusive-tag {
+    background-color: $secondary-color-3;
+    color: $primary-color-1;
+    display: block;
+    font-family: $FuturaStd-Medium;
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin: 10px auto 10px;
+    padding: 5px 10px;
+    width: 170px;
+  }
+
+}

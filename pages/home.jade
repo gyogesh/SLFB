@@ -1,0 +1,23 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Homepage"}
+  - var Meta = {description:"Homepage", keywords:"homepage"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/main-carousel
+  include ../modules/search
+  include ../modules/joinus-table
+  include ../modules/mood-for
+  include ../modules/restaurant-bar-list
+  include ../modules/restaurant-bar-list-three-venues
+  include ../modules/restaurant-bar-list-two-venues  
+  include ../modules/restaurant-bar-list-one-venues
+  include ../modules/experiences
+  include ../modules/special-offers
+  include ../modules/special-offers-one
+  include ../modules/special-offers-two
+  include ../modules/social-media
+  include ../modules/destination
+  include ../modules/footer

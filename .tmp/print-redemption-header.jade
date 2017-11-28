@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Print Redemption Header"}
+  - var Meta = {description:"Module - Print Redemption Header", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/print-redemption-header

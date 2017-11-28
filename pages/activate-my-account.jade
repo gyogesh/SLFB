@@ -1,0 +1,42 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"ACTIVATE MY ACCOUNT"}
+  - var Meta = {description:"Login to Golden Circle", keywords:"Golden Circle, Login"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/activate-my-account
+  script(type="text/javascript").
+    var options = {
+      rules: {
+      	txtMembershipNumber: {required: true},
+        txtLastName:      {required: true},
+        selDD:            {required_email_or_dob: true},
+        selMM:            {required_email_or_dob: true},
+        selYYYY:          {required_email_or_dob: true},
+        txtEmail:         {required_email_or_dob: true, email: true},
+        txtCaptchaKeyword:{required: true}
+      },
+      messages: {
+      	txtMembershipNumber: {required: "Membership Number is a required field"},
+        txtLastName:      {required: "Last Name is a required field"},
+        selDD:            {required_email_or_dob: "Email or Date of Birth is a required field"},
+        selMM:            {required_email_or_dob: "Email or Date of Birth is a required field"},
+        selYYYY:          {required_email_or_dob: "Email or Date of Birth is a required field"},
+        txtEmail:         {required_email_or_dob: "Email or Date of Birth is a required field", email: "Email is invalid"},
+        txtCaptchaKeyword:{required: "Captcha Keyword is a required field"}
+      },
+      messagesCN: {
+      	txtMembershipNumber: {required: "Membership Number is a required field"},
+        txtLastName:      {required: "Last Name required should be English"},
+        selDD:            {required_email_or_dob: "Email or Date of Birth is a required field"},
+        selMM:            {required_email_or_dob: "Email or Date of Birth is a required field"},
+        selYYYY:          {required_email_or_dob: "Email or Date of Birth is a required field"},
+        txtEmail:         {required_email_or_dob: "Email or Date of Birth is a required field", email: "Email is invalid"},
+        txtCaptchaKeyword:{required: "Captcha Keyword is a required field"}
+      }
+    };
+  script(src="content/js/vendors/jquery.validate.js") 
+  script(src="content/js/pages/activateaccount.js")
+  include ../modules/footer

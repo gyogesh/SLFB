@@ -1,0 +1,13 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Special Offer Landing"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "special-offers"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-special-offer-header
+  include ../modules/offer-landing
+  include ../modules/destination
+  include ../modules/footer

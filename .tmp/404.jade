@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - 404"}
+  - var Meta = {description:"Module - 404", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/404

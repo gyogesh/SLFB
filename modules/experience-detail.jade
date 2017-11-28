@@ -1,0 +1,47 @@
+// Module - Experience Detail - Starts
+section.experience-detail
+  .container
+    .details
+      .row
+        .hidden-sm.hidden-xs.col-md-11.col-md-offset-1
+          .release-padding-top30
+          // Comment this div once below breadcrumb div is uncommented.
+          //.detail-breadcrums-wrapper
+              include ../includes/breadcrums
+      .row
+        .col-xs-12.col-md-7.col-md-offset-1
+          .experience-info
+            p.avalabilty Available: Weekdays only
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel sollicitudin sapien, eu aliquet nisi. In accumsan, nisl at hendrerit laoreet, sapien est molestie justo, dignissim cursus mauris mi vitae sapien. Vestibulum sit amet ex lobortis, rutrum ex quis, feugiat lorem. Sed viverra ligula a bibendum, et convallis orci luctus.
+
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel sollicitudin sapien, eu aliquet nisi.
+
+            h4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            ul
+              li Sed viverra ligula a justo bibendum
+              li Etiam ut iaculis justo
+              li Sed sem sapien
+          .need-to-know
+            h5 Need to know
+            p Vivamus convallis urna et felis vehicula vestibulum. Nam ullamcorper condimentum dolor, eget blandit urna commodo eget. Etiam mattis imperdiet odio ac tristique. Mauris bibendum dui efficitur libero ornare blandit. Etiam ut iaculis justo, sit amet venenatis odio.
+          include ../includes/terms-conditions
+
+          .social-share
+            span Share
+            .social-icons-wrapper(data-visible=3)
+              include ../includes/social-icons-share
+
+
+        .col-xs-12.col-md-3
+          aside.right-column
+            .experience-map
+              .description
+                a.map.icon-search-plus(data-type='static-map')
+                  img.img-responsive(src="content/img/content/placeholder.png", data-longitude="114.164415", data-latitude="22.277106" data-mapurl="https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=255x170&maptype=roadmap&markers=icon:" alt="")
+                .map-info
+                  h3
+                    span Waterside Terrace
+                    | Island Shangri-La, Hong Kong
+                  p Pacific Place, Supreme Court Road Central, Hong Kong
+
+// Module - Experience Detail - Ends

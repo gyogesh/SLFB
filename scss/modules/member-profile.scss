@@ -1,0 +1,359 @@
+/*
+* Module : member-profile
+*/
+.text-capitalize {
+  text-transform: capitalize;
+}
+ .member-profile {
+    background-color: #f1f2f2;
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #dedede;
+      margin-left: 74px;
+      @include breakpoint('xs') {
+        margin-left: 48%;
+      }
+    }
+    .section-heading {
+      padding-bottom: 20px;
+      @include breakpoint('lg') {
+        padding-bottom: 35px;
+      }
+    }
+    .manage-profile {
+      text-align: left;
+      padding: 0;
+      .button-primary {
+        width: auto;
+        min-width: 120px;
+        margin: 0;
+        @include breakpoint('xs') {
+          width: 100%;
+        }
+        span {
+          display: inline-block;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+      .icon-android-close {
+        position: absolute;
+        font-size: 16px;
+        top: -3px;
+        right: -20px;
+      }
+    }
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+
+    // main
+    .member-main {
+      padding-top: 15px;
+      @include breakpoint('lg') {
+        padding-top: 0;
+      }
+      li {
+        font-family: $MyriadPro-Regular;
+        text-transform: none;
+        font-size: 13px; // ie8 fallback
+        font-size: 1.3rem; // modern browsers
+        
+
+        @include gridBreakpoint ('lg'){
+          font-size: 16px; // ie8 fallback
+          font-size: 1.6rem; // modern browsers
+        }
+        
+        &.text-capitalize {
+          text-transform: capitalize;
+        }
+        &.headline,
+        .headline {
+          font-family: $FuturaStd-Medium;
+          font-size: 13px; // ie8 fallback
+          font-size: 1.3rem; // modern browsers
+          text-transform: uppercase;
+          @include gridBreakpoint ('lg'){
+            font-size: 16px; // ie8 fallback
+            font-size: 1.6rem; // modern browsers
+          }
+        }
+      }
+
+      .member-main-heading {
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #ccc;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 17px 0;
+
+        font-family: $FuturaStd-Medium;
+        font-size: 18px; // ie8 fallback
+        font-size: 1.8rem; // modern browsers
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-family: $FuturaStd-Medium;
+        font-size: 18px; // ie8 fallback
+        font-size: 1.8rem;
+        margin-top: 0;
+        @include breakpoint('lg') {
+          font-size: 36px; // ie8 fallback
+          font-size: 3.6rem; // modern browsers
+        }
+      }
+
+      .member-profile-intro {
+        margin-top: 30px;
+        margin-bottom: 18px;
+        @include breakpoint('lg') {
+          margin-top: 54px;
+        }
+
+        .member-profile-info {
+          .headline {
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            display: inline-block;
+          }
+        }
+      }
+
+      .member-profile-points {
+        li{
+          margin-bottom: 15px;
+
+          @include gridBreakpoint('sm') {
+            margin-bottom: 30px;
+          }
+
+          .row {
+            //line-height: 35px;
+            @include breakpoint('lg') {
+              line-height: 20px;
+            }
+          }
+          .details {
+            display: table;
+            .desc,
+            .points {
+              display: table-cell;
+              vertical-align: top;
+            }
+            .points {
+              padding-right: 10px;
+            }
+          }
+          .points {
+            font-family: $FuturaStd-Medium;
+            font-size: 15px; // ie8 fallback
+            font-size: 1.5rem; // modern browsers
+            @include gridBreakpoint('sm') {
+              font-size: 36px; // ie8 fallback
+              font-size: 3.6rem; // modern browsers
+              line-height: 1;
+            }
+          }
+          .desc {
+            @include gridBreakpoint('sm') {
+              font-size: 16px; // ie8 fallback
+              font-size: 1.6rem; // modern browsers
+              max-width: 150px;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+
+      .member-profile-details {
+        margin-top: 25px;
+
+        li {
+          margin-bottom: 18px;
+          &.headline {
+            margin-bottom: 5px;
+            @include breakpoint('lg') {
+              margin-bottom: 18px;
+            }
+          }
+          &.headline-light {
+            margin-bottom: 0;
+            @include breakpoint('lg') {
+              margin-bottom: 18px;
+            }
+          }
+          &.pull-right {
+            text-align: right;
+          }
+
+          &.no-margin {
+            margin: 0;
+            @include breakpoint('lg') {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .redemption-group {
+        .member-redemption-group {
+          margin-top: 25px;
+          @include breakpoint('md') {
+            margin-bottom: 0;
+          }
+          // .headline {
+          //   padding-top: 15px;
+          // }
+          li {
+            margin-bottom: 18px;
+            &.headline {
+              @include breakpoint('lg') {
+                margin-bottom: 18px;
+              }
+            }
+            &.pull-right {
+              text-align: right;
+            }
+            span {
+              padding: 0;
+            }
+            &:last-child {
+              margin-bottom: 0;
+              /*@include breakpoint('xs') {
+                span:last-child {
+                  border-bottom: 1px solid #ccc;
+                  padding-bottom: 25px;
+                }
+              }*/
+            }
+
+            &:nth-child(3n+0){
+              span:last-child{
+                @include breakpoint('md') {
+                  padding-bottom: 15px;
+                  border-bottom: 1px solid $secondary-color-4;  
+                }
+                
+              }
+            }
+            &.last {
+              span:last-child{
+                @include breakpoint('md') {
+                  border-bottom: none;
+                  padding-bottom: 0;
+                }
+              }
+            }
+
+            &.visible-lg {
+              @include breakpoint('md') {
+                margin-bottom: 0; 
+              }
+            }
+          }
+          
+
+        }
+      }
+  }
+
+  // sidebar
+  .member-sidebar {
+      border: 0;
+      padding: 28px;
+      background-color: #dedede;
+      @include breakpoint('sm') {
+        padding: 10px;
+      }
+      @include breakpoint('xs') {
+        padding: 15px 0 0 0;
+      }
+      @include breakpoint('lg') {
+        border: 1px solid #ccc;
+        background-color: transparent;
+      }
+      .member-sidebar-heading {
+        font-family: $FuturaStd-Medium;
+        font-size: 16px; // ie8 fallback
+        font-size: 1.6rem; // modern browsers
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        @include breakpoint('xs') {
+          &:not(.last-ul) {
+            padding-bottom: 15px;
+             border-bottom: 1px solid #ccc;
+          }
+        }
+        @include breakpoint('md') {
+          .last-ul {
+            margin-bottom: 0;
+          }
+        }
+        &.menu {
+          margin-bottom: 0;
+          display: inline-flex;
+          width: 100%;
+          @include breakpoint('xs') {
+            display: block;
+            padding-left: 10px;
+            border-bottom: 0;
+          }
+          @include breakpoint('lg') {
+            display: block;
+          }
+
+          li:not(:last-child) {
+            border-right: 1px solid #ccc;
+            @include breakpoint('xs') {
+              border-right: 0;
+            }
+            @include breakpoint('lg') {
+              border-right: 0;
+            }
+          }
+          .sub-menu li {
+            border-right: 0;
+          }
+        }
+
+        li {
+          margin-bottom: 12px;
+
+          a {
+            color: #257e8a;
+            font-family: $FuturaStd-Medium;
+            font-size: 13px; // ie8 fallback
+            font-size: 1.3rem; // modern browsers
+          }
+        }
+      }
+
+      .member-profile-note {
+        @include breakpoint('xs') {
+          padding-left: 10px;
+        }
+      }
+      p {
+        font-family: $MyriadPro-Regular;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.6;
+      }
+    }
+ }

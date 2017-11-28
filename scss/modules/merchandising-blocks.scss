@@ -1,0 +1,312 @@
+// default merchandising block
+.mood-mosaic {
+  .merchandising-block {
+	margin-top: 20px;
+	position: static;
+    @include boxShadow(#ccc, 1px, 1px, 2px);
+  }  
+}
+.experiences-list {
+	.merchandising-block {
+		.content-container {
+			padding-left: 45px;
+			padding-right: 45px;
+		}	
+	}
+}
+.offer-landing {
+	.merchandising-block.full-width {
+		@include gridBreakpoint('sm') {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		@include breakpoint('md') {
+			width: 100%;
+		}
+	}
+}
+.restaurant-bar-list {
+	.merchandising-block.full-width {
+		@include gridBreakpoint('sm') {
+			margin-left: 10px;
+			margin-right: 10px;
+			width: 97.6%;
+		}
+		@include gridBreakpoint('md') {
+			width: 98%;
+		}
+		@include gridBreakpoint('lg') {
+			width: 100%;
+		}
+	}	
+}
+
+.merchandising-block {
+	position: relative;
+	max-width: 1150px;
+    margin: 0 auto;
+
+	.media-container.image {
+		height: 370px;
+		@include breakpoint('md'){
+		  height: 303px;
+		}
+		@include breakpoint('sm'){
+		  height: 355px;
+		}
+		@include breakpoint('xs'){
+		  height: auto;
+		}
+		img {
+		  width: 100%;
+		  height: auto;
+		}
+		+ .content-container {
+			text-align: center;
+		}
+	}
+	.media-container.video {
+		+ .content-container {
+			text-align: center;
+		}
+	}
+	.content-container {
+		background-color: $section-background-2;
+		padding: 20px;
+		text-align: left;
+		p {
+			color: $primary-color-2;
+			font-family: $MyriadPro-Regular;
+			font-size: 13px;
+			font-size: 1.3rem;
+			line-height: 1.66;
+			margin: 10px 0;
+			// margin-bottom: 5px;
+		}
+	}
+	h3 {
+	    font-family: $FuturaStd-Medium;
+	    font-size: 21px;
+	    font-size: 2.1rem;
+	    line-height: 1.52;
+	    padding-top: 11px;
+	    padding-bottom: 11px;
+	    margin: 0;
+	    @include breakpoint('sm'){
+	     line-height: 1.38;
+	   }
+	   a {
+	      color: $black;
+	   }
+	}
+	p.offer-period {
+	    font-family: $FuturaStd-Medium;
+	    font-size: 13px;
+	    font-size: 1.3rem;
+	    display: inline-block;
+	    position: relative;
+	    text-transform: uppercase;
+	    margin-top: 10px;
+	    margin-bottom: 0;
+	}
+	p.member-exclusive {
+        background-color: $secondary-color-3;
+        color: $primary-color-1;
+        font-family: $FuturaStd-Medium;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #7e735f;
+        margin: 40px 0 10px 0;
+        padding: 5px 10px;
+        display: inline-block;
+
+        + .button-container {
+        	a {
+        		margin-top: 5px;
+        	}
+        }
+    }
+	.button-container {
+		display: block;
+		a {
+			font-family: $FuturaStd-Medium;
+		    font-size: 13px;
+		    font-size: 1.3rem;
+		    text-transform: uppercase;
+		    color: $secondary-color-2;
+		    margin: 10px 0;
+		    display: inline-block;
+		    &:hover,
+		    &:focus,
+		    &:active {
+		    	color: $secondary-color-7;
+		    	.icon-angle-rgt {
+		    		border: solid 1px $secondary-color-7;
+		    	}
+		    }
+		}
+		.icon-angle-rgt {
+			border-radius: 50%;
+			border: solid 1px $secondary-color-2;
+			height: 15px;
+			width: 15px;
+			display: inline-block;
+			top: 1px;
+			left: 5px;
+			position: relative;
+			line-height: 1;
+			padding: 0 1px 1px;
+		}
+	}
+}
+
+// full width merchandising block
+.merchandising-block.full-width {
+	width: 100%;
+	margin: 45px 10px 20px 10px;
+	@include breakpoint('xs'){
+		@include boxShadow(#ccc, 1px, 1px, 2px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include breakpoint('md') {
+		width: 95%;
+	}
+
+
+	@include gridBreakpoint ('sm') {
+		margin-left: 20px;
+		margin-right: 20px;
+		display: table;
+		.media-container {
+			overflow: hidden;
+			display: table-cell;
+			vertical-align: top;
+			width: 240px;
+			position: relative;
+			&.image,
+			&.video {
+				height: auto;
+				img {
+					max-width: 260px;
+					width: auto;
+
+					position: absolute;
+				    left: 50%;
+				    top: 50%;
+				    margin-top: -50%;
+				    margin-left: -50%;
+				}
+				+ .content-container {
+					text-align: left;
+					.inner-content {
+						padding-right: 30px;
+						padding-left: 30px;
+
+						@include breakpoint('sm') {
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+		}
+		.content-container {
+			padding: 0;
+			min-height: 160px;
+		}
+		.inner-content {
+			display: table-cell;
+			//vertical-align: middle;
+			position: relative;
+			padding: 20px;
+			height: 160px;
+			width: 100%;
+		}
+		.button-container {
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 20px;
+			padding-left: 20px;
+			position: relative;
+
+			// @include gridBreakpoint('md') {
+			// 	padding-left: 50px;
+			// 	padding-right: 50px;
+			// }
+			a {
+				white-space: nowrap;
+				margin: 0;
+			}
+			&:before {
+				content: "";
+				top: 40px;
+				left: 0;
+				bottom: 40px;
+				width: 1px;
+				background-color: #433c37;
+				position: absolute;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		p.offer-period {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		h3 {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		p.member-exclusive {
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+	}
+	@include gridBreakpoint ('md') {
+		margin-left: auto;
+		margin-right: auto;
+		.button-container {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+	@include gridBreakpoint ('lg') {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.ie {
+	.merchandising-block.full-width {
+		@include gridBreakpoint ('sm') {
+			.media-container {
+				&.image,
+				&.video {
+					img {
+						max-width: none;
+					}
+				}
+			}
+			.button-container {
+				overflow: hidden;
+				&:before {
+					height: 200px;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 40px;
+					width: 1px;
+					background-color: $section-background-2;
+				}
+			}
+		}
+	}
+}

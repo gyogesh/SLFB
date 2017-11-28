@@ -1,0 +1,16 @@
+block config
+  include ../components/config
+
+doctype
+<!--[if IE 8]><html  class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html  class="ie9 no-js"lang="en"><![endif]-->
+<!--[if !IE]><!-->
+html.no-js(lang="en")
+  <!--<![endif]-->
+
+  include ../components/header
+
+  body
+    block contentMain
+      | this would be replaced by the page' partial HMTL content
+    include ../components/footer

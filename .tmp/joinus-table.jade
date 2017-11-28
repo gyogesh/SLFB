@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Joinus Table"}
+  - var Meta = {description:"Module - Joinus Table", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/joinus-table

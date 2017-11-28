@@ -1,0 +1,212 @@
+// Module - Join Golden Circle - Starts
+section.join-golden-circle
+  .section-image-header.join-now
+    .container-fluid.no-gutter
+      .image-container
+        img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/join-golden-circle.jpg", alt="SUMMER PALACE Island Shangri-La")
+      .content-container
+        h1 Join Golden Circle
+  .container
+    .personal-info-container
+      .form-container
+        h1 Personal Information
+        p *Denotes required fields.
+
+        .row
+          .col-md-5
+            .row
+              .col-md-5
+                .form-field
+                  label Title*
+              .col-md-7
+                .form-field
+                  .field-container.ui-select-wrapper
+                    .ui-select.label-title
+                      select
+                        option(value="Mr") Mr
+                        option(value="Mrs") Mrs
+                        option(value="Sir") Sir
+                        option(value="Dr") Dr
+                        option(value="Mdm") Mdm
+                        option(value="Professor") Professor
+                    span.error-message Select your Title
+            .row
+              .col-md-5
+                .form-field
+                  label Last Name*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message Last Name is required field
+            .row
+              .col-md-5
+                .form-field
+                  label First Name*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message First Name is required field
+            .row
+              .col-md-5
+                .form-field
+                  label
+                    span.two-line Name you wish to appear on card*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message Preferred Name is a required field
+            .row
+              .col-md-5
+                .form-field
+                  label Date of birth*
+              .col-md-7
+                .row
+                  .col-xs-12
+                    .form-field.error
+                      .field-container
+                        .ui-textinput
+                          input(type="text" placeholder="DD/MM/YYYY")
+                      span.error-message Date format must be DD/MM/YYYY
+                      span.error-message Date is Invalid
+            .row
+              .col-md-5
+                .form-field
+                  label Gender*
+              .col-md-7
+                .form-field.radio-group
+                  label
+                    input(type="radio", name="gender" checked)
+                    span.icon-ios-circle-outline Male
+                  label
+                    input(type="radio", name="gender")
+                    span.icon-ios-circle-outline Female
+
+            .row
+              .col-md-5
+                .form-field
+                  label Email*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message Email already registered
+            .row
+              .col-md-5
+                .form-field
+                  label Re-type email*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message The email address fields do no match
+
+          .col-md-5.col-md-offset-1
+            .row
+              .col-md-4
+                .form-field
+                  label phone number*
+              .col-md-8
+                .row
+                  .col-xs-6
+                    .form-field.error
+                      .field-container.ui-select-wrapper
+                        .ui-select.label-areacode
+                          select
+                            option(value="") Area code
+                            option(value="+91") +91
+                            option(value="+92") +92
+                            option(value="+93") +93
+                            option(value="+94") +94
+                            option(value="+91") +91
+                            option(value="+92") +92
+                            option(value="+93") +93
+                            option(value="+94") +94
+                      span.error-message Please select the area code
+                  .col-xs-6
+                    .form-field.error
+                      .field-container
+                        .ui-textinput
+                          input(type="text", data-type="tel")
+                      span.error-message Phone No. is a required field
+            .row
+              .col-md-4
+                .form-field
+                  label phone type*
+              .col-md-8
+                .form-field
+                  .field-container.ui-select-wrapper
+                    .ui-select
+                      select
+                        option(value="Mobile") Mobile
+                        option(value="Landline") Landline
+            .row
+              .col-xs-12
+                p.description Please create a password to access your Golden Circle account. Passwords must contain at least six characters, with a combination of English letters and at least one numeric digit.
+            .row
+              .col-md-4
+                .form-field
+                  label Password*
+              .col-md-8
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="password")
+                  span.error-message Password must follow above format
+            .row
+              .col-md-4
+                .form-field
+                  label Re-enter Password*
+              .col-md-8
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="password")
+                  span.error-message Passwords do not match
+            .row
+              .col-xs-12
+                .form-field.clearfix.checkbox.error
+                  label
+                    input(type="checkbox")
+                    span.icon-uncheck I have read and agree to the
+                      a(href="javascript:void(0);", title="Terms and Conditions") Terms and Conditions
+                      | .
+                  span.error-message Please read and agree
+                .form-field.clearfix.checkbox.error
+                  label
+                    input(type="checkbox")
+                    span.icon-uncheck I have read and agree to the
+                      a(href="javascript:void(0);", title="Privacy Policy") Privacy Policy
+                      | .
+                  span.error-message Please read and agree
+        .row
+          .col-md-5
+            .row
+              .col-md-offset-5
+                .captcha-holder
+                  img(src="content/img/content/captcha-holder.jpg")
+                  a(href="javascript:void(0)")
+                    img(src="content/img/content/captcha-refresh.png")
+            .row
+              .col-md-5
+                .form-field
+                  label Captcha*
+              .col-md-7
+                .form-field.error
+                  .field-container
+                    .ui-textinput
+                      input(type="text")
+                  span.error-message Captcha does not match
+
+
+        .golden-circle-btn
+          input.button-secondary(value="Submit", type="submit")
+include ../modules/thank-you-join-golden-circle
+// Module - Join Golden Circle - Ends

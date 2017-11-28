@@ -1,0 +1,319 @@
+/*
+* Moudule : Join Goldern Circle New Form
+*/
+.form-cta {
+  .button-primary{
+    border: none;
+  }
+}
+.readonly-label {
+  font-family: $MyriadPro-Regular;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  .last-name {
+    padding-left: 5px;
+  }
+}
+.joining-form {
+  background-color: $section-background-1;
+  padding: 0 0 20px;
+  // max-width: 1300px;
+  margin: 0 auto;
+  @include gridBreakpoint('sm') {
+    padding: 0;
+  }
+  .section-image-header{
+    h1{
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    }
+  }
+  .notes {
+    text-align: center;
+    padding: 20px 0 10px;
+    p {
+      font-family: $MyriadPro-Regular;
+    }
+  }
+  .revlalidate-info-container {
+    > .row{
+      @include gridBreakpoint('sm') {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        border-top: solid 1px $secondary-color-4;
+      }
+      @include gridBreakpoint('md') {
+        margin: 30px -40px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top: solid 1px $secondary-color-4;
+      }
+      @include gridBreakpoint('lg') {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .form-container {
+        @include breakpoint('xs'){
+          padding-top: 5px;
+          margin-top: 10px;
+          margin-bottom: 30px;
+          border-top: solid 1px $secondary-color-4;
+        }
+      }
+    }
+  }
+  .golden-circle-btn{
+    text-align: center;
+    .button-primary{
+      @include breakpoint('xs'){
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .form-container{
+
+    h2{
+      color: $primary-color-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 1.5;
+      text-transform: uppercase;
+      padding: 10px 0;
+      margin: 15px 0;
+      border-top: solid 1px $primary-color-2;
+      border-bottom: solid 1px $secondary-color-4;
+      @include breakpoint('sm') {
+        margin: 15px 0;
+        padding: 15px 0;
+      }
+    }
+
+    & > p{
+      font-family: $MyriadPro-Regular;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    label {
+      br {
+        @include breakpoint('sm'){
+          display: none;
+        }
+      }
+    }
+    label,
+    h3{
+      color: $primary-color-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      display: inline-block;
+      text-transform: uppercase;
+      span.two-line{
+        display: block;
+        margin: -5px 0 0;
+      }
+    }
+    p.description{
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin: 20px 0 0;
+      @include gridBreakpoint('md'){
+        margin-bottom: 20px;
+      }
+    }
+
+    .captcha-holder {
+      padding-left: 0;
+    }
+    .form-field{
+
+      .label-title .dropdown-menu{
+        .ie9 & {
+          width: auto !important;
+          min-width: 264px !important;
+          @include breakpoint('md'){
+            min-width: 217px !important;
+          }
+          @include breakpoint('sm'){
+            min-width: 100% !important;
+          }
+        }
+      }
+
+      .label-areacode .dropdown-menu,
+      .label-day .dropdown-menu,
+      .label-month .dropdown-menu,
+      .label-year .dropdown-menu,
+      .label-quantity .dropdown-menu{
+        .ie9 & {
+          width: auto !important;
+          min-width: 140px !important;
+          @include breakpoint('md'){
+            min-width: 115px !important;
+          }
+          @include breakpoint('sm'){
+            min-width: 100% !important;
+          }
+        }
+      }
+
+      &.radio-group{
+        label{
+          width: 90px;
+
+          /* Base for label styling */
+          [type="radio"]:not(:checked),
+          [type="radio"]:checked,
+          [type="radio"] + input {
+            position: absolute;
+            left: -9999px;
+          }
+          [type="radio"] + span.icon-ios-circle-outline:before,
+          [type="radio"] + input + span.icon-ios-circle-outline:before{
+            color: $secondary-color-6;
+            cursor: pointer;
+            margin-right: 15px;
+            position: relative;
+            top: 1px;
+          }
+
+          /* radio aspect */
+          [type="radio"]:checked + span.icon-ios-circle-outline:before,
+          [type="radio"]:checked + input + span.icon-ios-circle-outline:before {
+            color: $secondary-color-6;
+            content: "\7a";
+          }
+
+          span{
+            .ie8 &{
+              margin-left: 10px;
+            }
+            .ie8 &.icon-ios-circle-outline:before{
+              display: none;
+            }
+          }
+
+        }
+      }
+
+      &.form-field.checkbox{
+        display: block;
+        label{
+          display: block;
+          margin: 0 0 5px;
+          input{
+            margin-right: 15px;
+          }
+          span {
+            text-transform: none;
+            .ie8 &.icon-uncheck:before{
+              display: none;
+            }
+          }
+          a{
+            color: $secondary-color-2;
+          }
+
+        }
+
+        /* Base for label styling */
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked,
+        [type="checkbox"] + input {
+          position: absolute;
+          left: -9999px;
+        }
+        [type="checkbox"] + span.icon-uncheck:before,
+        [type="checkbox"] + input + span.icon-uncheck:before{
+          color: $secondary-color-6;
+          cursor: pointer;
+          margin-right: 1.4rem;
+          position: relative;
+          top: 1px;
+          font-size: 13px;
+          font-size: 1.3rem;
+        }
+
+        /* checkbox aspect */
+        [type="checkbox"]:checked + span.icon-uncheck:before,
+        [type="checkbox"]:checked + input + span.icon-uncheck:before  {
+          background-color: $secondary-color-6;
+          color: $secondary-color-6;
+        }
+        &.error{
+          [type="checkbox"] + span.icon-uncheck:before,
+          [type="checkbox"] + input + span.icon-uncheck:before  {
+            color:#a7042a;
+          }
+        }
+        .error-message{
+          margin: 0;
+        }
+      }
+    }
+  }
+  // .col-md-5 {
+  //   @include gridBreakpoint('sm') {
+  //     padding-right: 0;
+  //   }
+  // }
+}
+
+.review-profile {
+  .personal-info-container {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p.description {
+      @include gridBreakpoint('md') {
+        margin-top: 0;
+      }
+    }
+  }
+  .revlalidate-info-container {
+    > .row {
+      @include gridBreakpoint('md') {
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+      @include gridBreakpoint('lg') {
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.required-field {
+    color: #000;
+    font-size: 10px;
+    font-size: 1rem;
+    font-family: verdana, arial, sans-serif;
+    font-weight: normal;
+}
+
+.review-profile {
+  .form-field {
+    &.form-field-label {
+      @include breakpoint('sm') {
+        margin-bottom: 0;
+      }
+    }
+ }
+}

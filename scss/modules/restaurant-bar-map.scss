@@ -1,0 +1,197 @@
+// Restaurant and Bars Map
+.restaurant-bar-map {
+    display: none;
+  margin: 20px 0 50px;
+  .no-result-message{
+    padding-bottom: 20px;
+    @include breakpoint('xs'){
+      margin: 10px;
+    }
+  }
+  .map-view-container {
+    position: relative;
+    height: 600px;
+    margin: 0 auto;
+    max-width: 1150px;
+
+    @include breakpoint('sm') {
+      height: auto;
+    }
+
+    /*
+    @include breakpoint('sm') {
+      position: relative;
+      height: 430px;;
+    }
+
+    @include breakpoint('xs') {
+      height: 180px;
+    }*/
+
+    .map-wrapper {
+      width: 100%;
+      height: 600px;
+      position: absolute;
+      background-color: #ddd;
+
+      @include breakpoint('sm') {
+        position: relative;
+        height: 400px;
+      }
+
+      @include breakpoint('xs') {
+        height: 200px;
+      }
+
+      #rb-map {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title {
+      position: absolute;
+      left: 20px;
+      top: 4%;
+      z-index: 1;
+      width: 320px;
+      background-color: $section-background-2;
+
+      @include breakpoint('sm') {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+      }
+
+      .title-name {
+        color: $primary-color-2;
+        font-family: $FuturaStd-Medium;
+        font-size: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        padding: 16px 10px;
+        margin: 0;
+
+        .count {
+          margin-left: 5px;
+        }
+      }
+    }
+    .detail-container {
+      position: absolute;
+      left: 20px;
+      top: 3%;
+      width: 320px;
+      height: 86%;
+      margin-top: 50px;
+      overflow-y: auto;
+      background-color: $primary-color-1;
+
+      @include breakpoint('sm') {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        margin-top: 0;
+      }
+
+      .hotel-name {
+        color: $primary-color-2;
+        font-family: $FuturaStd-Medium;
+        font-size: 1.3rem;
+        font-size: 13px;
+        line-height: 1.2;
+        text-transform: capitalize;
+        padding: 0 10px;
+        margin: 15px 0 5px;
+
+        .count {
+          margin-left: 5px;
+        }
+      }
+
+      .restaurant-bar-container {
+        margin: 10px 0;
+      }
+
+      .container {
+        max-width: 100%;
+
+        @include breakpoint('sm') {
+          max-width: none;
+        }
+
+        .restaurant-bar-container {
+
+          .image-container {
+            height: 188px;
+
+            @include breakpoint('sm') {
+              height: 236px;
+            }
+
+            @include breakpoint('xs') {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Flyout Links */
+
+  .markerLabels {
+    font-family: $FuturaStd-Medium;
+    color: $primary-color-1;
+    font-size: 1.6rem;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+
+    &.active {
+      font-size: 2.2rem;
+      font-size: 22px;
+      width: 40px;
+    }
+  }
+
+  .flyout {
+    width: 225px;
+
+    .flyout-title{
+      color: $primary-color-2;
+      background-color: $section-background-2;
+      font-family: $FuturaStd-Medium;
+      font-size: 1.3rem;
+      font-size: 13px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      padding: 10px 40px 10px 10px;
+    }
+
+    .flyout-links-wrapper {
+      max-height: 120px;
+      overflow-y: auto;
+
+      .flyout-links {
+        color: $primary-color-2;
+        display: block;
+        font-family: $MyriadPro-Regular;
+        font-size: 1.3rem;
+        font-size: 13px;
+        line-height: 1;
+        padding: 10px;
+        //margin: 0 0 5px;
+        &:hover{
+          background-color: $section-background-1;
+        }
+      }
+
+    }
+
+  }
+}

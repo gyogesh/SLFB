@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Paginationjs"}
+  - var Meta = {description:"Module - Paginationjs", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/paginationjs

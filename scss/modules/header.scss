@@ -1,0 +1,571 @@
+header {
+  height:118px;
+  @include breakpoint('md'){
+    height:60px;
+  }
+  @include breakpoint('xs'){
+    height:48px;
+  }
+  .header-container{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:11;
+    width:100%;
+
+    .mobile-menu{
+      height: 60px;
+      line-height: 58px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      //width: 90px; Need to add when Global search added in tablet and mobile
+      width: auto;
+      overflow: hidden;
+      display: none;
+      @include breakpoint('xs'){
+        display: block;
+        height:48px;
+      }
+      @include breakpoint('md'){
+        display: block;
+      }
+      li {
+        float:left;
+        a{
+          color: $black;
+          display: block;
+          height: 60px;
+          line-height: 70px;
+          text-align: center;
+          width: 45px;
+          @include breakpoint('xs'){
+            height:48px;
+            line-height: 57px;
+          }
+          &.mobile-nav {
+            position: relative;
+            // Divider need to add when Global search added in tablet and mobile
+            /*&:before{
+              content: "";
+              border-left:1px solid $secondary-color-4;
+              position: absolute;
+              left:0;
+              top:50%;
+              height:23px;
+              margin-top: -12px;
+            }*/
+          }
+          span{
+            display: inline-block;
+            height: 60px;
+            width: 45px;
+            @include breakpoint('xs'){
+              height:48px;
+            }
+          }
+          span.icon-menu{
+            font-size: 20px;
+            font-size: 2rem;
+          }
+          span.icon-search{
+            font-size: 16px;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  .secondary-nav-wrapper {
+    background-color: $section-background-1;
+    @include breakpoint('md'){
+      display: none;
+    }
+  }
+  .back-btn-container{
+    display: none;
+    @include breakpoint('md'){
+      display: block;
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+      a.back-btn{
+        position: relative;
+        color: #333;
+        display: block;
+        font-family: $FuturaStd-Medium;
+        font-size: 1.3rem;
+        font-size: 13px;
+        line-height: 1.538;
+        margin: 0;
+        padding: 21px 10px 18px;
+        background-color:$secondary-color-1;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+        &:before{
+          font-size: 20px;
+          font-size: 2rem;
+          vertical-align: top;
+        }
+        .icon-menu{
+          background:$primary-color-1;
+          font-size: 20px;
+          font-size: 2rem;
+          height: 60px;
+          left: -45px;
+          line-height: 70px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 45px;
+       }
+     }
+   }
+   @include breakpoint('xs'){
+    .icon-menu{
+      height: 48px;
+      line-height:57px;
+    }
+    a.back-btn{
+      padding: 15px 10px;
+      .icon-menu{
+        height: 48px;
+        line-height:57px;
+      }
+    }
+   }
+ }
+  .primary-nav-wrapper {
+    background-color: $primary-color-1;
+    @include breakpoint('md'){
+      .container{
+        position: relative;
+      }
+    }
+    nav.secondary {
+      display: none;
+      @include breakpoint('md'){
+        display: block;
+      }
+    }
+    .nav-wraper{
+      @include breakpoint('md'){
+        display: block;
+        left:100%;
+        padding-left:45px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .nav-inner-container{
+          bottom: 0;
+          height: 100%;
+          overflow-y: auto;
+          padding-top: 60px;
+          position: relative;
+          top: 0;
+          width: 100%;
+          left:0;
+          background:$primary-color-1;
+        }
+      }
+      @include breakpoint('xs'){
+        .nav-inner-container{
+          padding-top: 48px;
+        }
+      }
+    }
+    nav.primary {
+      ul {
+        padding-left: 20px;
+        @include breakpoint('md'){
+          padding-left:0;
+        }
+      }
+      ul > li {
+        margin: 36px 0 28px;
+        padding: 0 24px;
+
+        @include breakpoint('md'){
+          padding: 0 12px;
+        }
+        @include breakpoint('md'){
+          margin: 0;
+        }
+        a {
+          font-family: $FuturaStd-Medium;
+          font-size: 13px;
+          font-size: 1.3rem;
+          color: $primary-color-2;
+          line-height: 1.53;
+          text-transform: uppercase;
+          padding:10px 0;
+          &.active{
+            position: relative;
+            &:after{
+             border-bottom: 2px solid $primary-color-3;
+             bottom: 2px;
+             content: "";
+             display: block;
+             left: 0;
+             position: absolute;
+             width: 100%;
+             @include breakpoint('md'){
+              border: none;
+             }
+            }
+          }
+          @include breakpoint('md'){
+            padding: 12px 5px;
+            display: block;
+          }
+        }
+        &.cta-search {
+          border-left: 1px solid #666666;
+          a > span.icon-search {
+            font-size: 11px;
+            font-size: 1.1rem;
+            padding-left: 8px;
+          }
+          @include breakpoint('md'){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  nav ul {
+    display: block;
+    list-style: none;
+    float: right;
+    margin: 0;
+    @include breakpoint('md'){
+      float: none;
+      padding: 0;
+    }
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0 10px;
+    @include breakpoint('md'){
+      border-bottom: 1px solid $secondary-color-4;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+    a,
+    a:hover,
+    a:active,
+    a:focus {
+      text-decoration: none;
+      @include breakpoint('md'){
+        padding: 12px 15px;
+        display: block;
+      }
+    }
+  }
+
+  nav.secondary {
+    margin-right: 15px;
+    @include breakpoint(md){
+      margin-right: 0;
+    }
+    ul{
+      padding-left: 20px;
+      @include breakpoint(md){
+        padding-left: 0;
+        &:first-child{
+          border-top: 6px solid #f4f3ef;
+          margin: -1px 0 0;
+        }
+      }
+    }
+
+    ul > li {
+      margin: 0;
+      padding: 8px 10px;
+      position: relative;
+      &:first-child{
+        &:before{
+          display: none;
+        }
+      }
+      &:before{
+        border-left: 1px solid #666;
+        color: #333333;
+        content: "";
+        height: 15px;
+        margin-top: -9px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include breakpoint('md'){
+          display: none;
+        }
+      }
+      &.remove{
+        &:before{
+          display: none;
+        }
+      }
+      &.active{
+        background-color: $section-background-2;
+        &:before{
+          display: none;
+        }
+        a {
+          border-bottom: 2px solid $primary-color-3;
+        }
+        @include breakpoint('md'){
+          background-color:$primary-color-1;
+          a{
+            border-bottom: none;
+          }
+        }
+      }
+      @include breakpoint('md'){
+        padding: 0;
+        border-left: none;
+        a{
+          border-bottom:none;
+          padding: 12px 16px;
+        }
+
+        &.member-login-mobile {
+          background: #dedede;
+          //display: none; // Should uncomment for log-out status 
+                           // or can be shown/ hide through JS based on user status
+          
+          .member-name {
+            display: block;
+          }
+
+          .member-points img {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      a {
+        outline: none;
+        //font-family: 'MyriadPro-Semibold';
+        font-family: $MyriadPro-Regular;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 1.66;
+        color: #666;
+
+        @include breakpoint('md'){
+          font-size: 13px;
+          font-size: 1.3rem;
+          line-height: 1.53;
+          color: $primary-color-2;
+          &:before {
+            font-size: 20px;
+            font-size: 2rem;
+            position: absolute;
+            right: 20px;
+          }
+        }
+      }
+
+      &.member-login-trigger {
+        .member-name {
+          padding-right: 10px;
+          margin-right: 10px;
+          border-right: 1px solid #666;
+          height: 15px;
+          display: inline-block;
+        }
+
+        .member-points {
+          img {
+            margin-right: 5px;
+              margin-top: -4px;
+          }
+        }
+      }
+    }
+  }
+
+  h1.logo {
+    height: 84px;
+    line-height: 84px;
+    margin: 0;
+    overflow:hidden;
+    img{
+      max-height: 45px;
+    }
+    @include breakpoint('md'){
+      height: 60px;
+      line-height: 60px;
+      margin: 0;
+      img {
+        max-width: 165px;
+      }
+    }
+    @include breakpoint('xs'){
+      height: 48px;
+      line-height: 48px;
+      margin: 0;
+      img{
+        max-width: 120px;
+        height: auto;
+      }
+    }
+  }
+
+  .search-panel {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+    z-index: 11;
+    display: none;
+
+    @include breakpoint('md'){
+      top: 0;
+    }
+
+    .search-wrapper{
+      padding-right: 15px;
+      max-width: 1170px;
+      margin: 0 auto;
+
+      @include breakpoint('md'){
+        max-width: 970px;
+      }
+
+      @include breakpoint('md'){
+        background-color: $primary-color-1;
+        padding-right: 0;
+      }
+
+      .search-bar{
+        width: 100%;
+        margin-top: 5px;
+        @include breakpoint('md'){
+          max-width: 750px;
+          margin:0 auto;
+        }
+
+        .form-bar{
+          background: $primary-color-1;
+          position: relative;
+
+          input.input-val{
+            width: 100%;
+            display: inline-block;
+            padding: 6px 95px 6px 18px;
+            border: 0;
+            border-bottom: 2px solid #eee;
+            box-shadow: none;
+
+            @include breakpoint('md'){
+              height: auto;
+              line-height: 22px;
+              border-bottom: none;
+              padding: 19px 95px 19px 18px;
+            }
+            @include breakpoint('xs'){
+              padding: 13px 95px 13px 18px;
+            }
+          }
+
+          .submit-group{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 11;
+            width:90px;
+            overflow: hidden;
+            background: $primary-color-1;
+
+            .icon-search{
+              float: left;
+              font-size: 12px;
+              font-size: 1.2rem;
+              height: 60px;
+              line-height: 64px;
+              position: relative;
+              text-align: center;
+              width: 45px;
+              @include breakpoint('md'){
+                font-size: 16px;
+                font-size: 1.6rem;
+                height: 60px;
+                line-height: 70px;
+              }
+              @include breakpoint('xs'){
+                height: 48px;
+                line-height: 57px;
+              }
+              .submit-btn {
+                font-size: 0;
+                border:0;
+                background: none;
+                position: absolute;
+                left:0;
+                top:0;
+                width:45px;
+                height:50px;
+                @include breakpoint('md'){
+                  height: 60px;
+                  line-height: 70px;
+                }
+                @include breakpoint('xs'){
+                  height: 48px;
+                  line-height: 57px;
+                }
+              }
+            }
+            .close-form{
+              background: $primary-color-1;
+              cursor: pointer;
+              display: inline-block;
+              font-size: 18px;
+              font-size: 1.8rem;
+              height: 60px;
+              line-height: 64px;
+              text-align: center;
+              vertical-align: top;
+              width: 45px;
+              z-index: 11;
+              @include breakpoint('md'){
+                font-size: 20px;
+                font-size: 2rem;
+                height: 60px;
+                line-height: 70px;
+              }
+              @include breakpoint('xs'){
+                height: 48px;
+                line-height: 57px;
+              }
+            }
+          }
+        }
+
+        .search-dropdown{
+          @include breakpoint('md'){
+            border-top: 1px solid #dedede;
+            top: 61px;
+          }
+          @include breakpoint('xs'){
+            border-top: 1px solid #dedede;
+            top: 49px;
+          }
+          ul li{
+            color: $primary-color-2;
+            span{
+              color: #257e8a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

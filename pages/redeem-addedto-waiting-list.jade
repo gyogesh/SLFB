@@ -1,0 +1,10 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Redeem Experience Added to waiting list"}
+  - var Meta = {description:"Redeem Experience Added to waiting list", keywords:"Golden Circle, Redeem Experience Added to waiting list"}
+
+block contentMain
+  include ../modules/header
+  include ../modules/redeem-added-waiting-list
+  include ../modules/footer 

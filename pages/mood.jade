@@ -1,0 +1,13 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Mood"}
+  - var Meta = {description:"", keywords:""}
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-image-header-mood
+  include ../modules/destination
+  include ../modules/mood-filter
+  include ../modules/mood-mosaic
+  include ../modules/footer

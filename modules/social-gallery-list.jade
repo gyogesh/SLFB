@@ -1,0 +1,16 @@
+// Module - Social Gallery List - Starts
+section.social-gallery-list
+    .container
+      .row
+        .col-xs-12
+          script(id="mediaTemplate", type="text/x-jsrender")
+            |  <div class="candid-wall-cell">
+            |      <div class="candid-wall-overlay"></div>
+            |      <div class="candid-wall-overlay-text"><div>SHOP NOW</div></div>
+            |      <a class='media' data-media-index='{{> Index }}' style="cursor:pointer;">
+            |          <img data-original="{{> Media.Images.LowResolution.Url }}" alt="{{> Title }}" style="display:inline-block;" class="lazy">
+            |      </a>
+            |  </div>
+          .candid-container(data-gallery-id='e75023e9-2d06-41c3-8e3b-22d54c9f25be')
+
+// Module - Social Gallery List- Ends

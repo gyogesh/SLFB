@@ -1,0 +1,106 @@
+// predefine all mixins
+// 
+// font property mixin
+@mixin fontProperty($family:Arial, $size: 1rem, $color: $black, $lineHeight:1rem){
+  font-family:$family;
+  font-size:$size;
+  color:$color;
+  line-height:$lineHeight;
+}
+
+// border radius
+@mixin borderRadius($radius: 0) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// box sizing border-box
+@mixin boxSizing($sizing: border-box) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  -ms-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+// Box shadow
+@mixin boxShadow($color: $black , $distance: 1px, $spread: 2px, $size:5px) {
+  box-shadow: $distance $spread $size $color;
+  -mox-box-shadow: $distance $spread $size $color;
+  -webkit-box-shadow: $distance $spread $size $color;
+  -ms-box-shadow: $distance $spread $size $color;
+  -o-box-shadow: $distance $spread $size $color;
+}
+
+
+// media query breakpoints
+@mixin breakpoint($point) {
+  @if $point == 'xs' {
+    @media screen and (max-width: 767px) { @content ; }
+  }
+  @else if $point == 'sm' {
+    @media screen and (max-width: 991px) { @content ; }
+  }
+  @else if $point == 'md' {
+    @media screen and (max-width: 1199px)  { @content ; }
+  }
+  @else if $point == 'lg' {
+    @media screen and (min-width: 1200px)  { @content ; }
+  }
+}
+
+//Bootstrap Grid breakpoints which has a mobile first layout
+// xs = 
+// sm = @media (min-width: 768px) {}
+// md = @media (min-width: 992px) {}
+// lg = @media (min-width: 1200px) {}
+@mixin gridBreakpoint ($point) {
+  @if $point == 'xs' {
+    @media (max-width: 767px) { @content ; }
+  }
+  @else if $point == 'sm' {
+    @media (min-width: 768px) { @content ; }
+  }
+  @else if $point == 'md' {
+    @media (min-width: 992px)  { @content ; }
+  }
+  @else if $point == 'lg' {
+    @media (min-width: 1200px)  { @content ; }
+  }
+  @else if $point == 'lg-xl' {
+    @media (min-width: 1400px)  { @content ; }
+  }
+}
+
+
+// Gradient code is used from Bootstrap
+
+// Horizontal gradient, from left to right
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+// Color stops are not available in IE9 and below.
+
+@mixin gradient-horizontal($start-color: #555, $mid-color: #555, $end-color: #333, $start-percent: 0%, $mid-percent: 0%, $end-percent: 100%) {
+  background-image: -moz-linear-gradient(left, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);
+  background-image: -webkit-gradient(linear, left top, left right, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Opera 12
+  background-image: linear-gradient(to right, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+
+// Vertical gradient, from top to bottom
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+// Color stops are not available in IE9 and below.
+@mixin gradient-vertical($start-color: #555, $mid-color: #555, $end-color: #333, $start-percent: 0%, $mid-percent: 0%, $end-percent: 100%) {
+  background-image: -moz-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);
+  background-image: -webkit-gradient(linear, left top, left bottom, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+  background-image: -o-linear-gradient(top, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent);  // Opera 12
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $mid-color $mid-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}

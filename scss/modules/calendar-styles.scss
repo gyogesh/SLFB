@@ -1,0 +1,201 @@
+.ui-datepicker {
+  margin: 12px 0 0 -12px;
+  padding: 0;
+  //width: auto;
+  background:#f6f6f6;
+  border: none;
+  border-radius:0;
+  width: 300px;
+
+  &:before{
+    border:0;
+    display: block;
+    height: 0;
+    left: none;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+  .ui-widget-header .ui-icon{
+    background: none;
+  }
+  .ui-datepicker-header{
+    color: $primary-color-1;
+    background-color: $secondary-color-3;
+    border-left: 1px solid $secondary-color-3;
+    border-right: 1px solid $secondary-color-3;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-family: $FuturaStd-Medium;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+  }
+  .ui-datepicker-calendar{
+    margin:0;
+    thead{
+      color: $primary-color-1;
+      background-color: $secondary-color-3;
+      border-left: 1px solid $secondary-color-3;
+      border-right: 1px solid $secondary-color-3;
+      text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+      font-size:13px;
+      font-size: 1.3rem;
+      font-family: $FuturaStd-Medium;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -4px;
+        width: 0;
+        height: 0;
+        border-bottom: 6px solid $secondary-color-3;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+      }
+    }
+    tbody{
+      background-color: $section-background-1;
+    }
+    td{
+      border: 1px solid $section-background-2;
+      padding:0;
+      width: 14.285%;
+      &.offer-dates {
+        .ui-state-default{
+          color: $primary-color-2;
+        }
+      }
+    }
+    .ui-state-default{
+      width: 100%;
+      color: #999999;
+      font-family: $FuturaStd-Medium;
+      font-size: 16px;
+      font-size:1.6rem;
+      line-height: 33px;
+      text-align: center;
+      padding:0;
+      border: none;
+    }
+    .ui-state-disabled{
+      opacity: 0.3;
+      .ui-state-default{
+        cursor: default;
+      }
+    }
+    .ui-state-active,
+    .start-date a, .end-date a{
+      border: 1px solid $secondary-color-2;
+      background:none;
+      color: $primary-color-2;
+    }
+    .ui-state-highlight{
+      background: none;
+      & a{
+        background: $primary-color-1;
+        border: none;
+      }
+    }
+    .ui-datepicker-today{
+      .ui-state-highlight{
+        background: none;
+        border: none;
+        position: relative;
+        color: #999999;
+        &:before{
+          bottom: 0;
+          content: ".";
+          font-size: 33px;
+          left: 36%;
+          position: absolute;
+          color: #999999;
+        }
+        &.ui-state-active{
+          border: 1px solid $secondary-color-2;
+          background:none;
+          color: $primary-color-2;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    cursor: pointer;
+    background: $secondary-color-5;
+    font-size: 20px;
+    font-size: 2rem;
+    height: 35px;
+    line-height: 35px;
+    width: 20px;
+    color: $primary-color-1;
+
+    &.ui-state-hover.ui-datepicker-prev-hover,
+    &.ui-state-hover.ui-datepicker-next-hover{
+      background: $secondary-color-5;
+      border: none;
+    }
+    span{
+      display: none;
+    }
+    &.icon-angle-left:before,
+    &.icon-angle-right:before{
+      line-height: 35px;
+    }
+  }
+}
+
+.offers-calendars{
+  margin-bottom: 20px;
+  @include breakpoint('sm'){
+    width: auto;
+    position: absolute;
+    right:10px;
+    top:10px;
+    z-index: 1;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      right: 46px;
+      top: -6px;
+      width: 0;
+      height: 0;
+      margin-left: -3px;
+      border-bottom: 6px solid #dedede;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    &.invisible{
+      display: none;
+    }
+  }
+  @include breakpoint('xs'){
+    width: 300px;
+  }
+  .ui-datepicker {
+    padding: 0;
+    max-width: 270px;
+    width: 100%;
+    margin: 0;
+    @include breakpoint('sm'){
+      padding: 20px;
+      background:$section-background-2;
+    }
+    .ui-datepicker-calendar{
+      thead{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}

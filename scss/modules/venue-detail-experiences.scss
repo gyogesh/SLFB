@@ -1,0 +1,104 @@
+/*
+* Moudule : Restaurant and Bar Venue Detail - Experiences
+*/
+
+.venue-experiences{
+  .slider-content-pod{
+    @include breakpoint('sm'){
+      padding: 0 30px;
+    }
+    @include breakpoint('xs'){
+      padding: 0;
+    }
+    .item{
+      padding: 20px 0;
+      h3{
+        font-size: 21px;
+        font-size: 2.1rem;
+        line-height: 1.4;
+        margin-top: 11px;
+      }
+      h4{
+        margin-top: 15px;
+      }
+      p.member-exclusive{
+        bottom: 100px;
+        left: 50%;
+        margin: 0;
+        margin-left: -72px;
+        position: absolute;        
+      }
+      .button-secondary{
+        bottom: 50px;
+        left: 50%;
+        margin: 0;
+        margin-left: -72px;
+        position: absolute;
+        width: 96px;
+
+        @include breakpoint('xs') {
+          margin-left: -72px;
+          width: 116px;
+        }
+      }
+      .caption-block{
+        padding: 20px 45px;
+        min-height: 440px;
+        @include breakpoint('xs') {
+          padding: 0 40px 20px;
+          min-height: 380px;
+        }
+        .aligned-content{
+          vertical-align: top;
+        }
+      }
+    }
+    .owl-item{
+      @include breakpoint('sm'){
+        padding: 0 4px;
+      }
+    }
+  }
+  .caption-block{
+    p{
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.6;
+    }
+    .page-info{
+      bottom: 45px;
+    }
+  }
+  .owl-dot{
+    display: none;
+  }
+  .owl-next{
+    box-shadow:1px 1px 2px #ccc;
+  }
+  .owl-nav{
+    div{
+      background: rgba(0,0,0,0.2);
+      font-size: 24px;
+      font-size: 2.4rem;
+      line-height: 48px;
+      height: 48px;
+      width: 48px;
+      &:before{
+        color: $primary-color-1;
+      }
+      &.owl-prev{
+        left: -24px;
+        &:before {
+          left: 18px;
+        }
+      }
+      &.owl-next{
+        right: -24px;
+        &:before {
+          right: 18px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,191 @@
+// Mood Mosaic starts here
+
+.mood-mosaic{
+  background-color: $section-background-1;
+  padding-bottom: 60px;
+  .masonry-container{
+    margin: 0 -10px;
+  }
+  .special-offer-container{
+    .image-container{
+      position: relative;
+      .icon{
+        bottom: -15px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+      }
+      img{
+        width:100%;
+      }
+    }
+    .inner-container{
+      width: 100%;
+      float: none;
+      .col-md-12{
+        float: none;
+      }
+      .content-container{
+        padding-bottom: 60px;
+        p.member-exclusive{
+          margin: 15px 0 5px;
+          position: relative;
+          left: auto;
+          right: auto;
+          top: auto;
+          bottom: auto;
+        }
+        .button-container{
+          position: absolute;
+          .find-out-more{
+
+            @include breakpoint('sm'){
+              margin-left: 0;
+            }
+          }
+          @include breakpoint('sm'){
+            left: 20px;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    p.descreption{
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding-top: 5px;
+    }
+  }
+  .experience-panel{
+    padding-bottom: 0;
+    @include breakpoint('sm'){
+      padding: 0;
+      margin-bottom: 10px;
+    }
+    @include breakpoint('xs'){
+      margin-bottom: 0;
+    }
+    .item{
+      padding: 20px 10px 0;
+      .col-xs-12{
+        float: none;
+      }
+      .image-block{
+        height: 208px;
+        @include breakpoint('md'){
+          height: 170px;
+        }
+        @include breakpoint('sm'){
+          height: 199px;
+        }
+        @include breakpoint('xs'){
+          height: 78px;
+        }
+      }
+      .caption-block{
+        padding: 0 45px 85px;
+        height: auto;
+        .icon {
+          margin-bottom: 20px;
+          margin-top: -15px;
+        }
+        .aligned-content {
+          vertical-align: top;
+        }
+      }
+      p.member-exclusive{
+        background-color: $secondary-color-3;
+        color: $primary-color-1;
+        display: block;
+        font-family: $FuturaStd-Medium;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin: 10px auto 10px;
+        padding: 5px 10px;
+        width: 140px;
+      }
+    }
+    .button-secondary {
+        margin-top: 20px;
+        position: absolute;
+        left: 50%;
+        bottom: 25px;
+        margin-left: -70px;
+        width: 96px;
+        @include breakpoint('xs'){
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+    }
+  }
+  .restaurant-bar-container{
+    .image-container{
+      @include breakpoint('md'){
+        height: 202px;
+      }
+      @include breakpoint('sm'){
+        height: 236px;
+      }
+      @include breakpoint('xs'){
+        height: auto;
+      }
+    }
+    .content-container{
+      padding: 35px 15px 100px;
+      @include breakpoint('xs'){
+        padding: 35px 15px 15px;
+      }
+    }
+  }
+  .view-all-btn{
+    margin-top: 20px;
+  }
+}
+
+
+/* New Element */
+
+.standard-asset {
+  margin-top: 20px;
+  .image-container{
+    height: 370px;
+    @include breakpoint('md'){
+      height: 303px;
+    }
+    @include breakpoint('sm'){
+      height: 355px;
+    }
+    @include breakpoint('xs'){
+      height: auto;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content-container{
+    background-color: $section-background-2;
+    padding: 25px 50px 20px;
+    text-align: center;
+    @include breakpoint('sm'){
+      padding: 25px 35px 20px;
+    }
+    p{
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.candid-wall-container{
+  .candid-wall-cell{
+    @include breakpoint('xs'){
+      height: 75px;
+      width: 75px;
+      margin: 1px 3px;
+    }
+  }
+}

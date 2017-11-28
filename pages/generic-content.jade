@@ -1,0 +1,10 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Generic Content"}
+  - var Meta = {description:"", keywords:""}
+
+block contentMain
+  include ../modules/header
+  include ../modules/generic-content
+  include ../modules/footer

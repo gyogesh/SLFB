@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Login Flyout"}
+  - var Meta = {description:"Module - Login Flyout", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/login-flyout

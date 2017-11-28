@@ -1,0 +1,148 @@
+/*
+* Moudule : Join Us at the Table
+*/
+
+
+
+.joinus-table{
+  background-color: $section-background-1;
+/*   @include breakpoint('sm') {
+    .no-gutter{
+      padding: 0 10px;
+    }
+  } */
+  @include breakpoint('xs') {
+    .no-gutter{
+      padding: 0 10px;
+    }
+  }
+  .boxshadow-btmright{
+    @include boxShadow($color: #cccccc , $distance: 1px, $spread: 1px, $size:2px);
+  }
+
+
+  .img-container{
+    position: relative;
+    overflow: hidden;
+    max-height: 380px;
+    margin-left: 10px;
+    @include breakpoint('sm'){
+      max-height: 356px;
+      margin-right: -10px;
+    }
+    @include breakpoint('xs'){
+      max-height: none;
+      margin-right: 0;
+      margin-left: 0;
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .joinus-content {
+    margin: 0 auto;
+    height: 380px;
+    padding: 40px;
+    text-align: center;
+    background-color: $primary-color-1;
+    margin-right: 10px;
+    @include breakpoint('sm'){
+      height: 356px;
+    }
+    @include breakpoint('xs'){
+      height: auto;
+      padding: 20px 30px;
+      margin: 0;
+      margin-right: 0;
+    }
+
+    img {
+      margin: 0 0 -9px;
+      width: 40px;
+      height: auto;
+      @include breakpoint('xs') {
+        width: 33px;
+      }
+    }
+
+    h1{
+      font-family: $FuturaStd-Medium;
+      font-size: 36px;
+      font-size: 3.6rem;
+      line-height: 1.22;
+      margin: 0 0 20px;
+      text-transform: none !important;
+
+      @include breakpoint('sm') {
+        font-size: 30px;
+        font-size: 3rem;
+        margin: 0 0 20px;
+      }
+      @include breakpoint('xs') {
+        font-size: 30px;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+      span{
+        @include breakpoint('xs') {
+          display:block;
+        }
+      }
+    }
+
+    p {
+      font-family: $MyriadPro-Regular;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $primary-color-2;
+      margin: 0 0 20px;
+      @include breakpoint('xs'){
+        margin: 0 0 12px;
+      }
+    }
+
+    ul.joinus-list {
+      margin: 0 0 10px;
+      padding:0;
+      list-style-type: none;
+      li{
+        font-family: $MyriadPro-Semibold;
+        font-size: 16px;
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 13px 0 10px;
+        position: relative;
+        line-height:1;
+        text-transform: uppercase;
+        @include breakpoint('sm') {
+          margin: 0;
+        }
+        &:before{
+          content:"";
+          position: absolute;
+          top:0;
+          left:50%;
+          display: block;
+          width: 50px;
+          border-bottom: 1px solid $secondary-color-3;
+          margin-left: -25px;
+        }
+        &:first-child{
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+    a.button-secondary{
+      display: inline-block;
+      margin: 0;
+    }
+    a.button-primary{
+      box-sizing: content-box;
+    }
+  }
+}

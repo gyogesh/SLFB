@@ -1,0 +1,65 @@
+@mixin buttonPrimary {
+  
+  @extend %button-fonts;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: $primary-color-1;
+  background-color: $secondary-color-6;
+  display: inline-block;
+  padding: 16px 20px 12px;
+  margin: 5px;
+  width: 100px;
+  box-sizing: content-box;
+  transition: all 1s;
+  text-shadow: 1px 1px 0 rgba(28, 107, 65, 0.75);
+  
+  @include breakpoint('xs'){
+    //width: 100%;
+    padding: 16px 10px 12px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    transition: all 0.2s;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $primary-color-1;
+    background-color: $secondary-color-7;
+  }
+}
+
+@mixin buttonSecondary {
+  
+  @extend %button-fonts;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  color: #257e8a;
+  background-color: $primary-color-1;
+  border: 2px solid #25aaa5;
+
+  display: inline-block;
+  padding: 14px 20px 10px;
+  margin: 5px;
+
+  width: 96px;
+  box-sizing: content-box;
+  
+  transition: all 1s;
+
+  @include breakpoint('xs'){
+    padding: 14px 10px 10px;
+    transition: all 0.2s;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $primary-color-1;
+    background-color: $secondary-color-7;
+    border: 2px solid $secondary-color-7;
+  }
+}

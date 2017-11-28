@@ -1,0 +1,82 @@
+// To be ignored while integrating - Starts
+h5.text-center R&amp;B Variant - If the city has 3 venues, columns and no CTA
+p.text-center(style="color:#f00") Please remove this while integrating.
+// To be ignored while integrating - Ends
+
+// Module - Restaurant and Bar List (Three venues in a row) - Starts
+section.restaurant-bar-list
+  .section-row
+    .container-fluid.no-gutter
+      include ../includes/choose-destination-restaurants-bars
+      .container.no-gutter
+        .row
+          // This is a restaurant and bar container 1
+          .col-xs-12.col-sm-6.col-md-4
+            .restaurant-bar-container
+              .image-container.lazy-load-wrapper
+                a(href="#")
+                  img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/lobster-bar-grill.jpg", alt="Lobster &amp; bar Grill")
+                  span.icon
+                    span.icon-restaurants-bars
+              .content-container
+                h2 
+                  a(href="#") Lobster &amp; bar Grill
+                p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+                p.restaurant-bar-address Hong Kong
+                p.cuisine Italian
+                  span.divider |
+                  span.price $$
+                p.contact-info +
+                  span.contact-number 852 12345678
+                .button-container
+                  a.call-us-btn.button-secondary(href="tel:+852 1234 5678") Call
+                  a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+          // This is a restaurant and bar container 2
+          .col-xs-12.col-sm-6.col-md-4
+            .restaurant-bar-container
+              .image-container.lazy-load-wrapper
+                a(href="#")
+                  img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/waterside-terrace.jpg", alt="Waterside Terrace")
+                  span.icon
+                    span.icon-restaurants-bars
+              .content-container
+                h2 
+                  a(href="#") Waterside Terrace
+                p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+                p.restaurant-bar-address Hong Kong
+                p.cuisine Italian
+                  span.divider |
+                  span.price $$
+                p.contact-info +
+                  span.contact-number 852 12345678
+                .button-container
+                  a.call-us-btn.button-secondary(href="tel:+852 1234 5678") Call
+                  a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+          // This is a restaurant and bar container 3
+          .col-xs-12.col-sm-6.col-md-4
+            .restaurant-bar-container
+              .image-container.lazy-load-wrapper
+                a(href="#")
+                  img.lazy-load(src="content/img/content/placeholder.png", data-src="content/img/content/cafe-kool.jpg", alt="Café Cool")
+                  span.icon
+                    span.icon-restaurants-bars
+              .content-container
+                h2 
+                  a(href="#") Café Cool
+                p.restaurant-bar-address Kowloon Shangri-La, Hong Kong
+                p.restaurant-bar-address Hong Kong
+                p.cuisine International
+                  span.divider |
+                  span.price $$
+                p.contact-info +
+                  span.contact-number 852 12345678
+                .button-container
+                  a.call-us-btn.button-secondary(href="tel:+852 1234 5678") Call
+                  a.book-now-btn.button-secondary(href="https://tms-tablereservations.shangri-la.com/shangrila_testing/hk/en/resvs/booking/isl_cafe_too/" data-type="book-table-link") Book a Table
+
+        .view-all-btn.hidden
+          a.button-primary(href='#')
+            | view all (
+            span 36
+            | )
+// Module - Restaurant and Bar List (Three venues in a row) - Ends

@@ -1,0 +1,23 @@
+// predefine classes with font details as classes to be extended.
+
+%button-fonts {
+  font-family: $MyriadPro-Semibold;
+  font-size: 1.3rem;
+  font-size: 13px;
+  line-height: 0.923;
+}
+
+// Member Benefit Dot
+
+%benefit-dot{
+  display: block;
+  font-size: 1.6rem;
+  font-size: 16px;
+  line-height: 0;
+  // margin-top: -10px;
+  position: relative;
+  text-align: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}

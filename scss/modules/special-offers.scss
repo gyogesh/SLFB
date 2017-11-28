@@ -1,0 +1,144 @@
+//Special offers starts here
+.special-offers {
+  background-color: $section-background-1;
+}
+
+.special-offer-container{
+  position: relative;
+  padding-top: 20px;
+  p{
+    margin: 0;
+  }
+  .inner-container{
+    background: $primary-color-1;
+    width: 91.666666666667%;
+    float: right;
+    padding: 23px 0 20px;
+    position: relative;
+    @include boxShadow(#ccc, 1px, 1px, 2px);
+    @include breakpoint('sm'){
+      width: 100%;
+    }
+    .content-container{
+      //padding-bottom: 50px;
+      padding-bottom: 100px;
+      position: relative;
+      padding-left: 10px;
+      @include breakpoint('sm'){
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .offer-period{
+        font-family: $FuturaStd-Medium;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.923;
+        display: inline-block;
+        position: relative;
+        bottom: 3px;
+        padding-left: 40px;
+        text-transform: uppercase;
+        .icon{
+          position: absolute;
+          left:0;
+          top:0;
+          span{
+            height:25px;
+            width:25px;
+            font-size: 12px;
+            font-size: 1.2rem;
+            &:before{
+              line-height: 2.08;
+            }
+
+          }
+        }
+      }
+      h3{
+        font-family: $FuturaStd-Medium;
+        font-size: 21px;
+        font-size: 2.1rem;
+        line-height: 1.52;
+        padding-top: 11px;
+        margin: 0;
+        @include breakpoint('sm'){
+         line-height: 1.38;
+       }
+       a{
+          color: $black;
+       }
+     }
+     h5{
+      font-family: $MyriadPro-Semibold;
+      font-size: 16px;
+      font-size: 1.6rem;
+      line-height: 1.44;
+      padding-top: 11px;
+      margin: 0;
+      @include breakpoint('sm'){
+        font-size: 13px;
+        font-size: 1.3rem;
+        padding-top: 3px;
+      }
+    }
+    p{
+      color: $primary-color-2;
+      font-family: $MyriadPro-Regular;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.66;
+    }
+    p.avalabilty{
+     font-family: $MyriadPro-Semibold;
+     font-size: 13px;
+     font-size: 1.3rem;
+     line-height: 1.44;
+    }
+    p.location{
+      padding-bottom: 10px;
+    }
+    p.descreption{
+      padding-top: 10px;
+      }
+      p.member-exclusive{
+        background-color: $secondary-color-3;
+        color: $primary-color-1;
+        display: inline-table;
+        font-family: $FuturaStd-Medium;
+        font-size: 13px;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #7e735f;
+        margin: 5px 0;
+        padding: 5px 10px;
+        position: absolute;
+        left: 10px;
+        right: 0;
+        bottom: 50px;
+
+        @include breakpoint('sm') {
+          left: 20px;
+        }
+      }
+      .button-container{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        left: 5px;
+        @include breakpoint('sm'){
+          padding-left: 20px;
+          left: -5px;
+        }
+
+        .find-out-more {
+          width: 93px;
+
+          @include breakpoint('sm'){
+            width: 113px;
+          }
+        }
+      }
+    }
+  }
+}

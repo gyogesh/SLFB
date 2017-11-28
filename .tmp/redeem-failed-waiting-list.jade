@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Redeem Failed Waiting List"}
+  - var Meta = {description:"Module - Redeem Failed Waiting List", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/redeem-failed-waiting-list

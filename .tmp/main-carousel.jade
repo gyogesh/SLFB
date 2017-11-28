@@ -1,0 +1,9 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Module - Main Carousel"}
+  - var Meta = {description:"Module - Main Carousel", keywords:""}
+  - var Basepath = {path:"../"}
+
+block contentMain
+  include ../modules/main-carousel

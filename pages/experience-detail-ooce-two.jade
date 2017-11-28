@@ -1,0 +1,12 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Experiences Detail"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "experiences"
+
+block contentMain
+  include ../modules/header
+  include ../modules/section-experience-header-ooce-two
+  include ../modules/experience-detail-ooce
+  include ../modules/footer

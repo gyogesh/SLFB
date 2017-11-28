@@ -1,0 +1,11 @@
+extends ../templates/main
+
+append config
+  - var Page = {title:"Shangri-La - Social Gallery"}
+  - var Meta = {description:"", keywords:""}
+  - var currentUrl = "social-gallery"
+
+block contentMain
+  include ../modules/header
+  include ../modules/social-gallery
+  include ../modules/footer

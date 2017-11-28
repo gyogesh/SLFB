@@ -1,0 +1,54 @@
+/*
+* Moudule : Restaurant and Bar Venue Detail - Special Offers
+*/
+
+.venue-special-offers{
+  .special-offer-container{
+    .inner-container{
+      .content-container{
+        h3{
+          font-size: 24px;
+          font-size: 2.4rem;
+        }
+        p.descreption{
+          font-size: 16px;
+          font-size: 1.6rem;
+          padding: 0 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.offer-vaildity{
+  border: 2px solid $secondary-color-4;
+  padding: 20px 0 10px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 90px;
+  @include breakpoint('sm'){
+    display: none;
+  }
+  p {
+    color: $secondary-color-4;
+    font-family: $FuturaStd-Medium;
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+      display: block;
+      font-size: 13px;
+      font-size: 1.3rem;
+      &.divider {
+        background: $section-background-2;
+        margin: 5px auto;
+        height: 2px;
+        width: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+form#frmLogin(action="", method="post")
+  section.login-wrapper
+    .section-row
+      .container
+        .section-heading
+          h1 Login
+        //- .notes
+        .form-container
+          .row
+            .col-md-6
+              .col-left
+                .form-field
+                  label Membership Number
+                  .field-container
+                    .ui-textinput
+                     input#txtMembershipNumber(type="text", name="txtMembershipNumber")
+                  span.error-message Membership Number is a required field
+                .form-field
+                  label Password
+                  .field-container
+                    .ui-textinput
+                      input#txtPassword(type="password", name="txtPassword", autocapitalize="none")
+                  span.error-message Password is a required field
+                  a.forgot-password(href="javascript:void(0);", title="Forgot password") Forgot password
+                span.error-message Credentials entered are not correct
+                .form-cta
+                  input.button-primary(value="Login", type="submit")
+            .col-md-6
+              .col-right
+                h3 Become a member
+                .join-now-wrapper
+                  .notes
+                    p You need to be an existing member with enough GC Award Points to redeem this experience. Not a member yet? Sign up to start earning and redeeming points for unique experiences.
+                  .join-now-cta
+                    a.button-secondary(href="join-now.html", title="Join Now") Join Now
+                .activate-wrapper
+                  .notes
+                    p Already a member, but don’t have an online account?<br/>Activate your account to see if you have enough GC Award Points to redeem this experience.
+                  .activate-account-cta
+                    a.button-secondary(href="activate-account.html", title="Activate My Account") Activate Account
